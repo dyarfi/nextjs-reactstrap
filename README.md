@@ -10,6 +10,10 @@
 
 `$ yarn add bootstrap reactstrap @zeit/next-sass node-sass`
 
+### Add next.config.js in your project root and add NextJS SASS setup
+
+`const withSass = require("@zeit/next-sass"); module.exports = withSass({ cssLoaderOptions: { importLoaders: 2 } });`
+
 ### Start project development
 
 `$ yarn dev`
