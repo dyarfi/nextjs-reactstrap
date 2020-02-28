@@ -1,8 +1,13 @@
-// Variable overrides
+// ------ Bootstrap default variable overrides
 
 // Base font family
 // $base-font-family: "Montserrat", sans-serif !default;
 // $font-family-base: $base-font-family !default;
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
 // $body-bg: rgb(27, 27, 27);
 $body-bg: rgb(255,255,255);
 // $body-color: #fff;

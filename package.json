@@ -9,11 +9,26 @@
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "autoprefixer": "^9.7.4",
     "bootstrap": "^4.4.1",
+    "cssnano": "^4.1.10",
     "next": "9.2.1",
     "node-sass": "^4.13.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "reactstrap": "^8.4.1"
-  }
+  },
+  "browserslist": [
+    "last 3 version",
+    "Chrome >= 35",
+    "Firefox >= 38",
+    "Edge >= 10",
+    "Explorer >= 10",
+    "ie >= 10",
+    "iOS >= 8",
+    "Safari >= 8",
+    "Android 2.3",
+    "Android >= 4",
+    "Opera >= 12"
+  ]
 }

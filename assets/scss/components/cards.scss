@@ -1,4 +1,5 @@
 .card {
     margin-bottom: 1rem;
+    @extend %shadow-md;
     // height: 100%;
 }

@@ -141,11 +141,42 @@ const Dashboard = props => (
                 <Button>Go somewhere</Button>
               </Card>
             </Col>
+            <Col md="6" lg="4">
+              <Card body>
+                <CardTitle tag="h4">Special Title Treatment</CardTitle>
+                <CardText>
+                  With supporting text below as a natural lead-in to additional
+                  content. Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Autem, recusandae?
+                </CardText>
+                <Button>Go somewhere</Button>
+              </Card>
+            </Col>
+            <Col md="6" lg="4">
+              <Card body>
+                <CardTitle tag="h4">Special Title Treatment</CardTitle>
+                <CardText>
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </CardText>
+                <Button>Go somewhere</Button>
+              </Card>
+            </Col>
+            <Col md="6" lg="4">
+              <Card body>
+                <CardTitle tag="h4">Special Title Treatment</CardTitle>
+                <CardText>
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </CardText>
+                <Button>Go somewhere</Button>
+              </Card>
+            </Col>
           </Row>
         </Col>
       </Row>
     </MainLayout>
-    <style jsx>{`
+    {/* <style jsx>{`
       .hero {
         width: 100%;
         color: #333;
@@ -190,7 +221,7 @@ const Dashboard = props => (
         font-size: 13px;
         color: #333;
       }
-    `}</style>
+    `}</style> */}
   </>
 );
 
