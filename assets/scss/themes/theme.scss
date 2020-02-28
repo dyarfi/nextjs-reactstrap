@@ -1,0 +1,29 @@
+// Theme fonts
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700,800,900&display=swap');
+
+// Set unique-id ver
+$ver 			: unique_id();
+
+// Theme color
+$theme-color 	: #cc9900 !default; // #cc9900
+$theme			: $theme-color !default;
+
+// Background variables light
+$light-primary : lighten($primary, 25%);
+$light-success : lighten($success, 25%);
+$light-warning : lighten($warning, 25%);
+$light-danger : lighten($danger, 25%);
+$light-info : lighten($info, 25%);
+$light-dark : lighten($dark, 25%);
+$light-theme : lighten($theme, 25%);
+$light-secondary : lighten($secondary, 25%);
+
+// Background variables dark
+$dark-primary : darken($primary, 28%);
+$dark-success : darken($success, 28%);
+$dark-warning : darken($warning, 28%);
+$dark-danger : darken($danger, 28%);
+$dark-info : darken($info, 15%);
+$dark-secondary : darken($secondary, 15%);
+$dark-mute : darken($dark, 45%);
+$dark-theme : darken($theme, 32%);

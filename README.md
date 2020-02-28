@@ -8,7 +8,7 @@
 
 ### Add Bootstrap and Reactstrap to the project
 
-`$ yarn add bootstrap reactstrap`
+`$ yarn add bootstrap reactstrap @zeit/next-sass node-sass`
 
 ### Start project development
 
@@ -16,4 +16,10 @@
 
 #### Add boostrap to \_app.js and restart nextjs
 
-`import "bootstrap/dist/css/bootstrap.min.css";`
+`import 'bootstrap/dist/css/bootstrap.min.css';`
+
+#### Or add Custom SCSS to import boostrap to \_app.js and restart nextjs
+
+`import 'node_modules/bootstrap/scss/bootstrap.scss';`
+
+`import 'assets/scss/main.scss';`

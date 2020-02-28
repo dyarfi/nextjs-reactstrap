@@ -1,0 +1,85 @@
+.imghvr-center figcaption {
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+  	flex-direction: column;
+  	text-align: center;
+}
+
+[class^='imghvr-'],[class*=' imghvr-'] {
+
+	&:hover {
+		.ih-delay-xs {
+			@include transition-delay($transition-duration / 2);
+		}
+		.ih-delay-sm {
+			@include transition-delay($transition-duration);
+		}
+		.ih-delay-md {
+			@include transition-delay($transition-duration * 1.5);
+		}
+		.ih-delay-lg {
+			@include transition-delay($transition-duration * 2);
+		}
+		.ih-delay-xl {
+			@include transition-delay($transition-duration * 2.5);
+		}
+		.ih-delay-xxl {
+			@include transition-delay($transition-duration * 3);
+		}
+	}
+
+	[class^='ih-'],[class*=' ih-'] {
+		opacity: 0;
+	}
+
+	.ih-fade {
+	}
+	.ih-fade-up {
+		@include transform(translate(0,25px));
+	}
+	.ih-fade-down {
+		@include transform(translate(0,-25px));
+	}
+	.ih-fade-left {
+		@include transform(translate(25px,0));
+	}
+	.ih-fade-right {
+		@include transform(translate(-25px,0));
+	}
+	.ih-fade-up-big {
+		@include transform(translate(0,300%));
+	}
+	.ih-fade-down-big {
+		@include transform(translate(0,-300%));
+	}
+	.ih-fade-left-big {
+		@include transform(translate(150%,0));
+	}
+	.ih-fade-right-big {
+		@include transform(translate(-150%,0));
+	}
+	.ih-zoom-in {
+		@include transform(scale(0.1));
+	}
+	.ih-zoom-out {
+		@include transform(scale(1.5));
+	}
+
+	.ih-flip-x {
+		@include transform(rotateX(-90deg));
+	}
+	.ih-flip-y {
+		@include transform(rotateY(90deg));
+	}
+
+
+	&:hover {
+		[class^='ih-'],[class*=' ih-'] {
+			@include transform(translate(0,0) scale(1) rotate(0));
+			opacity: 1;	
+		}
+	}
+
+
+}

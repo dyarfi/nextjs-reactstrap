@@ -1,0 +1,15 @@
+// Vendors variables override default variables
+@import "variables";
+
+/*
+|--------------------------------------------------------------------------
+| Packages
+|--------------------------------------------------------------------------
+*/
+
+// Import partials.
+@import
+'node_modules/bootstrap/scss/bootstrap', // Or other option to put BS 4 SCSS in assets/scss/vendors/bootstrap
+'imagehover/scss/imagehover', // Imagehover SCSS
+'fontawesome/scss/fontawesome' // Font Awesome 5
+;

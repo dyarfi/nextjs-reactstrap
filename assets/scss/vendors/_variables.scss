@@ -1,0 +1,161 @@
+// Variable overrides
+
+// Base font family
+// $base-font-family: "Montserrat", sans-serif !default;
+// $font-family-base: $base-font-family !default;
+// $body-bg: rgb(27, 27, 27);
+$body-bg: rgb(255,255,255);
+// $body-color: #fff;
+$body-color: #212529;
+
+// stylelint-disable
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+// Define defaults for each variable.
+$enable-caret:              false !default;
+$enable-rounded:            false !default;
+$enable-shadows:            true !default;
+$enable-gradients:          false !default;
+$enable-transitions:        true !default;
+$enable-hover-media-query:  false !default;
+$enable-grid-classes:       true !default;
+$enable-print-styles:       true !default;
+
+// Input focus
+$input-btn-focus-width:       .0rem !default;
+$input-btn-focus-box-shadow:  .0rem !default;
+
+// Transition
+$transition-base:             all .05s ease-in-out !default;
+$transition-fade:             opacity .20s linear !default;
+$transition-collapse:         height .55s ease !default;
+
+// Carousel
+$carousel-control-color:            $white !default;
+$carousel-control-width:            15% !default;
+$carousel-control-opacity:          .5 !default;
+
+$carousel-indicator-width:          30px !default;
+$carousel-indicator-height:         3px !default;
+$carousel-indicator-spacer:         3px !default;
+$carousel-indicator-active-bg:      $white !default;
+
+$carousel-caption-width:            70% !default;
+$carousel-caption-color:            $white !default;
+
+$carousel-control-icon-width:       20px !default;
+
+// $carousel-control-prev-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"), "#", "%23") !default;
+// $carousel-control-next-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"), "#", "%23") !default;
+$carousel-control-prev-icon-bg:     none;
+$carousel-control-next-icon-bg:     none;
+
+$carousel-transition:               transform .9s ease !default;
+//$carousel-transition:               opacity .75s ease-in-out !default;
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval:      10% !default;
+
+//$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+//$base-font-size:   0.94rem !default;
+$base-font-size:   0.94rem !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$font-size-base:              .90rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-md:                ($font-size-base * 1.115) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+//:400,700,900
+$font-weight-light:           400 !default;
+$font-weight-normal:          700 !default;
+$font-weight-bold:            900 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
+
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+$spacing-unit:     30px !default;
+
+// Links
+//
+// Style anchor elements.
+
+//$link-color:              theme-color("primary") !default;
+$link-color:                $white;
+$link-decoration:           none !default;
+$link-hover-color:          darken($link-color, 25%) !default;
+$link-hover-decoration:     underline !default;
+
+$text-color:       #111 !default;
+$background-color: #fdfdfd !default;
+$brand-color:      #2a7ae2 !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+//$dark:          $gray-600 !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Navbar
+// navbar-dark
+//$navbar-dark-color:                 rgba($white, .5) !default;
+$navbar-dark-color:                 rgba($white, .6) !default;
+$navbar-dark-hover-color:           rgba($white, .75) !default;
+$navbar-dark-active-color:          $white !default;
+$navbar-dark-disabled-color:        rgba($white, .25) !default;
+// $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
+$navbar-dark-toggler-border-color:  rgba($white, .1) !default;
+
+// navbar-light
+$navbar-light-color:                rgba($black, .5) !default;
+$navbar-light-hover-color:          rgba($black, .7) !default;
+$navbar-light-active-color:         rgba($black, .9) !default;
+$navbar-light-disabled-color:       rgba($black, .3) !default;
+// $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
+$navbar-light-toggler-border-color: rgba($black, .1) !default;
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+// ImageHover Output
+$output-bourbon-deprecation-warnings: false !default;
+
+// ImageHover Settings
+$image-bg:             rgba(#919191,.75) !default;
+$figcaption-bg:        rgba(#666666,.75) !default;
+// $figcaption-padding:   28px 15px!default;
+// $text-color:           #ffffff !default;
+// /$border-color:         #ffffff !default;
+// $border-margin:        5px !default;
+// $border-width:         4px !default;
+$transition-duration:  0.35s !default;
+$shift-distance:       10px !default;
+
+// Font Awesome Font Path
+$fa-font-path:                "../webfonts" !default;
+// ImageHover Output Deprecation
+$output-bourbon-deprecation-warnings: false !default;
+
