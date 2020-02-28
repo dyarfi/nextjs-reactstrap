@@ -2,10 +2,10 @@ import React from "react";
 import Head from "next/head";
 
 import { Container, Row, Col } from "reactstrap";
-import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
 
 import MainLayout from "../layout/MainLayout";
 import Nav from "../components/nav";
+import NavLeft from "../components/navLeft";
 import Footer from "../components/footer";
 
 const Documentation = props => (
@@ -18,130 +18,46 @@ const Documentation = props => (
     <MainLayout>
       <Row>
         <Col xs={12} sm={3} className="bg-light">
-          <h1>Left Menu</h1>
-          <Form>
-            <FormGroup>
-              <Label for="exampleEmail">Email</Label>
-              <Input
-                type="email"
-                name="email"
-                id="exampleEmail"
-                placeholder="with a placeholder"
-              />
-            </FormGroup>
-            <FormGroup>
-              <Label for="examplePassword">Password</Label>
-              <Input
-                type="password"
-                name="password"
-                id="examplePassword"
-                placeholder="password placeholder"
-              />
-            </FormGroup>
-            <FormGroup>
-              <Label for="exampleSelect">Select</Label>
-              <Input type="select" name="select" id="exampleSelect">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </Input>
-            </FormGroup>
-            <FormGroup>
-              <Label for="exampleSelectMulti">Select Multiple</Label>
-              <Input
-                type="select"
-                name="selectMulti"
-                id="exampleSelectMulti"
-                multiple
-              >
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </Input>
-            </FormGroup>
-            <FormGroup>
-              <Label for="exampleText">Text Area</Label>
-              <Input type="textarea" name="text" id="exampleText" />
-            </FormGroup>
-            <FormGroup>
-              <Label for="exampleFile">File</Label>
-              <Input type="file" name="file" id="exampleFile" />
-              <FormText color="muted">
-                This is some placeholder block-level help text for the above
-                input. It's a bit lighter and easily wraps to a new line.
-              </FormText>
-            </FormGroup>
-            <FormGroup tag="fieldset">
-              <legend>Radio Buttons</legend>
-              <FormGroup check>
-                <Label check>
-                  <Input type="radio" name="radio1" /> Option one is this and
-                  that—be sure to include why it's great
-                </Label>
-              </FormGroup>
-              <FormGroup check>
-                <Label check>
-                  <Input type="radio" name="radio1" /> Option two can be
-                  something else and selecting it will deselect option one
-                </Label>
-              </FormGroup>
-              <FormGroup check disabled>
-                <Label check>
-                  <Input type="radio" name="radio1" disabled /> Option three is
-                  disabled
-                </Label>
-              </FormGroup>
-            </FormGroup>
-            <FormGroup check>
-              <Label check>
-                <Input type="checkbox" /> Check me out
-              </Label>
-            </FormGroup>
-            <Button color="primary">Submit</Button>
-          </Form>
+          <NavLeft />
         </Col>
         <Col xs={12} sm={9}>
           <Container isFluid className="my-3 py-5">
             <Row>
               <Col md="12" id="typography">
-                <h3>Typography</h3>
+                <h1>Dashboard</h1>
                 <p className="lead">Themes default typography</p>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Impedit quisquam harum odio. Natus hic quod unde corporis
                   ipsam optio voluptas possimus quidem?
                 </p>
-                <div id="sub-header" className="row">
-                  <div className="col-lg-3">
+                <Row id="sub-header">
+                  <Col lg="3">
                     <h1>Heading 1</h1>
                     <h2>Heading 2</h2>
                     <h3>Heading 3</h3>
                     <h4>Heading 4</h4>
                     <h5>Heading 5</h5>
-                  </div>
-                  <div className="col-lg-3">
+                  </Col>
+                  <Col lg="3">
                     <h1 className="font-lead-base">Heading 1</h1>
                     <h2 className="font-lead-base">Heading 2</h2>
                     <h3 className="font-lead-base">Heading 3</h3>
                     <h4 className="font-lead-base">Heading 4</h4>
                     <h5 className="font-lead-base">Heading 5</h5>
-                  </div>
-                  <div className="col-lg-3">
+                  </Col>
+                  <Col lg="3">
                     <h1 className="font-head-base">Heading 1 </h1>
                     <h2 className="font-head-base">Heading 2</h2>
                     <h3 className="font-head-base">Heading 3</h3>
                     <h4 className="font-head-base">Heading 4</h4>
                     <h5 className="font-head-base">Heading 5</h5>
-                  </div>
-                </div>
+                  </Col>
+                </Row>
                 <hr />
                 <h3>Lead</h3>
-                <div id="sub-lead" className="row">
-                  <div className="col-lg-6">
+                <Row id="sub-lead">
+                  <Col lg="6">
                     <h4>Paragraph Lead</h4>
                     <p className="lead">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -150,8 +66,8 @@ const Documentation = props => (
                       voluptatum velit ipsa atque esse, cum hic. Libero nihil
                       quasi saepe officia.
                     </p>
-                  </div>
-                  <div className="col-lg-6">
+                  </Col>
+                  <Col lg="6">
                     <h4>Blockquote</h4>
                     <blockquote>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -160,11 +76,11 @@ const Documentation = props => (
                       voluptatum velit ipsa atque esse, cum hic. Libero nihil
                       quasi saepe officia.
                     </blockquote>
-                  </div>
-                </div>
+                  </Col>
+                </Row>
                 <h3>Content</h3>
-                <div id="sub-content" className="row">
-                  <div className="col-lg-12">
+                <Row id="sub-content">
+                  <Col lg="12">
                     <h4>Paragraph Content</h4>
                     <p className="lead">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -181,11 +97,11 @@ const Documentation = props => (
                       voluptatum velit ipsa atque esse, cum hic. Libero nihil
                       quasi saepe officia.
                     </p>
-                  </div>
-                </div>
+                  </Col>
+                </Row>
                 <h3>Navigation</h3>
-                <div id="sub-navigation" className="row">
-                  <div className="col-lg-12">
+                <Row id="sub-navigation">
+                  <Col lg="12">
                     <h4>Default</h4>
                     <p className="lead">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -194,8 +110,8 @@ const Documentation = props => (
                       voluptatum velit ipsa atque esse, cum hic. Libero nihil
                       quasi saepe officia.
                     </p>
-                  </div>
-                  <div className="col-lg-12">
+                  </Col>
+                  <Col lg="12">
                     <h4>Fixed</h4>
                     <p className="lead">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -204,11 +120,11 @@ const Documentation = props => (
                       voluptatum velit ipsa atque esse, cum hic. Libero nihil
                       quasi saepe officia.
                     </p>
-                  </div>
-                </div>
+                  </Col>
+                </Row>
                 <h3>Section</h3>
-                <div id="sub-section" className="row">
-                  <div className="col-lg-12">
+                <Row id="sub-section">
+                  <Col lg="12">
                     <h4>Section Content</h4>
                     <p className="lead">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -217,11 +133,11 @@ const Documentation = props => (
                       voluptatum velit ipsa atque esse, cum hic. Libero nihil
                       quasi saepe officia.
                     </p>
-                  </div>
-                </div>
+                  </Col>
+                </Row>
                 <h3>Carousel</h3>
-                <div id="sub-carousel" className="row">
-                  <div className="col-lg-6">
+                <Row id="sub-carousel">
+                  <Col lg="6">
                     <h4>Owl Carousel</h4>
                     <p className="lead">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -230,8 +146,8 @@ const Documentation = props => (
                       voluptatum velit ipsa atque esse, cum hic. Libero nihil
                       quasi saepe officia.
                     </p>
-                  </div>
-                  <div className="col-lg-6">
+                  </Col>
+                  <Col lg="6">
                     <h4>Slick Carousel</h4>
                     <p className="lead">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -240,11 +156,11 @@ const Documentation = props => (
                       voluptatum velit ipsa atque esse, cum hic. Libero nihil
                       quasi saepe officia.
                     </p>
-                  </div>
-                </div>
+                  </Col>
+                </Row>
                 <h3>Icons</h3>
-                <div id="icons" className="row">
-                  <div className="col-lg-12">
+                <Row id="icons">
+                  <Col lg="12">
                     <h3>Font Awesome</h3>
                     <p className="lead">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -7630,11 +7546,11 @@ const Documentation = props => (
                                 {% endfor %}
                             {% endfor %}
                         </div> */}
-                  </div>
-                </div>
+                  </Col>
+                </Row>
                 <h3>Backgrounds</h3>
-                <div id="background" className="row">
-                  <div className="container px-0">
+                <Row id="background">
+                  <Container isFluid className="px-0">
                     <div
                       className="d-flex align-items-center mb-2"
                       //   style="height:200px; background-image: url('./assets/img/unsplash-stil-336188.jpg');"
@@ -7663,15 +7579,15 @@ const Documentation = props => (
                     >
                       <h4 className="mx-auto text-light">.overlay-dark</h4>
                     </div>
-                  </div>
-                </div>
+                  </Container>
+                </Row>
                 <h3>Cards</h3>
-                <div id="cards" className="row">
-                  <div className="container-fluid">
-                    <div className="row">
+                <Row id="cards">
+                  <Container isFluid>
+                    <Row>
                       <h4>Promos</h4>
-                      <div className="container">
-                        <div className="row">
+                      <Container>
+                        <Row>
                           <div className="promotion-cards">
                             <div className="card-deck no-gutters">
                               {/* {% for promo in promos %}
@@ -7694,22 +7610,22 @@ const Documentation = props => (
                                 {% endfor %}*/}
                             </div>
                           </div>
-                        </div>
-                      </div>
-                      <div className="container">
-                        <div className="row">
+                        </Row>
+                      </Container>
+                      <Container>
+                        <Row>
                           {/* {% include "cards/card-promos.twig" with promos %} */}
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row">
+                        </Row>
+                      </Container>
+                    </Row>
+                    <Row>
                       <h4>Menus</h4>
                       <h5 className="mb-4">.menu-list</h5>
-                      <div className="container-fluid">
-                        <div className="row">
+                      <Container isFluid>
+                        <Row>
                           {/* {% include "cards/card-menus.twig" with menus %} */}
-                        </div>
-                      </div>
+                        </Row>
+                      </Container>
                       <h5>.menu-list-circle</h5>
                       {/* <p>
                         Default className for menu list circle are using{" "}
@@ -7732,9 +7648,9 @@ const Documentation = props => (
                                     {% set menus = menus_dish %}
                                     {% include "cards/card-menus-circle-disc.twig" with menus %}
                                 </div> */}
-                    </div>
-                  </div>
-                </div>
+                    </Row>
+                  </Container>
+                </Row>
               </Col>
             </Row>
           </Container>
