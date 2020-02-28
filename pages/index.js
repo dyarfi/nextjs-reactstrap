@@ -5,6 +5,7 @@ import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
 
 import MainLayout from "../layout/MainLayout";
 import Nav from "../components/nav";
+import Footer from "../components/footer";
 
 const Home = props => (
   <>
@@ -132,6 +133,7 @@ const Home = props => (
         </Col>
       </Row>
     </MainLayout>
+    <Footer />
     <style jsx>{`
       .hero {
         width: 100%;

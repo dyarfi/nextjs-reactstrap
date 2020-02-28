@@ -6,6 +6,7 @@ import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
 
 import MainLayout from "../layout/MainLayout";
 import Nav from "../components/nav";
+import Footer from "../components/footer";
 
 const Dashboard = props => (
   <>
@@ -118,7 +119,9 @@ const Dashboard = props => (
                   content. Lorem ipsum dolor sit amet consectetur adipisicing
                   elit. Autem, recusandae?
                 </CardText>
-                <Button>Go somewhere</Button>
+                <Button>
+                  <i className="fab fa-facebook"></i> Go somewhere
+                </Button>
               </Card>
             </Col>
             <Col md="6" lg="4">
@@ -176,6 +179,7 @@ const Dashboard = props => (
         </Col>
       </Row>
     </MainLayout>
+    <Footer />
     {/* <style jsx>{`
       .hero {
         width: 100%;
