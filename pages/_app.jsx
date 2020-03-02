@@ -1,7 +1,6 @@
 import App from "next/app";
 
 import "../assets/scss/main.scss";
-// import "bootstrap/dist/css/bootstrap.css";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;

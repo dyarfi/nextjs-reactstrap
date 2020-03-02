@@ -1,7 +1,13 @@
 module.exports = {
   plugins: [
     // PostCSS Config
-    require("cssnano")({ cascade: false, minified: true }),
+    require("cssnano")({
+      cascade: false,
+      minified: true,
+      discardComments: {
+        removeAll: true
+      }
+    }),
     require("autoprefixer")({
       flexbox: "no-2009",
       stage: 3,

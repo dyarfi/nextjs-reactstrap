@@ -11,3 +11,50 @@ h1,h2,h3,h4,h5,h6 {
 .btn:focus, a:focus, button:focus {
     box-shadow: none !important;
 }
+.logo {
+    width:78px;
+}
+.wrapper {
+    margin-top: 6rem;
+}
+.page {
+    &-error {
+        margin: 0;
+        min-height: 100vh;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+    }
+}
+.hero { 
+    &-start {    
+        width: 100%;
+        color: #333;
+        .title {
+            margin: 0;
+            width: 100%;
+            padding-top: 80px;
+            line-height: 1.15;
+            font-size: 48px;
+        }
+        .title,
+        .description {
+            text-align: center;
+        }
+        .card {
+            padding-top:1rem;
+            padding-bottom:1rem;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+.typography, .documentation {
+    button {
+        margin-right: .5rem;
+    }
+}

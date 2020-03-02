@@ -62,8 +62,8 @@ $carousel-control-icon-width:       20px !default;
 
 // $carousel-control-prev-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"), "#", "%23") !default;
 // $carousel-control-next-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"), "#", "%23") !default;
-$carousel-control-prev-icon-bg:     none;
-$carousel-control-next-icon-bg:     none;
+// $carousel-control-prev-icon-bg:     none;
+// $carousel-control-next-icon-bg:     none;
 
 $carousel-transition:               transform .9s ease !default;
 //$carousel-transition:               opacity .75s ease-in-out !default;
@@ -103,10 +103,10 @@ $spacing-unit:     30px !default;
 //
 // Style anchor elements.
 
-//$link-color:              theme-color("primary") !default;
-$link-color:                $white;
+// $link-color:              theme-color("primary") !default;
+// $link-color:                $white;
 $link-decoration:           none !default;
-$link-hover-color:          darken($link-color, 25%) !default;
+// $link-hover-color:          darken($link-color, 25%) !default;
 $link-hover-decoration:     underline !default;
 
 $text-color:       #111 !default;
@@ -116,34 +116,6 @@ $brand-color:      #2a7ae2 !default;
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
-
-//$dark:          $gray-600 !default;
-
-// Width of the content area
-$content-width:    800px !default;
-
-$on-palm:          600px !default;
-$on-laptop:        800px !default;
-
-// Navbar
-// navbar-dark
-//$navbar-dark-color:                 rgba($white, .5) !default;
-$navbar-dark-color:                 rgba($white, .6) !default;
-$navbar-dark-hover-color:           rgba($white, .75) !default;
-$navbar-dark-active-color:          $white !default;
-$navbar-dark-disabled-color:        rgba($white, .25) !default;
-// $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
-$navbar-dark-toggler-border-color:  rgba($white, .1) !default;
-
-// navbar-light
-$navbar-light-color:                rgba($black, .5) !default;
-$navbar-light-hover-color:          rgba($black, .7) !default;
-$navbar-light-active-color:         rgba($black, .9) !default;
-$navbar-light-disabled-color:       rgba($black, .3) !default;
-// $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
-$navbar-light-toggler-border-color: rgba($black, .1) !default;
-$navbar-dark-toggler-icon-bg: none;
-$navbar-light-toggler-icon-bg: none;
 
 // ImageHover Output
 $output-bourbon-deprecation-warnings: false !default;

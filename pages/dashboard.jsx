@@ -6,22 +6,25 @@ import { Button } from "reactstrap";
 
 import MainLayout from "../layout/MainLayout";
 import Nav from "../components/nav";
+import NavBar from "../components/navbar/navbar";
 import NavLeft from "../components/navLeft";
 import Footer from "../components/footer";
+
+import { THEME } from "../constants/vars";
 
 const Dashboard = props => (
   <>
     <Head>
-      <title>Dashboard</title>
+      <title>Dashboard | {THEME.title}</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Nav />
+    <NavBar />
     <MainLayout>
       <Row>
-        <Col xs={12} sm={3} className="bg-light">
+        <Col xs={12} sm={2} className="bg-light">
           <NavLeft />
         </Col>
-        <Col xs={12} sm={9}>
+        <Col xs={12} sm={10}>
           <h1>Dashboard</h1>
           <p>
             To get started, edit <code>pages/dashboard.jsx</code> and save to

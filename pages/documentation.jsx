@@ -5,23 +5,26 @@ import { Container, Row, Col } from "reactstrap";
 
 import MainLayout from "../layout/MainLayout";
 import Nav from "../components/nav";
+import NavBar from "../components/navbar/navbar";
 import NavLeft from "../components/navLeft";
 import Footer from "../components/footer";
+
+import { THEME } from "../constants/vars";
 
 const Documentation = props => (
   <>
     <Head>
-      <title>Documentation</title>
+      <title>Documentation | {THEME.title}</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Nav />
+    <NavBar />
     <MainLayout>
       <Row>
-        <Col xs={12} sm={3} className="bg-light">
+        <Col xs={12} sm={2} className="bg-light">
           <NavLeft />
         </Col>
-        <Col xs={12} sm={9}>
-          <Container isFluid className="my-3 py-5">
+        <Col xs={12} sm={10}>
+          <Container fluid className="my-3 py-5">
             <Row>
               <Col md="12" id="typography">
                 <h1>Dashboard</h1>
@@ -7550,7 +7553,7 @@ const Documentation = props => (
                 </Row>
                 <h3>Backgrounds</h3>
                 <Row id="background">
-                  <Container isFluid className="px-0">
+                  <Container fluid className="px-0">
                     <div
                       className="d-flex align-items-center mb-2"
                       //   style="height:200px; background-image: url('./assets/img/unsplash-stil-336188.jpg');"
@@ -7583,7 +7586,7 @@ const Documentation = props => (
                 </Row>
                 <h3>Cards</h3>
                 <Row id="cards">
-                  <Container isFluid>
+                  <Container fluid>
                     <Row>
                       <h4>Promos</h4>
                       <Container>
@@ -7621,7 +7624,7 @@ const Documentation = props => (
                     <Row>
                       <h4>Menus</h4>
                       <h5 className="mb-4">.menu-list</h5>
-                      <Container isFluid>
+                      <Container fluid>
                         <Row>
                           {/* {% include "cards/card-menus.twig" with menus %} */}
                         </Row>
