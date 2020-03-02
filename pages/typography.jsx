@@ -16,19 +16,14 @@ import {
 } from "reactstrap";
 
 import MainLayout from "../layout/MainLayout";
-import Nav from "../components/nav";
+import HeadHome from "../components/head";
 import NavBar from "../components/navbar/navbar";
 import NavLeft from "../components/navLeft";
 import Footer from "../components/footer";
 
-import { THEME } from "../constants/vars";
-
 const Typography = props => (
   <>
-    <Head>
-      <title>Typography | {THEME.title}</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+    <HeadHome title="Typography" />
     <NavBar />
     <MainLayout>
       <Row>
@@ -90,7 +85,7 @@ const Typography = props => (
                 <br />
                 <br />
                 <h2 className="d-block clearfix">Buttons</h2>
-                <div className="d-block">
+                <div className="d-block hero-start">
                   <Button className="btn btn-warning btn-sm">Submit</Button>
                   <Button className="btn btn-warning btn-md">Submit</Button>
                   <Button className="btn btn-warning btn-lg">Submit</Button>

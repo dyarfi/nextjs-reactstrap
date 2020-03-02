@@ -11,44 +11,46 @@ const links = [{ href: "/documentation", label: "Documentation" }].map(
 
 const Footer = () => (
   // <Navbar color="light" light>
-    <footer>
-      <ul>
-        <li>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
+  <footer>
+    <ul>
+      <li>
+        <Link href="/">
+          <a>Home</a>
+        </Link>
+      </li>
+      <li>
+        <small className="text-muted">Copyright 2020 | dykraf.com</small>
+      </li>
+      {links.map(({ key, href, label }) => (
+        <li key={key}>
+          <a href={href}>{label}</a>
         </li>
-        <li>
-          <small className="text-muted">Copyright 2020 | dykraf.com</small>
-        </li>
-        {links.map(({ key, href, label }) => (
-          <li key={key}>
-            <a href={href}>{label}</a>
-          </li>
-        ))}
-      </ul>
-      <style jsx>{`
-        footer {
-          text-align: center;
-        }
-        ul {
-          display: flex;
-          justify-content: space-between;
-        }
-        footer > ul {
-          padding: 4px 16px;
-        }
-        li {
-          display: flex;
-          padding: 6px 8px;
-        }
-        a {
-          color: #067df7;
-          text-decoration: none;
-          font-size: 13px;
-        }
-      `}</style>
-    </footer>
+      ))}
+    </ul>
+    <style jsx>{`
+      footer {
+        margin-top: 1rem;
+        text-align: center;
+        background-color: aliceblue;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+      }
+      footer > ul {
+        padding: 4px 16px;
+      }
+      li {
+        display: flex;
+        padding: 6px 8px;
+      }
+      a {
+        color: #067df7;
+        text-decoration: none;
+        font-size: 13px;
+      }
+    `}</style>
+  </footer>
   // </Navbar>
 );
 

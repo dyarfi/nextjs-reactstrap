@@ -1,21 +1,16 @@
 import React from "react";
-import Head from "next/head";
+// import Head from "next/head";
 import { Container, Row, Col, CardDeck, Card } from "reactstrap";
 
 import MainLayout from "../layout/MainLayout";
+import HeadHome from "../components/head";
 import NavBar from "../components/navbar/navbar";
-import Nav from "../components/nav";
 import NavLeft from "../components/navLeft";
 import Footer from "../components/footer";
 
-import { THEME } from "../constants/vars";
-
 const Home = props => (
   <>
-    <Head>
-      <title>Home | {THEME.title}</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+    <HeadHome title="Home" />
     <NavBar />
     <MainLayout>
       <Row>

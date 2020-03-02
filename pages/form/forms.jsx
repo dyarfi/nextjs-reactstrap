@@ -5,19 +5,14 @@ import { Row, Col } from "reactstrap";
 import { Form, FormGroup, Label, Button, Input, FormText } from "reactstrap";
 
 import MainLayout from "../../layout/MainLayout";
+import HeadHome from "../../components/head";
 import NavBar from "../../components/navbar/navbar";
-import Nav from "../../components/nav";
 import NavLeft from "../../components/navLeft";
 import Footer from "../../components/footer";
 
-import { THEME } from "../../constants/vars";
-
 const Forms = props => (
   <>
-    <Head>
-      <title>Forms | {THEME.title}</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+    <HeadHome title="Forms" />
     <NavBar />
     <MainLayout>
       <Row>
@@ -159,8 +154,13 @@ const Forms = props => (
                 <FormGroup check className="mb-3">
                   <Label check>
                     <Input type="checkbox" name="terms" /> Agree{" "}
-                    <Link href="/terms">terms</Link> and{" "}
-                    <Link href="/conditions">condition</Link>
+                    <Link href="/terms">
+                      <a>terms </a>
+                    </Link>
+                    and
+                    <Link href="/conditions" as="a">
+                      <a> condition</a>
+                    </Link>
                   </Label>
                 </FormGroup>
                 <Button color="primary" size="lg" block>

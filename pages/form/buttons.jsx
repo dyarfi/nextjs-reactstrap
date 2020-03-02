@@ -4,19 +4,14 @@ import { Row, Col } from "reactstrap";
 import { Button } from "reactstrap";
 
 import MainLayout from "../../layout/MainLayout";
+import HeadHome from "../../components/head";
 import NavBar from "../../components/navbar/navbar";
-import Nav from "../../components/nav";
 import NavLeft from "../../components/navLeft";
 import Footer from "../../components/footer";
 
-import { THEME } from "../../constants/vars";
-
 const Buttons = props => (
   <>
-    <Head>
-      <title>Button | {THEME.title}</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+    <HeadHome title="Buttons" />
     <NavBar />
     <MainLayout>
       <Row>
@@ -25,7 +20,7 @@ const Buttons = props => (
         </Col>
         <Col xs={12} sm={10}>
           <h1>Buttons</h1>
-          <div className="hero">
+          <div className="hero-start">
             <h3>Sizes</h3>
             <Button color="primary" size="lg">
               Large Button

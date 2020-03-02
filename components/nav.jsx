@@ -23,8 +23,7 @@ const Nav = () => (
         </li>
       ))}
     </ul>
-
-    <style jsx>{`
+    {/* <style jsx>{`
       // :global(body) {
       //   margin: 0;
       //   font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
@@ -49,7 +48,7 @@ const Nav = () => (
         text-decoration: none;
         font-size: 13px;
       }
-    `}</style>
+    `}</style> */}
   </nav>
 );
 

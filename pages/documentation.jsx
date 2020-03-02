@@ -4,19 +4,14 @@ import Head from "next/head";
 import { Container, Row, Col } from "reactstrap";
 
 import MainLayout from "../layout/MainLayout";
-import Nav from "../components/nav";
+import HeadHome from "../components/head";
 import NavBar from "../components/navbar/navbar";
 import NavLeft from "../components/navLeft";
 import Footer from "../components/footer";
 
-import { THEME } from "../constants/vars";
-
 const Documentation = props => (
   <>
-    <Head>
-      <title>Documentation | {THEME.title}</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+    <HeadHome title="Documentation" />
     <NavBar />
     <MainLayout>
       <Row>

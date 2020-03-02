@@ -1,23 +1,18 @@
 import React from "react";
-import Head from "next/head";
+// import Head from "next/head";
 
-import { Card, CardTitle, CardText, Row, Col } from "reactstrap";
+import { Card, CardBody, CardTitle, CardText, Row, Col } from "reactstrap";
 import { Button } from "reactstrap";
 
 import MainLayout from "../layout/MainLayout";
-import Nav from "../components/nav";
+import HeadHome from "../components/head";
 import NavBar from "../components/navbar/navbar";
 import NavLeft from "../components/navLeft";
 import Footer from "../components/footer";
 
-import { THEME } from "../constants/vars";
-
 const Dashboard = props => (
   <>
-    <Head>
-      <title>Dashboard | {THEME.title}</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+    <HeadHome title="Dashboard" />
     <NavBar />
     <MainLayout>
       <Row>
@@ -31,68 +26,80 @@ const Dashboard = props => (
             reload.
           </p>
           <Row>
-            <Col md="6" lg="4">
-              <Card body>
-                <CardTitle tag="h4">Special Title Treatment</CardTitle>
-                <CardText>
-                  With supporting text below as a natural lead-in to additional
-                  content. Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Autem, recusandae?
-                </CardText>
-                <Button>
-                  <i className="fab fa-facebook"></i> Go somewhere
-                </Button>
+            <Col md="6" lg="4" className="mb-4">
+              <Card className="h-100 mb-4">
+                <CardBody>
+                  <CardTitle tag="h4">Special Title Treatment</CardTitle>
+                  <CardText>
+                    With supporting text below as a natural lead-in to
+                    additional content. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Autem, recusandae?
+                  </CardText>
+                  <Button>
+                    <i className="fab fa-facebook"></i> Go somewhere
+                  </Button>
+                </CardBody>
               </Card>
             </Col>
-            <Col md="6" lg="4">
-              <Card body>
-                <CardTitle tag="h4">Special Title Treatment</CardTitle>
-                <CardText>
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </CardText>
-                <Button>Go somewhere</Button>
+            <Col md="6" lg="4" className="mb-4">
+              <Card className="h-100 mb-4">
+                <CardBody>
+                  <CardTitle tag="h4">Special Title Treatment</CardTitle>
+                  <CardText>
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </CardText>
+                  <Button>Go somewhere</Button>
+                </CardBody>
               </Card>
             </Col>
-            <Col md="6" lg="4">
-              <Card body>
-                <CardTitle tag="h4">Special Title Treatment</CardTitle>
-                <CardText>
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </CardText>
-                <Button>Go somewhere</Button>
+            <Col md="6" lg="4" className="mb-4">
+              <Card className="h-100 mb-4">
+                <CardBody>
+                  <CardTitle tag="h4">Special Title Treatment</CardTitle>
+                  <CardText>
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </CardText>
+                  <Button>Go somewhere</Button>
+                </CardBody>
               </Card>
             </Col>
-            <Col md="6" lg="4">
-              <Card body>
-                <CardTitle tag="h4">Special Title Treatment</CardTitle>
-                <CardText>
-                  With supporting text below as a natural lead-in to additional
-                  content. Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Autem, recusandae?
-                </CardText>
-                <Button>Go somewhere</Button>
+            <Col md="6" lg="4" className="mb-4">
+              <Card className="h-100 mb-4">
+                <CardBody>
+                  <CardTitle tag="h4">Special Title Treatment</CardTitle>
+                  <CardText>
+                    With supporting text below as a natural lead-in to
+                    additional content. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Autem, recusandae?
+                  </CardText>
+                  <Button>Go somewhere</Button>
+                </CardBody>
               </Card>
             </Col>
-            <Col md="6" lg="4">
-              <Card body>
-                <CardTitle tag="h4">Special Title Treatment</CardTitle>
-                <CardText>
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </CardText>
-                <Button>Go somewhere</Button>
+            <Col md="6" lg="4" className="mb-4">
+              <Card className="h-100 mb-4">
+                <CardBody>
+                  <CardTitle tag="h4">Special Title Treatment</CardTitle>
+                  <CardText>
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </CardText>
+                  <Button>Go somewhere</Button>
+                </CardBody>
               </Card>
             </Col>
-            <Col md="6" lg="4">
-              <Card body>
-                <CardTitle tag="h4">Special Title Treatment</CardTitle>
-                <CardText>
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </CardText>
-                <Button>Go somewhere</Button>
+            <Col md="6" lg="4" className="mb-4">
+              <Card className="h-100 mb-4">
+                <CardBody>
+                  <CardTitle tag="h4">Special Title Treatment</CardTitle>
+                  <CardText>
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </CardText>
+                  <Button>Go somewhere</Button>
+                </CardBody>
               </Card>
             </Col>
           </Row>

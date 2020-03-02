@@ -4,15 +4,12 @@ import Link from "next/link";
 import { Row, Col } from "reactstrap";
 
 import ErrorLayout from "../layout/ErrorLayout";
-import { THEME } from "../constants/vars";
+import HeadHome from "../components/head";
 
 function Error({ statusCode }) {
   return (
     <>
-      <Head>
-        <title>404 Page | {THEME.title}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <HeadHome title={`Page not Found - ${statusCode}`} />
       <ErrorLayout>
         <Row>
           <Col auto>

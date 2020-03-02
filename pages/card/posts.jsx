@@ -4,8 +4,8 @@ import { Row, Col } from "reactstrap";
 import { Button, Card, CardTitle, CardText } from "reactstrap";
 
 import MainLayout from "../../layout/MainLayout";
+import HeadHome from "../../components/head";
 import NavBar from "../../components/navbar/navbar";
-import Nav from "../../components/nav";
 import NavLeft from "../../components/navLeft";
 import Footer from "../../components/footer";
 
@@ -14,10 +14,7 @@ import { CARDS } from "../../constants/cards";
 
 const Posts = props => (
   <>
-    <Head>
-      <title>Posts | {THEME.title}</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+    <HeadHome title="Posts" />
     <NavBar />
     <MainLayout>
       <Row>
