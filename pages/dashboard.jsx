@@ -1,13 +1,20 @@
 import React from "react";
 // import Head from "next/head";
 
-import { Card, CardBody, CardTitle, CardText, Row, Col } from "reactstrap";
+import {
+  Card,
+  CardBody,
+  CardTitle,
+  CardText,
+  CardFooter,
+  Row,
+  Col
+} from "reactstrap";
 import { Button } from "reactstrap";
 
 import MainLayout from "../layout/MainLayout";
 import HeadHome from "../components/head";
 import NavBar from "../components/navbar/navbar";
-import NavLeft from "../components/navLeft";
 import Footer from "../components/footer";
 
 const Dashboard = props => (
@@ -15,96 +22,128 @@ const Dashboard = props => (
     <HeadHome title="Dashboard" />
     <NavBar />
     <MainLayout>
-      <Row>
-        <Col xs={12} sm={2} className="bg-light">
-          <NavLeft />
-        </Col>
-        <Col xs={12} sm={10}>
-          <h1>Dashboard</h1>
-          <p>
-            To get started, edit <code>pages/dashboard.jsx</code> and save to
-            reload.
-          </p>
-          <Row>
-            <Col md="6" lg="4" className="mb-4">
-              <Card className="h-100 mb-4">
-                <CardBody>
-                  <CardTitle tag="h4">Special Title Treatment</CardTitle>
-                  <CardText>
-                    With supporting text below as a natural lead-in to
-                    additional content. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Autem, recusandae?
-                  </CardText>
-                  <Button>
-                    <i className="fab fa-facebook"></i> Go somewhere
-                  </Button>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col md="6" lg="4" className="mb-4">
-              <Card className="h-100 mb-4">
-                <CardBody>
-                  <CardTitle tag="h4">Special Title Treatment</CardTitle>
-                  <CardText>
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </CardText>
-                  <Button>Go somewhere</Button>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col md="6" lg="4" className="mb-4">
-              <Card className="h-100 mb-4">
-                <CardBody>
-                  <CardTitle tag="h4">Special Title Treatment</CardTitle>
-                  <CardText>
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </CardText>
-                  <Button>Go somewhere</Button>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col md="6" lg="4" className="mb-4">
-              <Card className="h-100 mb-4">
-                <CardBody>
-                  <CardTitle tag="h4">Special Title Treatment</CardTitle>
-                  <CardText>
-                    With supporting text below as a natural lead-in to
-                    additional content. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Autem, recusandae?
-                  </CardText>
-                  <Button>Go somewhere</Button>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col md="6" lg="4" className="mb-4">
-              <Card className="h-100 mb-4">
-                <CardBody>
-                  <CardTitle tag="h4">Special Title Treatment</CardTitle>
-                  <CardText>
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </CardText>
-                  <Button>Go somewhere</Button>
-                </CardBody>
-              </Card>
-            </Col>
-            <Col md="6" lg="4" className="mb-4">
-              <Card className="h-100 mb-4">
-                <CardBody>
-                  <CardTitle tag="h4">Special Title Treatment</CardTitle>
-                  <CardText>
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </CardText>
-                  <Button>Go somewhere</Button>
-                </CardBody>
-              </Card>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+      <Col xs={12} md={10} className="content-wrapper">
+        <h1>Dashboard</h1>
+        <p>
+          To get started, edit <code>pages/dashboard.jsx</code> and save to
+          reload.
+        </p>
+        <Row>
+          <Col md="6" lg="4" className="mb-4">
+            <Card className="h-100 mb-2">
+              <CardBody>
+                <CardTitle tag="h4" className="headline-mm">
+                  Visitors
+                </CardTitle>
+                {/* <CardText> */}
+                <Row className="mb-2">
+                  <Col
+                    xs="4"
+                    className="d-inline align-items-center text-success"
+                  >
+                    <i className="fas fa-users fa-3x"></i>{" "}
+                    <span>
+                      1290 <CardText>Users</CardText>
+                    </span>
+                  </Col>
+                  <Col xs="4" className="d-inline align-items-center text-info">
+                    <i className="fas fa-cog fa-3x"></i>{" "}
+                    <span>
+                      1930 <CardText>Sessions</CardText>
+                    </span>
+                  </Col>
+                  <Col
+                    xs="4"
+                    className="d-inline align-items-center text-primary"
+                  >
+                    <i className="fas fa-clock fa-3x"></i>{" "}
+                    <span>
+                      234 <CardText>Real Time</CardText>
+                    </span>
+                  </Col>
+                </Row>
+                {/* </CardText> */}
+                {/* <CardFooter> */}
+                <Button>
+                  <i className="fab fa-facebook"></i> Go somewhere
+                </Button>
+                {/* </CardFooter> */}
+              </CardBody>
+            </Card>
+          </Col>
+          <Col md="6" lg="4" className="mb-4">
+            <Card className="h-100 mb-2">
+              <CardBody>
+                <CardTitle tag="h4" className="headline-mm">
+                  Special Title Treatment
+                </CardTitle>
+                <CardText>
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </CardText>
+                <Button>Go somewhere</Button>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col md="6" lg="4" className="mb-4">
+            <Card className="h-100 mb-2">
+              <CardBody>
+                <CardTitle tag="h4" className="headline-mm">
+                  Special Title Treatment
+                </CardTitle>
+                <CardText>
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </CardText>
+                <Button>Go somewhere</Button>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col md="6" lg="4" className="mb-4">
+            <Card className="h-100 mb-2">
+              <CardBody>
+                <CardTitle tag="h4" className="headline-mm">
+                  Special Title Treatment
+                </CardTitle>
+                <CardText>
+                  With supporting text below as a natural lead-in to additional
+                  content. Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Autem, recusandae?
+                </CardText>
+                <Button>Go somewhere</Button>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col md="6" lg="4" className="mb-4">
+            <Card className="h-100 mb-2">
+              <CardBody>
+                <CardTitle tag="h4" className="headline-mm">
+                  Special Title Treatment
+                </CardTitle>
+                <CardText>
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </CardText>
+                <Button>Go somewhere</Button>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col md="6" lg="4" className="mb-4">
+            <Card className="h-100 mb-2">
+              <CardBody>
+                <CardTitle tag="h4" className="headline-mm">
+                  Special Title Treatment
+                </CardTitle>
+                <CardText>
+                  With supporting text below as a natural lead-in to additional
+                  content.
+                </CardText>
+                <Button>Go somewhere</Button>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+      </Col>
     </MainLayout>
     <Footer />
     {/* <style jsx>{`

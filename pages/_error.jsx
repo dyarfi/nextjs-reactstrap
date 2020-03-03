@@ -1,11 +1,9 @@
 import React from "react";
-import Head from "next/head";
 import Link from "next/link";
 import { Row, Col } from "reactstrap";
 
 import ErrorLayout from "../layout/ErrorLayout";
 import HeadHome from "../components/head";
-
 function Error({ statusCode }) {
   return (
     <>
@@ -20,7 +18,9 @@ function Error({ statusCode }) {
             </h2>
             <span className="small clearfix d-block text-center my-2">
               <Link href="/" className="text-primary">
-                <a>Back to Home</a>
+                <a>
+                  <i className="fas fa-home"></i> Back to Home
+                </a>
               </Link>
             </span>
           </Col>

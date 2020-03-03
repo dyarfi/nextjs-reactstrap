@@ -17,6 +17,13 @@ h1,h2,h3,h4,h5,h6 {
 .wrapper {
     margin-top: 6rem;
 }
+.content {
+    &-wrapper {
+        // animation: sk-bounce .5s linear;
+        animation: scaleUpCenter .1s linear both;
+        padding-top: .75rem;
+    }
+}
 .page {
     &-error {
         margin: 0;
@@ -56,12 +63,85 @@ h1,h2,h3,h4,h5,h6 {
         }
     }
 }
-// .typography, .documentation {
-//     button {
-//         margin-right: .5rem;
-//     }
-// }
+// .typography, .documentation { }
 .headline {
     margin-top:1rem;
     margin-bottom:1rem;
+    &-mm {
+        position:relative;
+        display:block;
+        &:after {
+            content:'';
+            position: relative;
+            // right:0;
+            // top:50%;
+            // bottom:50%;
+            height:1px;
+            background-color:$text-muted;
+            width:auto;
+            margin: 0 auto 0 0;
+            display:flex;
+            align-items: center;            
+        }
+    }
+}
+// Bootstrap overide
+/* --- Width --- */
+.w-10 {
+    width: 10%;
+}
+.w-15 {
+    width: 15%;
+}
+/* --- Dropdown --- */
+.show > .dropdown-menu {
+	visibility:visible;
+	transform: translate(0, 0%);
+	opacity:1;
+	display: block;
+	// transition: transform .5s ease;
+	// overflow-x:hidden;
+	// overflow-y:auto;
+}
+.dropdown-menu {
+	border-radius:.2rem;
+	transform-origin: top;
+	animation-fill-mode: forwards;
+	transform: translate(0, -10%);
+	transition: all .2s linear !important;
+	visibility:hidden;
+	opacity:0;
+	display: block;	
+    border: 0;
+    &.show {
+        border: 0;
+        @extend %shadow-md;	
+    }
+	&:before {
+		display: inline-block;
+		position: absolute;
+		width: 0;
+		height: 0;
+		vertical-align: middle;
+		content: "";
+		top: -5px;
+		// left: 10px;
+		// right: auto;
+		left: auto;
+		right: 20px;
+		color: $white;
+		border-bottom: .4em solid;
+		border-right: .4em solid transparent;
+		border-left: .4em solid transparent;
+	}
+}
+.dropdown-item {
+	padding-top:.35rem;
+	padding-bottom:.35rem;
+}
+.list-group-nav-left {
+    .list-group-item {
+        background-color:transparent;
+        border:0;
+    }
 }

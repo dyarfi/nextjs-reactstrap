@@ -42,7 +42,7 @@ const Example = props => {
               <DropdownMenu right>
                 <DropdownItem tag="div">
                   <NavLink href="/card/posts" className="text-primary">
-                    Cards
+                    Posts
                   </NavLink>
                 </DropdownItem>
                 <DropdownItem tag="div">
@@ -64,9 +64,34 @@ const Example = props => {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>
-            <NavLink href="/dashboard">Dashboard</NavLink>
-          </NavbarText>
+          <UncontrolledDropdown inNavbar>
+            <DropdownToggle nav caret>
+              <NavbarText className="align-self-center text-right font-weight-bold">
+                <img
+                  src="/images/profile2.jpg"
+                  className="border rounded-circle w-15 img-fluid mr-1"
+                />
+                John Doe
+              </NavbarText>
+            </DropdownToggle>
+            <DropdownMenu right>              
+              <DropdownItem tag="div">
+                <NavLink href="/table/tables" className="text-dark">
+                  <i className="fas fa-user"></i> Profile
+                </NavLink>
+              </DropdownItem>
+              <DropdownItem tag="div">
+                <NavLink href="/form/buttons" className="text-dark">
+                  <i className="fas fa-cog"></i> Settings
+                </NavLink>
+              </DropdownItem>
+              <DropdownItem tag="div">
+                <NavLink href="/card/posts" className="text-dark">
+                  <i className="fas fa-home"></i> Logout
+                </NavLink>
+              </DropdownItem>
+            </DropdownMenu>
+          </UncontrolledDropdown>
         </Collapse>
       </Navbar>
     </div>

@@ -13,10 +13,10 @@ const links = [
 
 const NavLeft = () => (
   <>
-    <h2 className="headline">Left Menu</h2>
-    <ListGroup flush>
-      <ListGroupItem tag="a" href="/form/forms">
-        Forms
+    <h4 className="headline">Components</h4>
+    <ListGroup flush className="list-group-nav-left">
+      <ListGroupItem tag="a" href="/dashboard">
+        Dashboard
       </ListGroupItem>
       <ListGroupItem tag="a" href="/form/buttons">
         Buttons
@@ -31,13 +31,13 @@ const NavLeft = () => (
         Typography
       </ListGroupItem>
     </ListGroup>
-    <h2 className="headline">UI Elements</h2>
-    <ListGroup flush>
-      <ListGroupItem tag="a" href="/page/pages">
-        Pages
+    <h4 className="headline">UI Elements</h4>
+    <ListGroup flush className="list-group-nav-left">
+      <ListGroupItem tag="a" href="/card/employees">
+        Employees
       </ListGroupItem>
-      <ListGroupItem tag="a" href="/form/buttons">
-        Buttons
+      <ListGroupItem tag="a" href="/carousel/carousels">
+        Carousels
       </ListGroupItem>
       <ListGroupItem tag="a" href="/table/tables">
         Tables

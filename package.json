@@ -3,15 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
     "@zeit/next-sass": "^1.0.1",
     "autoprefixer": "^9.7.4",
     "bootstrap": "^4.4.1",
     "cssnano": "^4.1.10",
+    "imagehover.css": "^2.0.0",
     "next": "9.2.1",
     "node-sass": "^4.13.1",
     "react": "16.12.0",
