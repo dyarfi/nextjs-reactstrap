@@ -63,7 +63,7 @@
             z-index: 0;
             &:before {
                 background-color: rgba($light-secondary,.5);
-                background-image: url('/public/images/trianglify-lowres.png');
+                background-image: url('#{$img-path}/trianglify-lowres.png');
                 background-size: cover;
                 background-blend-mode: darken;
                 border-radius: $border-radius;

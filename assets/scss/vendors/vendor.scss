@@ -1,18 +1,17 @@
-// Vendors variables override default variables
+// Vendors variables override and path
 @import "variables";
+@import "base/path";
 
 /*
 |--------------------------------------------------------------------------
-| Packages
+| Vendor packages
 |--------------------------------------------------------------------------
 */
-
-// Import partials.
 @import
 'node_modules/bootstrap/scss/bootstrap', // Or other option to put BS 4 SCSS in assets/scss/vendors/bootstrap
-'node_modules/@fortawesome/fontawesome-free/scss/brands', // Font Awesome 5
-'node_modules/@fortawesome/fontawesome-free/scss/regular', // Font Awesome 5
-'node_modules/@fortawesome/fontawesome-free/scss/solid', // Font Awesome 5
-'node_modules/@fortawesome/fontawesome-free/scss/fontawesome', // Font Awesome 5
+'node_modules/@fortawesome/fontawesome-free/scss/brands', // Font Awesome 5 Brand
+'node_modules/@fortawesome/fontawesome-free/scss/regular', // Font Awesome 5 Regular
+'node_modules/@fortawesome/fontawesome-free/scss/solid', // Font Awesome 5 Solid
+'node_modules/@fortawesome/fontawesome-free/scss/fontawesome', // Font Awesome 5 Default
 'node_modules/imagehover.css/scss/imagehover' // Imagehover SCSS
 ;

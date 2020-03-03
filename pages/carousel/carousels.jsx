@@ -60,29 +60,27 @@ const Carousels = props => {
       <HeadHome title="Carousels" />
       <NavBar />
       <MainLayout>
-        <Col xs={12} md={10} className="content-wrapper">
-          <h1>Carousel</h1>
-          <Row lg="12">
-            <Carousel activeIndex={activeIndex} next={next} previous={previous}>
-              <CarouselIndicators
-                items={SLIDES.carousels}
-                activeIndex={activeIndex}
-                onClickHandler={goToIndex}
-              />
-              {slides}
-              <CarouselControl
-                direction="prev"
-                directionText="Previous"
-                onClickHandler={previous}
-              />
-              <CarouselControl
-                direction="next"
-                directionText="Next"
-                onClickHandler={next}
-              />
-            </Carousel>
-          </Row>
-        </Col>
+        <h1>Carousel</h1>
+        <Row lg="12">
+          <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+            <CarouselIndicators
+              items={SLIDES.carousels}
+              activeIndex={activeIndex}
+              onClickHandler={goToIndex}
+            />
+            {slides}
+            <CarouselControl
+              direction="prev"
+              directionText="Previous"
+              onClickHandler={previous}
+            />
+            <CarouselControl
+              direction="next"
+              directionText="Next"
+              onClickHandler={next}
+            />
+          </Carousel>
+        </Row>
       </MainLayout>
       <Footer />
     </>

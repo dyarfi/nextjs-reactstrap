@@ -23,9 +23,8 @@ const Posts = props => (
     <HeadHome title="Posts" />
     <NavBar />
     <MainLayout>
-      <Col xs={12} md={10} className="content-wrapper">
-        <h1>Cards</h1>
-        <div className="hero">
+      <h1>Cards</h1>
+      <div className="hero">
           <h3>Posts</h3>
           <Row>
             {CARDS.posts.map((post, key) => {
@@ -79,7 +78,6 @@ const Posts = props => (
             })}
           </Row>
         </div>
-      </Col>
     </MainLayout>
     <Footer />
   </>

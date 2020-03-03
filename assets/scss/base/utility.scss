@@ -779,7 +779,7 @@ $font-size-xs:                ($font-size-base * .475) !default;
 
 /* --- Button Menu --- */
 .btn { 
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	// transform: translateY(0);
 	// transition: transform .15s ease;
 	&-primary, &-secondary, &-success,

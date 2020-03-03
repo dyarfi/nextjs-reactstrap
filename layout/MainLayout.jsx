@@ -7,10 +7,14 @@ const MainLayout = props => {
   return (
     <Container fluid className="wrapper">
       <Row>
-        <Col xs={12} md={2} className="bg-light">
+        {/* <Col xs={12} md={2} className="wrapper-left"> */}
+        <Col className="wrapper-left">
           <NavLeft />
         </Col>
-        {children}
+        {/* <Col xs={12} md={10} className="wrapper-content"> */}
+        <Col className="wrapper-content">      
+          {children}
+        </Col>
       </Row>
     </Container>
   );

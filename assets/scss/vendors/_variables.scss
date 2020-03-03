@@ -27,7 +27,7 @@ $gray-900: #212529 !default;
 $black:    #000 !default;
 
 // Define defaults for each variable.
-$enable-caret:              false !default;
+$enable-caret:              true !default;
 $enable-rounded:            false !default;
 $enable-shadows:            true !default;
 $enable-gradients:          false !default;
@@ -65,8 +65,8 @@ $carousel-control-icon-width:       20px !default;
 // $carousel-control-prev-icon-bg:     none;
 // $carousel-control-next-icon-bg:     none;
 
-$carousel-transition:               transform .9s ease !default;
-//$carousel-transition:               opacity .75s ease-in-out !default;
+$carousel-transition:               transform .75s ease !default;
+// $carousel-transition:               opacity .75s ease-in-out !default;
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      10% !default;
@@ -117,6 +117,7 @@ $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
+/*! ========== ImageHover ========== */
 // ImageHover Output
 $output-bourbon-deprecation-warnings: false !default;
 
@@ -130,9 +131,4 @@ $figcaption-bg:        rgba(#666666,.75) !default;
 // $border-width:         4px !default;
 $transition-duration:  0.35s !default;
 $shift-distance:       10px !default;
-
-// Font Awesome Font Path
-$fa-font-path:                  "/webfonts" !default;
-// ImageHover Output Deprecation
-$output-bourbon-deprecation-warnings: false !default;
 

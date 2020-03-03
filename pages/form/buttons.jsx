@@ -1,19 +1,34 @@
-import React from "react";
-import Head from "next/head";
-import { Row, Col } from "reactstrap";
-import { Button } from "reactstrap";
+import React, { useState } from "react";
+import {
+  Badge,
+  Button,
+  ButtonDropdown,
+  ButtonGroup,
+  UncontrolledButtonDropdown,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
+} from "reactstrap";
 
 import MainLayout from "../../layout/MainLayout";
 import HeadHome from "../../components/head";
 import NavBar from "../../components/navbar/navbar";
 import Footer from "../../components/footer";
 
-const Buttons = props => (
-  <>
-    <HeadHome title="Buttons" />
-    <NavBar />
-    <MainLayout>
-      <Col xs={12} md={10} className="content-wrapper">
+const Buttons = props => {
+  const [stateDropUp, setStateDropUp] = useState(false);
+  const [stateDropLeft, setStateDropLeft] = useState(false);
+  const [stateDropRight, setStateDropRight] = useState(false);
+  const [stateDropRightAlign, setStateDropRightAlign] = useState(false);
+  const [isOpen, setOpen] = useState(false);
+  const toggle = () => setOpen(!isOpen);
+
+  return (
+    <>
+      <HeadHome title="Buttons" />
+      <NavBar />
+      <MainLayout>
         <h1>Buttons</h1>
         <div className="hero-start">
           <h3>Sizes</h3>
@@ -43,7 +58,10 @@ const Buttons = props => (
           <Button color="primary" size="lg" block>
             Block level button
           </Button>
-          <Button color="secondary" size="lg" block>
+          <Button color="secondary" size="md" block>
+            Block level button
+          </Button>
+          <Button color="secondary" size="sm" block>
             Block level button
           </Button>
           <h3>Outline</h3>
@@ -64,6 +82,26 @@ const Buttons = props => (
               warning
             </Button>{" "}
             <Button outline color="danger">
+              danger
+            </Button>
+          </div>
+          <div className="my-3">
+            <Button outline color="primary" className="btn-ghost-light">
+              rounded <Badge color="primary">2</Badge>
+            </Button>{" "}
+            <Button outline color="secondary" className="btn-ghost-light">
+              secondary <Badge color="secondary">4</Badge>
+            </Button>{" "}
+            <Button outline color="success" className="btn-ghost-light">
+              success
+            </Button>{" "}
+            <Button outline color="info" className="btn-ghost-light">
+              info
+            </Button>{" "}
+            <Button outline color="warning" className="btn-ghost-light">
+              warning
+            </Button>{" "}
+            <Button outline color="danger" className="btn-ghost-light">
               danger
             </Button>
           </div>
@@ -88,11 +126,99 @@ const Buttons = props => (
               <i className="fab fa-yahoo"></i> danger
             </Button>
           </div>
+          <h3>Dropdown</h3>
+          <ButtonDropdown isOpen={isOpen} toggle={toggle}>
+            <DropdownToggle caret color="primary">
+              Button Dropdown
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem header>Header</DropdownItem>
+              <DropdownItem disabled>Action</DropdownItem>
+              <DropdownItem>Another Action</DropdownItem>
+              <DropdownItem divider />
+              <DropdownItem>Another Action</DropdownItem>
+            </DropdownMenu>
+          </ButtonDropdown>
+          <Dropdown
+            isOpen={stateDropRightAlign}
+            toggle={() => setStateDropRightAlign(!stateDropRightAlign)}
+          >
+            <DropdownToggle caret>
+              Dropdown's menu is right-aligned
+            </DropdownToggle>
+            <DropdownMenu right>
+              <DropdownItem header>Header</DropdownItem>
+              <DropdownItem disabled>Action</DropdownItem>
+              <DropdownItem>Another Action</DropdownItem>
+              <DropdownItem divider />
+              <DropdownItem>
+                Another Really Really Long Action (Really!)
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+          <h3>Drop Direction</h3>
+          <UncontrolledButtonDropdown>
+            <ButtonDropdown
+              direction="up"
+              isOpen={stateDropUp}
+              toggle={() => {
+                setStateDropUp(!stateDropUp);
+              }}
+            >
+              <DropdownToggle caret>Dropup</DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem>Another Action</DropdownItem>
+                <DropdownItem>Another Action</DropdownItem>
+              </DropdownMenu>
+            </ButtonDropdown>
+            <ButtonDropdown
+              direction="left"
+              isOpen={stateDropLeft}
+              toggle={() => {
+                setStateDropLeft(!stateDropLeft);
+              }}
+            >
+              <DropdownToggle caret>Dropleft</DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem>Another Action</DropdownItem>
+                <DropdownItem>Another Action</DropdownItem>
+              </DropdownMenu>
+            </ButtonDropdown>
+            <ButtonDropdown
+              direction="right"
+              isOpen={stateDropRight}
+              toggle={() => {
+                setStateDropRight(!stateDropRight);
+              }}
+            >
+              <DropdownToggle caret>Dropright</DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem>Another Action</DropdownItem>
+                <DropdownItem>Another Action</DropdownItem>
+              </DropdownMenu>
+            </ButtonDropdown>
+          </UncontrolledButtonDropdown>
+          <h3>Button Group</h3>
+          <ButtonGroup size="lg">
+            <Button>Left</Button>
+            <Button>Middle</Button>
+            <Button>Right</Button>
+          </ButtonGroup>
+          <ButtonGroup>
+            <Button>Left</Button>
+            <Button>Middle</Button>
+            <Button>Right</Button>
+          </ButtonGroup>
+          <ButtonGroup size="sm">
+            <Button>Left</Button>
+            <Button>Middle</Button>
+            <Button>Right</Button>
+          </ButtonGroup>
         </div>
-      </Col>
-    </MainLayout>
-    <Footer />
-  </>
-);
+      </MainLayout>
+      <Footer />
+    </>
+  );
+};
 
 export default Buttons;

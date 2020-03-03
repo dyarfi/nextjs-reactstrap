@@ -10,7 +10,6 @@ const links = [{ href: "/documentation", label: "Documentation" }].map(
 );
 
 const Footer = () => (
-  // <Navbar color="light" light>
   <footer>
     <ul>
       <li>
@@ -27,7 +26,7 @@ const Footer = () => (
         </li>
       ))}
     </ul>
-    <style jsx>{`
+    {/* <style jsx>{`
       footer {
         margin-top: 1rem;
         text-align: center;
@@ -49,9 +48,8 @@ const Footer = () => (
         text-decoration: none;
         font-size: 13px;
       }
-    `}</style>
+    `}</style> */}
   </footer>
-  // </Navbar>
 );
 
 export default Footer;

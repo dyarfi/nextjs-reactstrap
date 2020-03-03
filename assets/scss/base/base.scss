@@ -15,13 +15,46 @@ h1,h2,h3,h4,h5,h6 {
     width:78px;
 }
 .wrapper {
-    margin-top: 6rem;
-}
-.content {
-    &-wrapper {
-        // animation: sk-bounce .5s linear;
+    margin-top: 5rem;
+    &-left { 
+        background-color: $light;
+        height:100%;
+        // width: calc(100% - 240px);
+        // @include media-breakpoint-down(xs) {            
+            width: 240px;
+            position: fixed;
+        // }
+    }
+    &-content {
+        height:100%;
+        min-height:100vh;
         animation: scaleUpCenter .1s linear both;
         padding-top: .75rem;
+        padding-bottom: .75rem;
+        // @include media-breakpoint-down(xs) {
+            margin-left: 240px;
+        // }
+    }
+}
+footer {
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    background-color: aliceblue;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 4px 16px;
+        margin: 0;
+        > li {
+            display: flex;
+            padding: 6px 8px;
+            > a {
+                color: #067df7;
+                text-decoration: none;
+                font-size: 13px;
+            }
+        }
     }
 }
 .page {
@@ -58,7 +91,12 @@ h1,h2,h3,h4,h5,h6 {
                 text-decoration: none;
             }
         }
-        button {
+        .btn-group {
+            button:not(.dropdown-toggle) {
+                margin-right: 0;
+            }
+        }
+        button, [role=group].btn-group {
             margin-right: .5rem;
         }
     }
@@ -85,7 +123,7 @@ h1,h2,h3,h4,h5,h6 {
         }
     }
 }
-// Bootstrap overide
+// Bootstrap overide / extend
 /* --- Width --- */
 .w-10 {
     width: 10%;
@@ -94,29 +132,41 @@ h1,h2,h3,h4,h5,h6 {
     width: 15%;
 }
 /* --- Dropdown --- */
-.show > .dropdown-menu {
+.dropdown.show {
+    a.dropdown-toggle:after {
+        transform: rotate(90deg) scale(1.3) translate(1px,-2px);
+    }
+}
+.dropdown {
+    a.dropdown-toggle:after {
+        transform: rotate(0deg) scale(1) translate(0,0);
+        transition:transform .25s ease;
+    }
+}
+.show > .dropdown-menu:not([x-placement]) {
 	visibility:visible;
-	transform: translate(0, 0%);
+	// transform: translate(0, 0%);
 	opacity:1;
-	display: block;
+	// display: block;
+	transition: .5s ease;
 	// transition: transform .5s ease;
 	// overflow-x:hidden;
-	// overflow-y:auto;
+    // overflow-y:auto;    
 }
-.dropdown-menu {
+.dropdown-menu:not([x-placement]) {
 	border-radius:.2rem;
-	transform-origin: top;
-	animation-fill-mode: forwards;
-	transform: translate(0, -10%);
-	transition: all .2s linear !important;
-	visibility:hidden;
-	opacity:0;
-	display: block;	
+	// transform-origin: top;
+	// animation-fill-mode: forwards;
+	// transform: translate(0, -10%);
+	// transition: all .2s linear !important;
+	visibility: hidden;
+	opacity: 0;
+	// display: none;	
     border: 0;
     &.show {
         border: 0;
         @extend %shadow-md;	
-    }
+    }    
 	&:before {
 		display: inline-block;
 		position: absolute;
@@ -133,7 +183,7 @@ h1,h2,h3,h4,h5,h6 {
 		border-bottom: .4em solid;
 		border-right: .4em solid transparent;
 		border-left: .4em solid transparent;
-	}
+    }    
 }
 .dropdown-item {
 	padding-top:.35rem;

@@ -21,7 +21,7 @@ const Example = props => {
 
   return (
     <div>
-      <Navbar color="dark" dark expand="sm" fixed="top">
+      <Navbar color="dark" dark expand="sm" fixed="top" className="py-0">
         <NavbarBrand href="/">
           <img src="../logo.svg" alt="Logo" className="logo" />
           NextJS BS 4
@@ -65,7 +65,7 @@ const Example = props => {
             </UncontrolledDropdown>
           </Nav>
           <UncontrolledDropdown inNavbar>
-            <DropdownToggle nav caret>
+            <DropdownToggle caret nav className="text-secondary">
               <NavbarText className="align-self-center text-right font-weight-bold">
                 <img
                   src="/images/profile2.jpg"
@@ -74,7 +74,7 @@ const Example = props => {
                 John Doe
               </NavbarText>
             </DropdownToggle>
-            <DropdownMenu right>              
+            <DropdownMenu right>
               <DropdownItem tag="div">
                 <NavLink href="/table/tables" className="text-dark">
                   <i className="fas fa-user"></i> Profile

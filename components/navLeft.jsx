@@ -39,7 +39,7 @@ const NavLeft = () => (
       <ListGroupItem tag="a" href="/carousel/carousels">
         Carousels
       </ListGroupItem>
-      <ListGroupItem tag="a" href="/table/tables">
+      {/* <ListGroupItem tag="a" href="/table/tables">
         Tables
       </ListGroupItem>
       <ListGroupItem tag="a" href="/card/posts">
@@ -47,7 +47,7 @@ const NavLeft = () => (
       </ListGroupItem>
       <ListGroupItem tag="a" href="/typography">
         Typography
-      </ListGroupItem>
+      </ListGroupItem> */}
     </ListGroup>
   </>
 );
