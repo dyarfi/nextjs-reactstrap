@@ -2,31 +2,32 @@ import React from "react";
 import Link from "next/link";
 // import { Navbar } from "reactstrap";
 
-const links = [{ href: "/documentation", label: "Documentation" }].map(
+const links = [{ href: "/page/documentation", label: "Documentation" }].map(
   link => ({
     ...link,
     key: `Footer-link-${link.href}-${link.label}`
   })
 );
 
-const Footer = () => (
-  <footer>
-    <ul>
-      <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </li>
-      <li>
-        <small className="text-muted">Copyright 2020 | dykraf.com</small>
-      </li>
-      {links.map(({ key, href, label }) => (
-        <li key={key}>
-          <a href={href}>{label}</a>
+function Footer() {
+  return (
+    <footer>
+      <ul>
+        <li>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
         </li>
-      ))}
-    </ul>
-    {/* <style jsx>{`
+        <li>
+          <small className="text-muted">Copyright 2020 | dykraf.com</small>
+        </li>
+        {links.map(({ key, href, label }) => (
+          <li key={key}>
+            <a href={href}>{label}</a>
+          </li>
+        ))}
+      </ul>
+      {/* <style jsx>{`
       footer {
         margin-top: 1rem;
         text-align: center;
@@ -49,7 +50,8 @@ const Footer = () => (
         font-size: 13px;
       }
     `}</style> */}
-  </footer>
-);
+    </footer>
+  );
+}
 
 export default Footer;

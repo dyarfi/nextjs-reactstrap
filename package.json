@@ -1,11 +1,26 @@
 {
   "name": "nextjs-reactstrap",
+  "description": "NextJS with Reactstrap Dashboard",
+  "keywords": [
+    "NextJS",
+    "ReactJS",
+    "Reactstrap"
+  ],
+  "homepage": "https://github.com/dyarfi/nextjs-reactstrap",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Defrian Yarfi",
+    "email": "dyarfi20@gmail.com",
+    "url": "https://dykraf.com/"
+  },
+  "contributors": [
+    "defrian <dyarfi20@gmail.com> (https://dykraf.com/)"
+  ],
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "next build",
-    "start": "next start"
+    "start": "ENV=production next start -p 3000"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
@@ -15,10 +30,13 @@
     "cssnano": "^4.1.10",
     "imagehover.css": "^2.0.0",
     "next": "9.2.1",
+    "next-redux-wrapper": "^5.0.0",
     "node-sass": "^4.13.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
-    "reactstrap": "^8.4.1"
+    "react-redux": "^7.2.0",
+    "reactstrap": "^8.4.1",
+    "redux": "^4.0.5"
   },
   "browserslist": [
     "last 3 version",
@@ -32,5 +50,10 @@
     "Android 2.3",
     "Android >= 4",
     "Opera >= 12"
-  ]
+  ],
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "prettier": "^1.19.1",
+    "redux-devtools-extension": "^2.13.8"
+  }
 }

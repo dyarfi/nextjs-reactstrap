@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {
+  Col,
   Badge,
   Button,
   ButtonDropdown,
@@ -125,6 +126,32 @@ const Buttons = props => {
             <Button outline color="danger">
               <i className="fab fa-yahoo"></i> danger
             </Button>
+            <div className="my-2">
+              <Button className="btn btn-danger btn-sm btn-square btn-hidden">
+                <i className="fas fa-eye"></i>{" "}
+                <span className="links">Read More</span>
+              </Button>
+              <Button className="btn btn-danger btn-sm btn-square btn-hidden">
+                <i className="fas fa-trash"></i>{" "}
+                <span className="links">Delete</span>
+              </Button>
+              <Button className="btn btn-danger btn-sm btn-square btn-hidden">
+                <i className="fas fa-chevron-left"></i>{" "}
+                <span className="links">Submit</span>
+              </Button>
+              <Button className="btn btn-danger btn-sm btn-square btn-hidden">
+                <i className="fab fa-facebook"></i>{" "}
+                <span className="links">Post</span>
+              </Button>
+              <Button className="btn btn-danger btn-sm btn-square btn-hidden">
+                <i className="fab fa-twitter"></i>{" "}
+                <span className="links">Twit</span>
+              </Button>
+              <Button className="btn btn-danger btn-sm btn-square btn-hidden">
+                <i className="fab fa-github"></i>{" "}
+                <span className="links">Commit</span>
+              </Button>
+            </div>
           </div>
           <h3>Dropdown</h3>
           <ButtonDropdown isOpen={isOpen} toggle={toggle}>

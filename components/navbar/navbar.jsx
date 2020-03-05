@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Collapse,
   Navbar,
@@ -14,11 +14,15 @@ import {
   NavbarText
 } from "reactstrap";
 
-const Example = props => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
+function NavBar({
+    /* state vars */    
+    isOpen,
+    isToggled,
+    /* toggles */
+    toggle,
+    toggleLeft
+}) {
+  
   return (
     <div>
       <Navbar color="dark" dark expand="sm" fixed="top" className="py-0">
@@ -30,10 +34,16 @@ const Example = props => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components">Components</NavLink>
+              <NavLink href="#" className="d-block" onClick={toggleLeft}>
+                <i
+                  className={`fas fa-caret-square-${
+                    isToggled ? "left" : "right"
+                  }`}
+                ></i>
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/typography">Typography</NavLink>
+              <NavLink href="/page/typography">Typography</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
@@ -81,7 +91,7 @@ const Example = props => {
                 </NavLink>
               </DropdownItem>
               <DropdownItem tag="div">
-                <NavLink href="/form/buttons" className="text-dark">
+                <NavLink href="/page/settings" className="text-dark">
                   <i className="fas fa-cog"></i> Settings
                 </NavLink>
               </DropdownItem>
@@ -96,6 +106,6 @@ const Example = props => {
       </Navbar>
     </div>
   );
-};
+}
 
-export default Example;
+export default NavBar;

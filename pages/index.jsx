@@ -1,59 +1,37 @@
 import React from "react";
-import { Container, Col, CardDeck, Card } from "reactstrap";
+import { connect } from "react-redux";
 
 import MainLayout from "../layout/MainLayout";
+import HomeContainer from "../components/container/HomeContainer";
 import HeadHome from "../components/head";
-import NavBar from "../components/navbar/navbar";
 import Footer from "../components/footer";
 
-const Home = props => (
-  <>
-    <HeadHome title="Home" />
-    <NavBar />
-    <MainLayout>
-      <h1>Content</h1>
-      <div className="hero-start">
-        <h1 className="title">Welcome to Next.js!</h1>
-        <p className="description">
-          To get started, edit <code>pages/index.js</code> and save to reload.
-        </p>
-        <Container>
-          <CardDeck>
-            <Card color="dark">
-              <Col lg="12">
-                <a href="https://nextjs.org/docs" className="text-light">
-                  <h3>Documentation &rarr;</h3>
-                  <p>Learn more about Next.js in the documentation.</p>
-                </a>
-              </Col>
-            </Card>
-            <Card color="dark">
-              <Col lg="12">
-                <a href="https://nextjs.org/learn" className="text-light">
-                  <h3>Next.js Learn &rarr;</h3>
-                  <p>
-                    Learn about Next.js by following an interactive tutorial!
-                  </p>
-                </a>
-              </Col>
-            </Card>
-            <Card color="dark">
-              <Col lg="12">
-                <a
-                  href="https://github.com/zeit/next.js/tree/master/examples"
-                  className="text-light"
-                >
-                  <h3>Examples &rarr;</h3>
-                  <p>Find other example boilerplates on the Next.js GitHub.</p>
-                </a>
-              </Col>
-            </Card>
-          </CardDeck>
-        </Container>
-      </div>
-    </MainLayout>
-    <Footer />
-  </>
-);
+class Index extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { isScrolled: false };
+  }
 
-export default Home;
+  static async getInitialProps(props) {
+    const { store, isServer, req, res } = props.ctx;
+
+    // console.log(storeLayout);
+    // return { storeLayout };
+  }
+
+  render() {
+    const { dispatch, storeLayout } = this.props;
+
+    return (
+      <>
+        <HeadHome title="Home" />
+        <MainLayout dispatch={dispatch} storeLayout={storeLayout}>
+          <HomeContainer dispatch={dispatch} storeLayout={storeLayout} />
+        </MainLayout>
+        <Footer />
+      </>
+    );
+  }
+}
+
+export default connect(state => state)(Index);

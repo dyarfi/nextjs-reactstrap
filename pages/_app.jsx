@@ -1,9 +1,34 @@
 import App from "next/app";
+import React from 'react';
+import { Provider } from 'react-redux';
+import withRedux from 'next-redux-wrapper';
+import createStore from '../store';
 
 import "../assets/scss/main.scss";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+class MyApp extends App {
+  constructor(props) {
+    super(props);
+    this.state = { isLoading: false };
+  }
+  static async getInitialProps({ Component, ctx }) {
+    const {
+      store,
+      isServer,
+      req,
+      query: { amp },
+    } = ctx;
+    let pageProps = {};
+    if (Component.getInitialProps) {
+      pageProps = await Component.getInitialProps({ ctx });
+    }
+
+    return { pageProps };
+  }
+  render() {
+    const { Component, pageProps, store } = this.props;
+    return (<Provider store={store}><Component {...pageProps} /></Provider>);
+  };
 }
 
 // Only uncomment this method if you have blocking data requirements for
@@ -11,11 +36,13 @@ function MyApp({ Component, pageProps }) {
 // perform automatic static optimization, causing every page in your app to
 // be server-side rendered.
 //
-MyApp.getInitialProps = async appContext => {
-  // calls page's `getInitialProps` and fills `appProps.pageProps`
-  const appProps = await App.getInitialProps(appContext);
+// MyApp.getInitialProps = async appContext => {
+//   // calls page's `getInitialProps` and fills `appProps.pageProps`
+//   const appProps = await App.getInitialProps(appContext);
 
-  return { ...appProps };
-};
+//   return { ...appProps };
+// };
 
-export default MyApp;
+export default withRedux(createStore)(MyApp);
+
+// export default MyApp;

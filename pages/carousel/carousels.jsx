@@ -16,7 +16,7 @@ import Footer from "../../components/footer";
 
 import { SLIDES } from "../../constants/slides";
 
-const Carousels = props => {
+function Carousels(props) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -85,6 +85,6 @@ const Carousels = props => {
       <Footer />
     </>
   );
-};
+}
 
 export default Carousels;

@@ -8,13 +8,17 @@
 
 ### Add Bootstrap and Reactstrap to the project
 
-`$ yarn add bootstrap reactstrap @zeit/next-sass node-sass autoprefixer cssnano @fortawesome/fontawesome-free imagehover.css`
+`$ yarn add redux react-redux next-redux-wrapper bootstrap reactstrap @zeit/next-sass node-sass autoprefixer cssnano @fortawesome/fontawesome-free imagehover.css`
+
+Add dev dependencies
+`$ yarn add --dev redux-devtools-extension prettier babel-eslint`
 
 Why I use autoprefixer and cssnano?
 
 > As default NextJS has a builtin CSS-in-JS, Styled JSX and CSS support with autoprefixer, since we are using node-sass with custom scss, we need to add some other tools for css autoprefixing and minified the css.
 
 ### Our project tree directory
+
 ```
 .
 ├── README.md
@@ -35,6 +39,23 @@ Why I use autoprefixer and cssnano?
 │           ├── _variables.scss
 │           └── vendor.scss
 ├── components
+│   ├── container
+│   │   ├── HomeContainer.jsx
+│   │   ├── HomePage.jsx
+│   │   ├── card
+│   │   │   ├── EmployeeContainer.jsx
+│   │   │   ├── EmployeePage.jsx
+│   │   │   ├── PostsContainer.jsx
+│   │   │   └── PostsPage.jsx
+│   │   ├── carousel
+│   │   ├── dashboard
+│   │   │   ├── DashboardContainer.jsx
+│   │   │   └── DashboardPage.jsx
+│   │   ├── form
+│   │   ├── page
+│   │   └── table
+│   │       ├── TableContainer.jsx
+│   │       └── TablePage.jsx
 │   ├── footer.jsx
 │   ├── head.jsx
 │   ├── nav.jsx
@@ -42,9 +63,9 @@ Why I use autoprefixer and cssnano?
 │   └── navbar
 │       └── navbar.jsx
 ├── constants
-│   ├── cards.jsx
-│   ├── slides.jsx
-│   └── vars.jsx
+│   ├── cards.js
+│   ├── slides.js
+│   └── vars.js
 ├── layout
 │   ├── ErrorLayout.jsx
 │   └── MainLayout.jsx
@@ -59,14 +80,16 @@ Why I use autoprefixer and cssnano?
 │   ├── carousel
 │   │   └── carousels.jsx
 │   ├── dashboard.jsx
-│   ├── documentation.jsx
 │   ├── form
 │   │   ├── buttons.jsx
 │   │   └── forms.jsx
 │   ├── index.jsx
-│   ├── table
-│   │   └── tables.jsx
-│   └── typography.jsx
+│   ├── page
+│   │   ├── documentation.jsx
+│   │   ├── settings.jsx
+│   │   └── typography.jsx
+│   └── table
+│       └── tables.jsx
 ├── postcss.config.js
 ├── public
 │   ├── favicon.ico
@@ -101,9 +124,18 @@ Why I use autoprefixer and cssnano?
 │       ├── fa-solid-900.ttf
 │       ├── fa-solid-900.woff
 │       └── fa-solid-900.woff2
+├── store
+│   ├── actionTypes.js
+│   ├── defaultStates.js
+│   ├── errorTypes.js
+│   ├── index.js
+│   ├── redux
+│   │   ├── index.js
+│   │   └── layout.js
+│   └── statusTypes.js
 └── yarn.lock
 
-18 directories, 67 files
+28 directories, 85 files
 ```
 
 ### Add next.config.js in your project root and add NextJS withSass config
@@ -149,6 +181,70 @@ module.exports = {
     })
   ]
 };
+```
+
+### package.json file
+
+```
+{
+  "name": "nextjs-reactstrap",
+  "description": "NextJS with Reactstrap Dashboard",
+  "keywords": [
+    "NextJS",
+    "ReactJS",
+    "Reactstrap",
+  ],
+  "homepage": "https://github.com/dyarfi/nextjs-reactstrap",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "Defrian Yarfi",
+    "email": "@dyarfi",
+    "url": "https://dykraf.com/"
+  },
+  "contributors": [
+    "defrian <defrian.yarfi@gmail.com> (https://dykraf.com/)"
+  ],
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3000"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "@zeit/next-sass": "^1.0.1",
+    "autoprefixer": "^9.7.4",
+    "bootstrap": "^4.4.1",
+    "cssnano": "^4.1.10",
+    "imagehover.css": "^2.0.0",
+    "next": "9.2.1",
+    "next-redux-wrapper": "^5.0.0",
+    "node-sass": "^4.13.1",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-redux": "^7.2.0",
+    "reactstrap": "^8.4.1",
+    "redux": "^4.0.5"
+  },
+  "browserslist": [
+    "last 3 version",
+    "Chrome >= 35",
+    "Firefox >= 38",
+    "Edge >= 10",
+    "Explorer >= 10",
+    "ie >= 10",
+    "iOS >= 8",
+    "Safari >= 8",
+    "Android 2.3",
+    "Android >= 4",
+    "Opera >= 12"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "prettier": "^1.19.1",
+    "redux-devtools-extension": "^2.13.8"
+  }
+}
 ```
 
 ### Start project development

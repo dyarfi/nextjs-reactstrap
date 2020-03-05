@@ -9,21 +9,22 @@ const links = [
   key: `nav-link-${link.href}-${link.label}`
 }));
 
-const Nav = () => (
-  <nav>
-    <ul>
-      <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </li>
-      {links.map(({ key, href, label }) => (
-        <li key={key}>
-          <a href={href}>{label}</a>
+function Nav(props) {
+  return (
+    <nav>
+      <ul>
+        <li>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
         </li>
-      ))}
-    </ul>
-    {/* <style jsx>{`
+        {links.map(({ key, href, label }) => (
+          <li key={key}>
+            <a href={href}>{label}</a>
+          </li>
+        ))}
+      </ul>
+      {/* <style jsx>{`
       // :global(body) {
       //   margin: 0;
       //   font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
@@ -49,7 +50,8 @@ const Nav = () => (
         font-size: 13px;
       }
     `}</style> */}
-  </nav>
-);
+    </nav>
+  );
+}
 
 export default Nav;
