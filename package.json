@@ -19,8 +19,8 @@
   ],
   "scripts": {
     "dev": "next dev -p 3001",
-    "build": "ENV=production NODE_ENV=production next build",
-    "start": "ENV=production NODE_ENV=production next start"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
