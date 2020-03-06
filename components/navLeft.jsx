@@ -24,7 +24,7 @@ function NavLeft(props) {
       <h4 className="headline">Components</h4>
       <div className="wrapper-list-group">
         <ListGroup flush className="list-group-nav-left">
-          <ListGroupItem tag="a" href="/dashboard">
+          <ListGroupItem tag="a" href="/dashboard/dashboard">
             Dashboard
           </ListGroupItem>
           <ListGroupItem tag="a" href="/form/buttons">

@@ -48,11 +48,23 @@ Why I use autoprefixer and cssnano?
 │   │   │   ├── PostsContainer.jsx
 │   │   │   └── PostsPage.jsx
 │   │   ├── carousel
+│   │   │   ├── CarouselsContainer.jsx
+│   │   │   └── CarouselsPage.jsx
 │   │   ├── dashboard
 │   │   │   ├── DashboardContainer.jsx
 │   │   │   └── DashboardPage.jsx
 │   │   ├── form
+│   │   │   ├── ButtonsContainer.jsx
+│   │   │   ├── ButtonsPage.jsx
+│   │   │   ├── FormsContainer.jsx
+│   │   │   └── FormsPage.jsx
 │   │   ├── page
+│   │   │   ├── DocumentationContainer.jsx
+│   │   │   ├── DocumentationPage.jsx
+│   │   │   ├── SettingContainer.jsx
+│   │   │   ├── SettingPage.jsx
+│   │   │   ├── TypographyContainer.jsx
+│   │   │   └── TypographyPage.jsx
 │   │   └── table
 │   │       ├── TableContainer.jsx
 │   │       └── TablePage.jsx
@@ -79,14 +91,15 @@ Why I use autoprefixer and cssnano?
 │   │   └── posts.jsx
 │   ├── carousel
 │   │   └── carousels.jsx
-│   ├── dashboard.jsx
+│   ├── dashboard
+│   │   └── dashboard.jsx
 │   ├── form
 │   │   ├── buttons.jsx
 │   │   └── forms.jsx
 │   ├── index.jsx
 │   ├── page
 │   │   ├── documentation.jsx
-│   │   ├── settings.jsx
+│   │   ├── setting.jsx
 │   │   └── typography.jsx
 │   └── table
 │       └── tables.jsx
@@ -135,7 +148,7 @@ Why I use autoprefixer and cssnano?
 │   └── statusTypes.js
 └── yarn.lock
 
-28 directories, 85 files
+29 directories, 97 files
 ```
 
 ### Add next.config.js in your project root and add NextJS withSass config
@@ -253,10 +266,45 @@ module.exports = {
 
 #### Add boostrap CSS to \_app.js and restart nextjs
 
-`import 'bootstrap/dist/css/bootstrap.min.css';`
+~~import 'bootstrap/dist/css/bootstrap.min.css';~~
 
 #### Or add Custom SCSS to import boostrap to \_app.js and restart nextjs
 
-`import 'node_modules/bootstrap/scss/bootstrap.scss';`
-
 `import 'assets/scss/main.scss';`
+
+```
+// Imports SCSS theme
+@import "vendors/vendor";
+@import "themes/theme";
+@import "components/component";
+@import "base/placeholder";
+@import "base/utility";
+@import "base/base";
+```
+
+##### assets/scss/main.scss
+
+Import bootstrap scss library `import 'node_modules/bootstrap/scss/bootstrap.scss';` in your main scss includes
+
+```
+// Vendors variables override and path
+@import "variables";
+@import "base/path";
+
+/*
+|--------------------------------------------------------------------------
+| Vendor packages
+|--------------------------------------------------------------------------
+*/
+@import
+'node_modules/bootstrap/scss/bootstrap', // Or include BS 4 SCSS in assets/scss/vendors/bootstrap
+'node_modules/@fortawesome/fontawesome-free/scss/brands', // Font Awesome 5 Brand
+'node_modules/@fortawesome/fontawesome-free/scss/regular', // Font Awesome 5 Regular
+'node_modules/@fortawesome/fontawesome-free/scss/solid', // Font Awesome 5 Solid
+'node_modules/@fortawesome/fontawesome-free/scss/fontawesome', // Font Awesome 5 Default
+'node_modules/imagehover.css/scss/imagehover' // Imagehover SCSS
+;
+
+```
+
+##### assets/scss/vendors/vendor.scss

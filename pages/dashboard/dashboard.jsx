@@ -1,10 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import MainLayout from "../layout/MainLayout";
-import DashboardContainer from "../components/container/dashboard/DashboardContainer";
-import HeadHome from "../components/head";
-import Footer from "../components/footer";
+import MainLayout from "../../layout/MainLayout";
+import DashboardContainer from "../../components/container/dashboard/DashboardContainer";
+import HeadHome from "../../components/head";
 
 class Dashboard extends React.Component {
   constructor(props) {
@@ -27,7 +26,6 @@ class Dashboard extends React.Component {
         <MainLayout dispatch={dispatch} storeLayout={storeLayout}>
           <DashboardContainer dispatch={dispatch} storeLayout={storeLayout} />
         </MainLayout>
-        <Footer />
       </>
     );
   }

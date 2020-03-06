@@ -1,10 +1,10 @@
 import React from "react";
 
 import MainLayout from "../../layout/MainLayout";
-import DocumentationContainer from "../../components/container/page/DocumentationContainer";
+import SettingContainer from "../../components/container/page/SettingContainer";
 import HeadHome from "../../components/head";
 
-class Documentation extends React.Component {
+class Setting extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isScrolled: false };
@@ -21,13 +21,13 @@ class Documentation extends React.Component {
     const { dispatch, storeLayout } = this.props;
     return (
       <>
-        <HeadHome title="Documentation" />
+        <HeadHome title="Setting" />
         <MainLayout>
-          <DocumentationContainer />
+          <SettingContainer />
         </MainLayout>
       </>
     );
   }
 }
 
-export default Documentation;
+export default Setting;

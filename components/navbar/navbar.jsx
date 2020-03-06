@@ -15,14 +15,13 @@ import {
 } from "reactstrap";
 
 function NavBar({
-    /* state vars */    
-    isOpen,
-    isToggled,
-    /* toggles */
-    toggle,
-    toggleLeft
+  /* state vars */
+  isOpen,
+  isToggled,
+  /* toggles */
+  toggle,
+  toggleLeft
 }) {
-  
   return (
     <div>
       <Navbar color="dark" dark expand="sm" fixed="top" className="py-0">
@@ -91,8 +90,8 @@ function NavBar({
                 </NavLink>
               </DropdownItem>
               <DropdownItem tag="div">
-                <NavLink href="/page/settings" className="text-dark">
-                  <i className="fas fa-cog"></i> Settings
+                <NavLink href="/page/setting" className="text-dark">
+                  <i className="fas fa-cog"></i> Setting
                 </NavLink>
               </DropdownItem>
               <DropdownItem tag="div">

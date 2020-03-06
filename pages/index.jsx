@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import MainLayout from "../layout/MainLayout";
 import HomeContainer from "../components/container/HomeContainer";
 import HeadHome from "../components/head";
-import Footer from "../components/footer";
 
 class Index extends React.Component {
   constructor(props) {
@@ -28,7 +27,6 @@ class Index extends React.Component {
         <MainLayout dispatch={dispatch} storeLayout={storeLayout}>
           <HomeContainer dispatch={dispatch} storeLayout={storeLayout} />
         </MainLayout>
-        <Footer />
       </>
     );
   }
