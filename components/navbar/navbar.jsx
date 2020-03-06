@@ -75,10 +75,10 @@ function NavBar({
           </Nav>
           <UncontrolledDropdown inNavbar>
             <DropdownToggle caret nav className="text-secondary">
-              <NavbarText className="align-self-center text-right font-weight-bold">
+              <NavbarText className="align-self-center text-left font-weight-bold">
                 <img
                   src="/images/profile2.jpg"
-                  className="border rounded-circle w-15 img-fluid mr-1"
+                  className="border rounded-circle img-42 img-fluid mr-1"
                 />
                 John Doe
               </NavbarText>

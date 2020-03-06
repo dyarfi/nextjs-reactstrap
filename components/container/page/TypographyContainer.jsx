@@ -3,19 +3,19 @@ import React from "react";
 // import propTypes from 'prop-types';
 
 /** components */
-import SettingPage from "./SettingPage";
+import TypographyPage from "./TypographyPage";
 
-function SettingContainer({ dispatch, storeLayout }) {
+function TypographyContainer({ dispatch, storeLayout }) {
   const props = {
     dispatch,
     storeLayout
   };
 
-  return <SettingPage {...props} />;
+  return <TypographyPage {...props} />;
 }
 
 // SettingContainer.propTypes = {
 //   isMobile: propTypes.bool.isRequired,
 // };
 
-export default SettingContainer;
+export default TypographyContainer;

@@ -1,14 +1,20 @@
 /** npm packages */
-import React from "react";
+import React, { useState, useEffect } from "react";
 // import propTypes from 'prop-types';
 
 /** components */
 import SettingPage from "./SettingPage";
 
 function SettingContainer({ dispatch, storeLayout }) {
+  const [isOpen, setIsOpen] = useState("1");
+  const toggle = e => setIsOpen(e);
+
   const props = {
     dispatch,
-    storeLayout
+    storeLayout,
+    /* states */
+    isOpen,
+    toggle
   };
 
   return <SettingPage {...props} />;

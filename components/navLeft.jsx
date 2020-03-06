@@ -57,17 +57,14 @@ function NavLeft(props) {
             <UncontrolledCollapse toggler="toggleCollapser">
               <Nav vertical className="mt-2">
                 <NavItem>
-                  <NavLink href="#">Link</NavLink>
+                  <NavLink href="/page/profile">Profile</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="#">Link</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="#">Another Link</NavLink>
+                  <NavLink href="/page/setting">Settings</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink disabled href="#">
-                    Disabled Link
+                    Login
                   </NavLink>
                 </NavItem>
               </Nav>
@@ -99,35 +96,8 @@ function NavLeft(props) {
               </Nav>
             </UncontrolledCollapse>
           </ListGroupItem>
-          {/* 
-      <ListGroupItem tag="a" href="/card/posts">
-        Cards
-      </ListGroupItem>
-      <ListGroupItem tag="a" href="/typography">
-        Typography
-      </ListGroupItem> */}
         </ListGroup>
       </div>
-      {/* <h4 className="headline">UI Elements</h4>
-    <div className="wrapper-list-group">
-      <ListGroup flush className="list-group-nav-left">
-        <ListGroupItem tag="a" href="/dashboard">
-          Dashboard
-        </ListGroupItem>
-        <ListGroupItem tag="a" href="/form/buttons">
-          Buttons
-        </ListGroupItem>
-        <ListGroupItem tag="a" href="/table/tables">
-          Tables
-        </ListGroupItem>
-        <ListGroupItem tag="a" href="/card/posts">
-          Cards
-        </ListGroupItem>
-        <ListGroupItem tag="a" href="/typography">
-          Typography
-        </ListGroupItem>
-      </ListGroup>
-    </div> */}
     </>
   );
 }

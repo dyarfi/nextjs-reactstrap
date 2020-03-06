@@ -1,4 +1,4 @@
-import React, { memo, useState } from "react";
+import React, { memo } from "react";
 import { Container, Row, Col } from "reactstrap";
 
 const DocumentationPage = memo(props => {

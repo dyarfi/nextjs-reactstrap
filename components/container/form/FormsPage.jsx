@@ -65,7 +65,12 @@ const FormsPage = memo(props => {
             </FormGroup>
             <FormGroup>
               <Label for="exampleText">Text Area</Label>
-              <Input type="textarea" name="text" id="exampleText" />
+              <Input
+                type="textarea"
+                name="text"
+                id="exampleText"
+                placeholder="Text Area"
+              />
             </FormGroup>
             <FormGroup>
               <Label for="exampleFile">File</Label>
