@@ -11,7 +11,7 @@ const links = [{ href: "/page/documentation", label: "Documentation" }].map(
 
 function Footer() {
   return (
-    <footer>
+    <footer className="footer-main">
       <ul>
         <li>
           <Link href="/">
@@ -27,29 +27,6 @@ function Footer() {
           </li>
         ))}
       </ul>
-      {/* <style jsx>{`
-      footer {
-        margin-top: 1rem;
-        text-align: center;
-        background-color: aliceblue;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      footer > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
-      }
-    `}</style> */}
     </footer>
   );
 }

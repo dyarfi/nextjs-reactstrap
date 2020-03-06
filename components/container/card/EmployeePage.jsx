@@ -67,7 +67,13 @@ const EmployeePage = memo(props => {
         <div className="card-employee-row">
           {CARDS.employees.map((employee, key) => {
             return (
-              <Col xs="12" md="6" lg="4" className="card-employee-col">
+              <Col
+                key={key}
+                xs="12"
+                md="6"
+                lg="4"
+                className="card-employee-col"
+              >
                 <div className="card-employee-content">
                   <Col
                     xs="12"

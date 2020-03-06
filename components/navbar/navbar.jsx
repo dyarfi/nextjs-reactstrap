@@ -83,9 +83,9 @@ function NavBar({
                 John Doe
               </NavbarText>
             </DropdownToggle>
-            <DropdownMenu right>
+            <DropdownMenu>
               <DropdownItem tag="div">
-                <NavLink href="/table/tables" className="text-dark">
+                <NavLink href="/page/profile" className="text-dark">
                   <i className="fas fa-user"></i> Profile
                 </NavLink>
               </DropdownItem>

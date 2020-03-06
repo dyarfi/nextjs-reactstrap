@@ -61,6 +61,8 @@ Why I use autoprefixer and cssnano?
 │   │   ├── page
 │   │   │   ├── DocumentationContainer.jsx
 │   │   │   ├── DocumentationPage.jsx
+│   │   │   ├── ProfileContainer.jsx
+│   │   │   ├── ProfilePage.jsx
 │   │   │   ├── SettingContainer.jsx
 │   │   │   ├── SettingPage.jsx
 │   │   │   ├── TypographyContainer.jsx
@@ -99,6 +101,7 @@ Why I use autoprefixer and cssnano?
 │   ├── index.jsx
 │   ├── page
 │   │   ├── documentation.jsx
+│   │   ├── profile.jsx
 │   │   ├── setting.jsx
 │   │   └── typography.jsx
 │   └── table
@@ -148,7 +151,7 @@ Why I use autoprefixer and cssnano?
 │   └── statusTypes.js
 └── yarn.lock
 
-29 directories, 97 files
+29 directories, 100 files
 ```
 
 ### Add next.config.js in your project root and add NextJS withSass config
@@ -220,8 +223,8 @@ module.exports = {
   ],
   "scripts": {
     "dev": "next dev -p 3001",
-    "build": "next build && next export -o docs",
-    "start": "ENV=production NODE_ENV=production next start -p 3000"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
@@ -299,4 +302,4 @@ Import bootstrap scss library `import 'node_modules/bootstrap/scss/bootstrap.scs
 
 ##### assets/scss/vendors/vendor.scss
 
-### Demo: [https://dyarfi.github.io/nextjs-reactstrap](https://dyarfi.github.io/nextjs-reactstrap)
+### Demo: [https://nextjs-reactstrap.now.sh/](https://nextjs-reactstrap.now.sh/)
