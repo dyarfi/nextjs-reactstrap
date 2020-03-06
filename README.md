@@ -205,23 +205,23 @@ module.exports = {
   "keywords": [
     "NextJS",
     "ReactJS",
-    "Reactstrap",
+    "Reactstrap"
   ],
   "homepage": "https://github.com/dyarfi/nextjs-reactstrap",
   "version": "0.1.0",
   "private": true,
   "author": {
     "name": "Defrian Yarfi",
-    "email": "@dyarfi",
+    "email": "dyarfi20@gmail.com",
     "url": "https://dykraf.com/"
   },
   "contributors": [
-    "defrian <defrian.yarfi@gmail.com> (https://dykraf.com/)"
+    "defrian <dyarfi20@gmail.com> (https://dykraf.com/)"
   ],
   "scripts": {
     "dev": "next dev -p 3001",
-    "build": "next build",
-    "start": "next start -p 3000"
+    "build": "next build && next export -o docs",
+    "start": "ENV=production NODE_ENV=production next start -p 3000"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
