@@ -26,7 +26,7 @@ function NavBar({
     <div>
       <Navbar color="dark" dark expand="sm" fixed="top" className="py-0">
         <NavbarBrand href="/">
-          <img src="../logo.svg" alt="Logo" className="logo" />
+          <img src="/logo.svg" alt="Logo" className="logo" />
           NextJS BS 4
         </NavbarBrand>
         <NavbarToggler onClick={toggle} color="dark" />

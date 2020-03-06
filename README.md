@@ -240,17 +240,7 @@ module.exports = {
     "redux": "^4.0.5"
   },
   "browserslist": [
-    "last 3 version",
-    "Chrome >= 35",
-    "Firefox >= 38",
-    "Edge >= 10",
-    "Explorer >= 10",
-    "ie >= 10",
-    "iOS >= 8",
-    "Safari >= 8",
-    "Android 2.3",
-    "Android >= 4",
-    "Opera >= 12"
+   ">0.3%", "not ie 11", "not dead", "not op_mini all"
   ],
   "devDependencies": {
     "babel-eslint": "^10.1.0",
