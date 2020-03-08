@@ -63,7 +63,7 @@ function NavLeft(props) {
                   <NavLink href="/page/setting">Settings</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink disabled href="#">
+                  <NavLink href="/page/login">
                     Login
                   </NavLink>
                 </NavItem>

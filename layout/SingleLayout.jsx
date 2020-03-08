@@ -1,13 +1,13 @@
 import React from "react";
 import { Container } from "reactstrap";
 
-function ErrorLayout(props) {
+function SingleLayout(props) {
   const { children } = props;
   return (
-    <Container fluid className="page-error bg-gradient-primary">
+    <Container fluid className="page-single bg-gradient-primary">
       {children}
     </Container>
   );
 }
 
-export default ErrorLayout;
+export default SingleLayout;

@@ -105,7 +105,7 @@ const TypographyPage = memo(props => {
               </p>
               <br />
               <br />
-              <div className="container">
+              <Container>
                 <CardDeck>
                   <Card className="m-2 box-shadow">
                     <CardBody className="col-12">
@@ -255,7 +255,7 @@ const TypographyPage = memo(props => {
                     </CardBody>
                   </Card>
                 </CardDeck>
-              </div>
+              </Container>
               <br />
               <br />
               <Button className="btn btn-warning btn-sm">

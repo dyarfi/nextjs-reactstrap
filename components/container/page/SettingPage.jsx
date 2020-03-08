@@ -11,7 +11,7 @@ import {
   TabContent,
   TabPane
 } from "reactstrap";
-import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
+import { Button, Form, FormRow, FormGroup, Label, Input, FormText } from "reactstrap";
 
 const SettingPage = memo(props => {
   const { isOpen, toggle } = props;
@@ -70,7 +70,7 @@ const SettingPage = memo(props => {
                 <div className="bg-white p-3 text-secondary mx-auto">
                   <Form className="form-horizontal" action="" method="GET">
                     <div className="form-row">
-                      <div className="col-sm-2">
+                      <Col sm="2">
                         <span className="text-black">Public Profile</span>
                         <div className="form-check">
                           <Input
@@ -103,8 +103,8 @@ const SettingPage = memo(props => {
                             No
                           </Label>
                         </div>
-                      </div>
-                      <div className="col-sm-2">
+                      </Col>
+                      <Col sm="2">
                         <span className="text-black">Show Email</span>
                         <div className="form-check">
                           <Input
@@ -134,11 +134,11 @@ const SettingPage = memo(props => {
                             No
                           </Label>
                         </div>
-                      </div>
-                      <div className="col-sm-8"></div>
+                      </Col>
+                      <Col sm="8"></Col>
                     </div>
                     <div className="form-row mt-3">
-                      <div className="col-sm-12 text-right mt-1">
+                      <Col sm="12" className="text-right mt-1">
                         <Button
                           type="submit"
                           name="submit"
@@ -146,7 +146,7 @@ const SettingPage = memo(props => {
                         >
                           <i className="fas fa-check"></i> Save
                         </Button>
-                      </div>
+                      </Col>
                     </div>
                   </Form>
                 </div>
@@ -160,43 +160,35 @@ const SettingPage = memo(props => {
               <div className="p-3 align-items-center text-white-50 bg-gradient-primary box-shadow">
                 <h5>Contact</h5>
                 <div className="bg-white p-3 text-secondary mx-auto">
-                  <Form className="form-horizontal" action="" method="GET">
+                  <Form action="" method="GET">
                     <div className="form-row">
-                      <div className="col-sm-2">
+                      <Col sm="2">
                         <span className="text-black">Disable Contact Form</span>
-                        <div className="form-check">
+                        <FormGroup check>
+                          <Label check for="disableFormYes">
                           <Input
                             type="radio"
                             name="disableForm"
                             id="disableFormYes"
-                            className="form-check-input"
-                            value="1"
-                          />
-                          <Label
-                            className="form-check-label"
-                            for="disableFormYes"
-                          >
+                            defaultValue="1"
+                          />                          
                             Yes
                           </Label>
-                        </div>
-                        <div className="form-check">
+                        </FormGroup>
+                        <FormGroup check>
+                          <Label check for="disableFormNo">
                           <Input
                             type="radio"
                             name="disableForm"
                             id="disableFormNo"
-                            className="form-check-input"
-                            value="0"
-                            checked="checked"
-                          />
-                          <Label
-                            className="form-check-label"
-                            for="disableFormNo"
-                          >
+                            defaultValue="0"
+                            checked
+                          />                          
                             No
                           </Label>
-                        </div>
-                      </div>
-                      <div className="col-sm-3">
+                        </FormGroup>
+                      </Col>
+                      <Col sm="3">
                         <div className="form-group">
                           <Label for="contactPhone">Phone</Label>
                           <Input
@@ -207,8 +199,8 @@ const SettingPage = memo(props => {
                             placeholder="Business phone"
                           />
                         </div>
-                      </div>
-                      <div className="col-sm-3">
+                      </Col>
+                      <Col sm="3">
                         <div className="form-group">
                           <Label for="contactEmail">Email</Label>
                           <Input
@@ -219,8 +211,8 @@ const SettingPage = memo(props => {
                             placeholder="Business email"
                           />
                         </div>
-                      </div>
-                      <div className="col-sm-4">
+                      </Col>
+                      <Col sm="4">
                         <div className="form-group">
                           <Label for="contactAddress">Address</Label>
                           <Input
@@ -231,10 +223,10 @@ const SettingPage = memo(props => {
                             placeholder="My business address"
                           />
                         </div>
-                      </div>
+                      </Col>
                     </div>
                     <div className="form-row mt-3">
-                      <div className="col-sm-12 text-right mt-1">
+                      <Col sm="12" className="text-right mt-1">
                         <Button
                           type="submit"
                           name="submit"
@@ -242,7 +234,7 @@ const SettingPage = memo(props => {
                         >
                           <i className="fas fa-check"></i> Save
                         </Button>
-                      </div>
+                      </Col>
                     </div>
                   </Form>
                 </div>
@@ -258,7 +250,7 @@ const SettingPage = memo(props => {
                 <div className="bg-white p-3 text-secondary mx-auto">
                   <Form className="form-horizontal" action="" method="GET">
                     <div className="form-row">
-                      <div className="col-sm-2">
+                      <Col sm="2">
                         <span className="text-black font-weight-bold">
                           Maintenance Mode
                         </span>
@@ -293,8 +285,8 @@ const SettingPage = memo(props => {
                             No
                           </Label>
                         </div>
-                      </div>
-                      <div className="col-sm-2">
+                      </Col>
+                      <Col sm="2">
                         <span className="text-black font-weight-bold">
                           Disable Comments
                         </span>
@@ -329,8 +321,8 @@ const SettingPage = memo(props => {
                             No
                           </Label>
                         </div>
-                      </div>
-                      <div className="col-sm-2">
+                      </Col>
+                      <Col sm="2">
                         <Label className="font-weight-bold">Comments</Label>
                         <div className="form-check">
                           <Input
@@ -378,8 +370,8 @@ const SettingPage = memo(props => {
                             Delete Instantly
                           </Label>
                         </div>
-                      </div>
-                      <div className="col-sm-6">
+                      </Col>
+                      <Col sm="6">
                         <Label className="font-weight-bold">Post Format</Label>
                         <div className="form-check">
                           <Input
@@ -442,10 +434,10 @@ const SettingPage = memo(props => {
                             /dd-mm-yyyy/category/your-blog-post-title/
                           </Label>
                         </div>
-                      </div>
+                      </Col>
                     </div>
                     <div className="form-row mt-3">
-                      <div className="col-sm-6">
+                      <Col sm="6">
                         <Label for="maintenanceModeText">
                           Maintenance Message
                         </Label>
@@ -457,8 +449,8 @@ const SettingPage = memo(props => {
                           placeholder="Your status"
                           defaultValue="We are in maintenance mode, sorry for the convinience!"
                         />
-                      </div>
-                      <div className="col-sm-6">
+                      </Col>
+                      <Col sm="6">
                         <Label for="statusText">Status</Label>
                         <Input
                           type="textarea"
@@ -468,10 +460,10 @@ const SettingPage = memo(props => {
                           placeholder="Your status"
                           defaultValue="Hi, John Doe was here!"
                         />
-                      </div>
+                      </Col>
                     </div>
                     <div className="form-row mt-3">
-                      <div className="col-sm-12 text-right mt-1">
+                      <Col sm="12" className="text-right mt-1">
                         <Button
                           type="submit"
                           name="submit"
@@ -479,7 +471,7 @@ const SettingPage = memo(props => {
                         >
                           <i className="fas fa-check"></i> Save
                         </Button>
-                      </div>
+                      </Col>
                     </div>
                   </Form>
                 </div>

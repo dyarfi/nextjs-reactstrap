@@ -46,10 +46,12 @@ function MainLayout(mainProps) {
     toggle,
     toggleLeft
   };
+  const myTheme = {   "$btn-primary-bg": "blue",
+  "$btn-primary-color": "white" };
 
   return (
     <>
-      <NavBar {...props} />
+      <NavBar {...props}/>
       <Container fluid className="wrapper">
         <Row>
           <Col className="wrapper-left" style={isWideNav}>

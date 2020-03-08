@@ -10,15 +10,15 @@ function Error({ statusCode }) {
       <HeadHome title={`Page not Found - ${statusCode}`} />
       <ErrorLayout>
         <Row>
-          <Col auto>
-            <h2 className="text-danger">
+          <Col>
+            <h2 className="text-warning">
               {statusCode
                 ? `An error ${statusCode} occurred on server`
                 : "An error occurred on client"}
             </h2>
             <span className="small clearfix d-block text-center my-2">
-              <Link href="/" className="text-primary">
-                <a>
+              <Link href="/">
+                <a className="text-light font-weight-bold">
                   <i className="fas fa-home"></i> Back to Home
                 </a>
               </Link>

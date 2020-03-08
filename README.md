@@ -257,7 +257,9 @@ module.exports = {
 
 `$ yarn dev`
 
-#### Add boostrap CSS to \_app.js and restart nextjs
+#### Open up yor browser and hit http://localhost:3001
+
+#### Add Boostrap to \_app.js and restart nextjs
 
 ~~import 'bootstrap/dist/css/bootstrap.min.css';~~
 

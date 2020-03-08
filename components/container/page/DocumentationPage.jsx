@@ -7492,136 +7492,66 @@ const DocumentationPage = memo(props => {
                     </button>
                   </div>
                 </div>
+                
                 {/* {% for icon, font in fontawesome %}
-                            <h5 className="my-3">{{ icon }}</h5>
-                            {% for icon in font %}
-                            <button className="btn btn-default btn-md" data-toggle="tooltip" title="{{icon}}">
-                                <i className="{{ icon|replace({".":""}) }}"></i>
-                            </button>
-                            {% endfor %}
-                        {% endfor %} */}
+                  <h5 className="my-3">{{ icon }}</h5>
+                    {% for icon in font %}
+                    <button className="btn btn-default btn-md" data-toggle="tooltip" title="{{icon}}">
+                      <i className="{{ icon|replace({".":""}) }}"></i>
+                    </button>
+                  {% endfor %}
+                {% endfor %} */}
 
                 {/* <div className="d-block">
-                            <h5 className="my-3">Social Icons Color Rounded</h5>
-                            {% for icons, social in socialicons %}
-                                {% for icon, icons in social %}
-                                    <button className="btn color-icons icon-rounded-circle" data-toggle="tooltip" title="{{ icons }}">
-                                        <i className="{{ icon|replace({".":""}) }}"></i>
-                                    </button>
-                                {% endfor %}
-                            {% endfor %}
-                            <h5 className="my-3">Social Icons Color Flatted</h5>
-                            {% for icons, social in socialicons %}
-                                {% for icon, icons in social %}
-                                    <button className="btn color-icons icon-flatted" data-toggle="tooltip" title="{{ icons }}">
-                                        <i className="{{ icon|replace({".":""}) }}"></i>
-                                    </button>
-                                {% endfor %}
-                            {% endfor %}
-                        </div> */}
+                      <h5 className="my-3">Social Icons Color Rounded</h5>
+                      {% for icons, social in socialicons %}
+                        {% for icon, icons in social %}
+                          <button className="btn color-icons icon-rounded-circle" data-toggle="tooltip" title="{{ icons }}">
+                            <i className="{{ icon|replace({".":""}) }}"></i>
+                          </button>
+                        {% endfor %}
+                      {% endfor %}
+                      <h5 className="my-3">Social Icons Color Flatted</h5>
+                      {% for icons, social in socialicons %}
+                        {% for icon, icons in social %}
+                          <button className="btn color-icons icon-flatted" data-toggle="tooltip" title="{{ icons }}">
+                            <i className="{{ icon|replace({".":""}) }}"></i>
+                          </button>
+                        {% endfor %}
+                      {% endfor %}
+                    </div> */}
               </Col>
             </Row>
             <h3>Backgrounds</h3>
             <Row id="background">
-              <Container fluid className="px-0">
+              <Container fluid>
                 <div
                   className="d-flex align-items-center mb-2"
-                  //   style="height:200px; background-image: url('./assets/img/unsplash-stil-336188.jpg');"
+                    style={{height:"200px",backgroundImage: 'url(/images/unsplash-stil-336188.jpg)'}}
                   data-overlay="overlay-theme"
                 >
                   <h4 className="mx-auto text-light">.overlay-theme</h4>
                 </div>
                 <div
                   className="d-flex align-items-center mb-2"
-                  //   style="height:200px; background-image: url('./assets/img/unsplash-stil-336188.jpg');"
+                    style={{height:"200px",backgroundImage: 'url(/images/unsplash-stil-336188.jpg)'}}
                   data-overlay="overlay-warning"
                 >
                   <h4 className="mx-auto text-light">.overlay-warning</h4>
                 </div>
                 <div
                   className="d-flex align-items-center mb-2"
-                  //   style="height:200px; background-image: url('./assets/img/unsplash-stil-336188.jpg');"
+                    style={{height:"200px",backgroundImage: 'url(/images/unsplash-stil-336188.jpg)'}}
                   data-overlay="overlay-secondary"
                 >
                   <h4 className="mx-auto text-light">.overlay-secondary</h4>
                 </div>
                 <div
-                  className="d-flex align-items-center mb-2"
-                  //   style="height:200px; background-image: url('./assets/img/unsplash-stil-336188.jpg');"
+                  className="d-flex align-items-center mb-2" style={{height:"200px",backgroundImage: 'url(/images/unsplash-stil-336188.jpg)'}}
                   data-overlay="overlay-dark"
                 >
                   <h4 className="mx-auto text-light">.overlay-dark</h4>
                 </div>
-              </Container>
-            </Row>
-            <h3>Cards</h3>
-            <Row id="cards">
-              <Container fluid>
-                <Row>
-                  <h4>Promos</h4>
-                  <Container>
-                    <Row>
-                      <div className="promotion-cards">
-                        <div className="card-deck no-gutters">
-                          {/* {% for promo in promos %}
-                                    {% set disc = 2 %}
-                                    <div className="col-12 col-sm-6 mb-4">
-                                        <div className="card rounded border h-100">
-                                            <a href="#"><img className="card-img-top" src="{{ promo.image }}?v={{random()}}" alt="{{ promo.title }}"></a>
-                                            <div className="card-body">
-                                                <a href="#"><h5 className="card-title uppercase">{{ promo.title }}</h5></a>
-                                                <p className="card-text text-secondary">{{ promo.description }}</p>
-                                                <span className="font-lead-base font-weight-bold">{{disc}}0% Off!</span>								
-                                                <div className="promotion-promo">$ {{promo.price}}</div>
-                                                <div className="promotion-price">
-                                                    <div className="promotion-price-desc">Now</div>
-                                                    <div className="promotion-price-text">$ {{promo.price - disc % 100}}</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                {% endfor %}*/}
-                        </div>
-                      </div>
-                    </Row>
-                  </Container>
-                  <Container>
-                    <Row>
-                      {/* {% include "cards/card-promos.twig" with promos %} */}
-                    </Row>
-                  </Container>
-                </Row>
-                <Row>
-                  <h4>Menus</h4>
-                  <h5 className="mb-4">.menu-list</h5>
-                  <Container fluid>
-                    <Row>
-                      {/* {% include "cards/card-menus.twig" with menus %} */}
-                    </Row>
-                  </Container>
-                  <h5>.menu-list-circle</h5>
-                  {/* <p>
-                        Default className for menu list circle are using{" "}
-                        <span className="badge badge-secondary">
-                          col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3
-                        </span>
-                        .
-                        <br />
-                        You can still change the className for other layout purpose{" "}
-                        <span className="badge badge-secondary">
-                          .col-{layout}-{size}
-                        </span>{" "}
-                        .
-                      </p> */}
-                  {/* <div className="row">
-                                    {% include "cards/card-menus-circle.twig" with menus %}
-                                </div>
-                                <h5>.menu-list-circle-disc</h5>
-                                <div className="row">
-                                    {% set menus = menus_dish %}
-                                    {% include "cards/card-menus-circle-disc.twig" with menus %}
-                                </div> */}
-                </Row>
               </Container>
             </Row>
           </Col>

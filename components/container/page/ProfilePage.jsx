@@ -18,7 +18,7 @@ const ProfilePage = memo(props => {
                     </h1>
                     <Col xs="10" md="5" className="mx-auto">
                       <img
-                        src="/images/profile9.jpg"
+                        src="/images/profile2.jpg"
                         className="rounded-circle img-thumbnail mt-5"
                         alt="Profile"
                       />

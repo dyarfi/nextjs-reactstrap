@@ -95,7 +95,7 @@ function NavBar({
                 </NavLink>
               </DropdownItem>
               <DropdownItem tag="div">
-                <NavLink href="/card/posts" className="text-dark">
+                <NavLink href="/page/login" className="text-dark">
                   <i className="fas fa-home"></i> Logout
                 </NavLink>
               </DropdownItem>
