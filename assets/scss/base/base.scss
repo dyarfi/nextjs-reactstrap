@@ -19,7 +19,6 @@ h1,h2,h3,h4,h5,h6 {
     &-left { 
         background-color:$light;
         height:100%;
-        // overflow-x:hidden;
         overflow-y:auto;
         // width: calc(100% - 240px);
         // @include media-breakpoint-down(xs) {            
@@ -90,7 +89,7 @@ footer[class=footer-main] {
         .title {
             margin: 0;
             width: 100%;
-            padding-top: 80px;
+            padding-top: 0px;
             line-height: 1.15;
             font-size: 48px;
         }

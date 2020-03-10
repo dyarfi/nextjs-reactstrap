@@ -2,7 +2,7 @@ import React from "react";
 
 import MainLayout from "../../layout/MainLayout";
 import CarouselsContainer from "../../components/container/carousel/CarouselsContainer";
-import HeadHome from "../../components/head";
+import HeadDefault from "../../components/HeadDefault";
 
 class Carousels extends React.Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class Carousels extends React.Component {
 
     return (
       <>
-        <HeadHome title="Carousels" />
+        <HeadDefault title="Carousels" />
         <MainLayout>
           <CarouselsContainer />
         </MainLayout>

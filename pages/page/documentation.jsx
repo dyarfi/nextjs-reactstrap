@@ -2,7 +2,7 @@ import React from "react";
 
 import MainLayout from "../../layout/MainLayout";
 import DocumentationContainer from "../../components/container/page/DocumentationContainer";
-import HeadHome from "../../components/head";
+import HeadHome from "../../components/HeadDefault";
 
 class Documentation extends React.Component {
   constructor(props) {

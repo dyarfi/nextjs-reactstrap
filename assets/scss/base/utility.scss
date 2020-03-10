@@ -15,13 +15,11 @@
 .text-shadow-white { text-shadow: 1px 1px 1px rgba(255,255,255,0.75); }
 
 // --------- Text Sizes
-$font-size-xl:                ($font-size-base * 1.55) !default;
-$font-size-xs:                ($font-size-base * .475) !default;
 .text-xs { font-size: $font-size-xs;}
 .text-sm { font-size: $font-size-sm; }
 .text-md { font-size: $font-size-md; }
 .text-lg { font-size: $font-size-lg; }
-.text-xl { font-size: $font-size-sm; }
+.text-xl { font-size: $font-size-xl; }
 
 // --------- Image Sizes
 .avatar-130 {

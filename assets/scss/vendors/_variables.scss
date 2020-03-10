@@ -1,16 +1,11 @@
 // ------ Bootstrap default variable override
 
 // Base font family
-// $base-font-family: "Montserrat", sans-serif !default;
-// $font-family-base: $base-font-family !default;
-
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
 
-// $body-bg: rgb(27, 27, 27);
 $body-bg: rgb(255,255,255);
-// $body-color: #fff;
 $body-color: #212529;
 
 // stylelint-disable
@@ -57,22 +52,13 @@ $carousel-indicator-active-bg:      $white !default;
 
 $carousel-caption-width:            70% !default;
 $carousel-caption-color:            $white !default;
-
 $carousel-control-icon-width:       20px !default;
 
-// $carousel-control-prev-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"), "#", "%23") !default;
-// $carousel-control-next-icon-bg:     str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"), "#", "%23") !default;
-// $carousel-control-prev-icon-bg:     none;
-// $carousel-control-next-icon-bg:     none;
-
 $carousel-transition:               transform .75s ease !default;
-// $carousel-transition:               opacity .75s ease-in-out !default;
 
 // Set a specific jump point for requesting color jumps
 $theme-color-interval:      10% !default;
 
-//$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-//$base-font-size:   0.94rem !default;
 $base-font-size:   0.94rem !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -103,10 +89,7 @@ $spacing-unit:     30px !default;
 //
 // Style anchor elements.
 
-// $link-color:              theme-color("primary") !default;
-// $link-color:                $white;
 $link-decoration:           none !default;
-// $link-hover-color:          darken($link-color, 25%) !default;
 $link-hover-decoration:     underline !default;
 
 $text-color:       #111 !default;

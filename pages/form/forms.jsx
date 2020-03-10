@@ -2,7 +2,7 @@ import React from "react";
 
 import MainLayout from "../../layout/MainLayout";
 import FormsContainer from "../../components/container/form/FormsContainer";
-import HeadHome from "../../components/head";
+import HeadHome from "../../components/HeadDefault";
 
 class Forms extends React.Component {
   constructor(props) {

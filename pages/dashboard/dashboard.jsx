@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 import MainLayout from "../../layout/MainLayout";
 import DashboardContainer from "../../components/container/dashboard/DashboardContainer";
-import HeadHome from "../../components/head";
+import HeadDefault from "../../components/HeadDefault";
 
 class Dashboard extends React.Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class Dashboard extends React.Component {
 
     return (
       <>
-        <HeadHome title="Dashboard" />
+        <HeadDefault title="Dashboard" />
         <MainLayout dispatch={dispatch} storeLayout={storeLayout}>
           <DashboardContainer dispatch={dispatch} storeLayout={storeLayout} />
         </MainLayout>

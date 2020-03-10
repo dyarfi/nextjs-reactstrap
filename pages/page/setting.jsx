@@ -2,7 +2,7 @@ import React from "react";
 
 import MainLayout from "../../layout/MainLayout";
 import SettingContainer from "../../components/container/page/SettingContainer";
-import HeadHome from "../../components/head";
+import HeadHome from "../../components/HeadDefault";
 
 class Setting extends React.Component {
   constructor(props) {

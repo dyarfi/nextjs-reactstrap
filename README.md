@@ -8,7 +8,7 @@
 
 ### Add Bootstrap and Reactstrap to the project
 
-`$ yarn add redux react-redux next-redux-wrapper bootstrap reactstrap @zeit/next-sass node-sass autoprefixer cssnano @fortawesome/fontawesome-free imagehover.css`
+`$ yarn add redux react-redux next-redux-wrapper next-page-transitions bootstrap reactstrap @zeit/next-sass node-sass autoprefixer cssnano @fortawesome/fontawesome-free imagehover.css`
 
 Add dev dependencies
 `$ yarn add --dev redux-devtools-extension prettier babel-eslint`
@@ -212,14 +212,14 @@ module.exports = {
   ],
   "homepage": "https://github.com/dyarfi/nextjs-reactstrap",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "author": {
     "name": "Defrian Yarfi",
-    "email": "dyarfi20@gmail.com",
+    "email": "your@email.com",
     "url": "https://dykraf.com/"
   },
   "contributors": [
-    "defrian <dyarfi20@gmail.com> (https://dykraf.com/)"
+    "defrian <your@email.com> (https://dykraf.com/)"
   ],
   "scripts": {
     "dev": "next dev -p 3001",
@@ -234,6 +234,7 @@ module.exports = {
     "cssnano": "^4.1.10",
     "imagehover.css": "^2.0.0",
     "next": "9.2.1",
+    "next-page-transitions": "^1.0.0-beta.2",
     "next-redux-wrapper": "^5.0.0",
     "node-sass": "^4.13.1",
     "react": "16.12.0",
@@ -243,7 +244,10 @@ module.exports = {
     "redux": "^4.0.5"
   },
   "browserslist": [
-   ">0.3%", "not ie 11", "not dead", "not op_mini all"
+    ">0.3%",
+    "not ie 11",
+    "not dead",
+    "not op_mini all"
   ],
   "devDependencies": {
     "babel-eslint": "^10.1.0",

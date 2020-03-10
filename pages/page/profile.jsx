@@ -2,7 +2,7 @@ import React from "react";
 
 import MainLayout from "../../layout/MainLayout";
 import ProfileContainer from "../../components/container/page/ProfileContainer";
-import HeadHome from "../../components/head";
+import HeadHome from "../../components/HeadDefault";
 
 class Profile extends React.Component {
   constructor(props) {

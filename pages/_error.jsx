@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Row, Col } from "reactstrap";
 
 import ErrorLayout from "../layout/ErrorLayout";
-import HeadHome from "../components/head";
+import HeadHome from "../components/HeadDefault";
 function Error({ statusCode }) {
   return (
     <>

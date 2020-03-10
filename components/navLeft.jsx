@@ -63,9 +63,7 @@ function NavLeft(props) {
                   <NavLink href="/page/setting">Settings</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/page/login">
-                    Login
-                  </NavLink>
+                  <NavLink href="/page/login">Login</NavLink>
                 </NavItem>
               </Nav>
             </UncontrolledCollapse>

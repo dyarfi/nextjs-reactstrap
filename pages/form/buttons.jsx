@@ -2,7 +2,7 @@ import React from "react";
 
 import MainLayout from "../../layout/MainLayout";
 import ButtonsContainer from "../../components/container/form/ButtonsContainer";
-import HeadHome from "../../components/head";
+import HeadHome from "../../components/HeadDefault";
 
 class Buttons extends React.Component {
   constructor(props) {

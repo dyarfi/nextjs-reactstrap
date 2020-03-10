@@ -1,33 +1,6 @@
 .card {
     margin-bottom: 1rem;
-    @extend %shadow-md;
-    // &:hover {
-        // transition: .5s ease;
-    // }
-    // &-start {
-    //     padding:1rem;
-    //     // max-width: 220px;
-    //     text-align: left;
-    //     text-decoration: none;
-    //     color: #434343;
-    //     border: 1px solid #9b9b9b;
-    //     display: flex;
-    //     &:hover {
-    //         border-color: #067df7;
-    //         text-decoration: none;
-    //     }
-    //     h3 {
-    //         margin: 0;
-    //         color: #067df7;
-    //         font-size: 18px;
-    //     }
-    //     p {
-    //         margin: 0;
-    //         // padding: 12px 0 0;
-    //         font-size: 13px;
-    //         color: #333;
-    //     }
-    // }
+    @extend %shadow-md;    
 }
 /* --- Employees --- */
 .card {

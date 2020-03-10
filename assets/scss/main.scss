@@ -1,6 +1,7 @@
 // Imports SCSS theme
 @import "vendors/vendor";
 @import "themes/theme";
+// Uncomment this if use in global or use the component base scss
 @import "components/component";
 @import "base/placeholder";
 @import "base/utility";

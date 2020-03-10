@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 import MainLayout from "../layout/MainLayout";
 import HomeContainer from "../components/container/HomeContainer";
-import HeadHome from "../components/head";
+import HeadHome from "../components/HeadDefault";
 
 class Index extends React.Component {
   constructor(props) {

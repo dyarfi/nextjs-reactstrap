@@ -2,8 +2,7 @@ import React from "react";
 
 import MainLayout from "../../layout/MainLayout";
 import EmployeeContainer from "../../components/container/card/EmployeeContainer";
-import HeadHome from "../../components/head";
-
+import HeadDefault from "../../components/HeadDefault";
 class Employees extends React.Component {
   constructor(props) {
     super(props);
@@ -21,7 +20,7 @@ class Employees extends React.Component {
     const { dispatch, storeLayout } = this.props;
     return (
       <>
-        <HeadHome title="Employees" />
+        <HeadDefault title="Employees" />
         <MainLayout dispatch={dispatch} storeLayout={storeLayout}>
           <EmployeeContainer dispatch={dispatch} storeLayout={storeLayout} />
         </MainLayout>

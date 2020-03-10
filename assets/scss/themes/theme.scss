@@ -24,3 +24,7 @@ $dark-info : darken($info, 15%);
 $dark-secondary : darken($secondary, 15%);
 $dark-mute : darken($dark, 45%);
 $dark-theme : darken($theme, 32%);
+
+// Font sizes
+$font-size-xl:                ($font-size-base * 1.55) !default;
+$font-size-xs:                ($font-size-base * .475) !default;

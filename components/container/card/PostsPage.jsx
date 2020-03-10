@@ -13,6 +13,8 @@ import {
 
 import { CARDS } from "../../../constants/cards";
 
+import "../../../assets/scss/components/card.scss";
+
 const PostsPage = memo(props => {
   return (
     <>

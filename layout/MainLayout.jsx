@@ -6,9 +6,9 @@ import { Container, Row, Col } from "reactstrap";
 import ACTION_TYPES from "../store/actionTypes";
 
 /* Components */
-import NavLeft from "../components/navLeft";
-import NavBar from "../components/navbar/navbar";
-import Footer from "../components/footer";
+import NavLeft from "../components/NavLeft";
+import NavBar from "../components/navbar/NavBar";
+import Footer from "../components/Footer";
 
 function MainLayout(mainProps) {
   const { children, dispatch, storeLayout } = mainProps;
@@ -46,12 +46,10 @@ function MainLayout(mainProps) {
     toggle,
     toggleLeft
   };
-  const myTheme = {   "$btn-primary-bg": "blue",
-  "$btn-primary-color": "white" };
 
   return (
     <>
-      <NavBar {...props}/>
+      <NavBar {...props} />
       <Container fluid className="wrapper">
         <Row>
           <Col className="wrapper-left" style={isWideNav}>

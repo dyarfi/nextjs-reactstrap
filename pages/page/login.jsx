@@ -1,8 +1,8 @@
-import React from "React";
+import React from "react";
 
 import SingleLayout from "../../layout/SingleLayout";
 import LoginContainer from "../../components/container/page/LoginContainer";
-import HeadHome from "../../components/head";
+import HeadHome from "../../components/HeadDefault";
 
 class Profile extends React.Component {
   constructor(props) {

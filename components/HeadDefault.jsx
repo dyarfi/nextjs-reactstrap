@@ -6,7 +6,7 @@ import propTypes from "prop-types";
 import Head from "next/head";
 import { THEME } from "../constants/vars";
 
-function HeadHome({
+function HeadDefault({
   title,
   description,
   keyword,
@@ -43,6 +43,6 @@ function HeadHome({
   );
 }
 
-HeadHome.propTypes = {};
+HeadDefault.propTypes = {};
 
-export default HeadHome;
+export default HeadDefault;

@@ -2,7 +2,7 @@ import React from "react";
 
 import MainLayout from "../../layout/MainLayout";
 import PostsContainer from "../../components/container/card/PostsContainer";
-import HeadHome from "../../components/head";
+import HeadDefault from "../../components/HeadDefault";
 
 class Posts extends React.Component {
   constructor(props) {
@@ -21,7 +21,7 @@ class Posts extends React.Component {
     const { dispatch, storeLayout } = this.props;
     return (
       <>
-        <HeadHome title="Posts" />
+        <HeadDefault title="Posts" />
         <MainLayout dispatch={dispatch} storeLayout={storeLayout}>
           <PostsContainer dispatch={dispatch} storeLayout={storeLayout} />
         </MainLayout>
