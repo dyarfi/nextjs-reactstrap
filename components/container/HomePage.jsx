@@ -1,6 +1,7 @@
 import React, { memo } from "react";
 import Link from "next/link";
 import { Row, Container, Button, Col, CardDeck, Card } from "reactstrap";
+import Loader from "../Loader";
 
 const HomePage = memo(props => {
   return (

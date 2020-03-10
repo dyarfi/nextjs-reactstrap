@@ -26,12 +26,13 @@ Why I use autoprefixer and cssnano?
 │   └── scss
 │       ├── base
 │       │   ├── base.scss
+│       │   ├── functions.scss
 │       │   ├── path.scss
 │       │   ├── placeholder.scss
 │       │   └── utility.scss
 │       ├── components
 │       │   ├── _component.scss
-│       │   └── cards.scss
+│       │   └── card.scss
 │       ├── main.scss
 │       ├── themes
 │       │   └── theme.scss
@@ -39,6 +40,10 @@ Why I use autoprefixer and cssnano?
 │           ├── _variables.scss
 │           └── vendor.scss
 ├── components
+│   ├── Footer.jsx
+│   ├── HeadDefault.jsx
+│   ├── Nav.jsx
+│   ├── NavLeft.jsx
 │   ├── container
 │   │   ├── HomeContainer.jsx
 │   │   ├── HomePage.jsx
@@ -61,6 +66,8 @@ Why I use autoprefixer and cssnano?
 │   │   ├── page
 │   │   │   ├── DocumentationContainer.jsx
 │   │   │   ├── DocumentationPage.jsx
+│   │   │   ├── LoginContainer.jsx
+│   │   │   ├── LoginPage.jsx
 │   │   │   ├── ProfileContainer.jsx
 │   │   │   ├── ProfilePage.jsx
 │   │   │   ├── SettingContainer.jsx
@@ -70,19 +77,16 @@ Why I use autoprefixer and cssnano?
 │   │   └── table
 │   │       ├── TableContainer.jsx
 │   │       └── TablePage.jsx
-│   ├── footer.jsx
-│   ├── head.jsx
-│   ├── nav.jsx
-│   ├── navLeft.jsx
 │   └── navbar
-│       └── navbar.jsx
+│       └── NavBar.jsx
 ├── constants
 │   ├── cards.js
 │   ├── slides.js
 │   └── vars.js
 ├── layout
 │   ├── ErrorLayout.jsx
-│   └── MainLayout.jsx
+│   ├── MainLayout.jsx
+│   └── SingleLayout.jsx
 ├── next.config.js
 ├── package.json
 ├── pages
@@ -101,6 +105,7 @@ Why I use autoprefixer and cssnano?
 │   ├── index.jsx
 │   ├── page
 │   │   ├── documentation.jsx
+│   │   ├── login.jsx
 │   │   ├── profile.jsx
 │   │   ├── setting.jsx
 │   │   └── typography.jsx
@@ -122,7 +127,9 @@ Why I use autoprefixer and cssnano?
 │   │   ├── profile5.jpg
 │   │   ├── profile6.jpg
 │   │   ├── profile9.jpg
-│   │   └── trianglify-lowres.png
+│   │   ├── trianglify-lowres.png
+│   │   ├── unsplash-stil-336188-768x648px.jpg
+│   │   └── unsplash-stil-336188.jpg
 │   ├── logo.svg
 │   └── webfonts
 │       ├── fa-brands-400.eot
@@ -151,7 +158,7 @@ Why I use autoprefixer and cssnano?
 │   └── statusTypes.js
 └── yarn.lock
 
-29 directories, 100 files
+29 directories, 107 files
 ```
 
 ### Add next.config.js in your project root and add NextJS withSass config

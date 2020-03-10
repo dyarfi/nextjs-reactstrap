@@ -9,6 +9,7 @@
   "homepage": "https://github.com/dyarfi/nextjs-reactstrap",
   "version": "0.1.0",
   "private": false,
+  "license": "Unlicense",
   "author": {
     "name": "Defrian Yarfi",
     "email": "dyarfi20@gmail.com",
@@ -30,7 +31,6 @@
     "cssnano": "^4.1.10",
     "imagehover.css": "^2.0.0",
     "next": "9.2.1",
-    "next-page-transitions": "^1.0.0-beta.2",
     "next-redux-wrapper": "^5.0.0",
     "node-sass": "^4.13.1",
     "react": "16.12.0",

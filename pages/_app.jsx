@@ -1,9 +1,10 @@
 import App from "next/app";
-import React from 'react';
-import { Provider } from 'react-redux';
-import withRedux from 'next-redux-wrapper';
-import createStore from '../store';
+import React from "react";
+import { Provider } from "react-redux";
+import withRedux from "next-redux-wrapper";
+import createStore from "../store";
 
+// Main SCSS
 import "../assets/scss/main.scss";
 
 class MyApp extends App {
@@ -16,7 +17,7 @@ class MyApp extends App {
       store,
       isServer,
       req,
-      query: { amp },
+      query: { amp }
     } = ctx;
     let pageProps = {};
     if (Component.getInitialProps) {
@@ -27,8 +28,12 @@ class MyApp extends App {
   }
   render() {
     const { Component, pageProps, store } = this.props;
-    return (<Provider store={store}><Component {...pageProps} /></Provider>);
-  };
+    return (
+      <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
+    );
+  }
 }
 
 // Only uncomment this method if you have blocking data requirements for

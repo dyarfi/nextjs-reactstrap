@@ -29,7 +29,8 @@ h1,h2,h3,h4,h5,h6 {
     &-content {
         height:100%;
         min-height:90vh;
-        animation:scaleUpCenter .1s linear both;
+        animation-delay: .85s;
+        animation:scaleUpCenter .15s linear both;
         padding-top:.75rem;
         padding-bottom:.75rem;
         // @include media-breakpoint-down(xs) {
