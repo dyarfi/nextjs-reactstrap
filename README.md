@@ -8,7 +8,7 @@
 
 ### Add Bootstrap and Reactstrap to the project
 
-`$ yarn add redux react-redux next-redux-wrapper next-page-transitions bootstrap reactstrap @zeit/next-sass node-sass autoprefixer cssnano @fortawesome/fontawesome-free imagehover.css`
+`$ yarn add redux react-redux next-redux-wrapper bootstrap reactstrap @zeit/next-sass node-sass autoprefixer cssnano @fortawesome/fontawesome-free imagehover.css`
 
 Add dev dependencies
 `$ yarn add --dev redux-devtools-extension prettier babel-eslint`
@@ -42,6 +42,7 @@ Why I use autoprefixer and cssnano?
 ├── components
 │   ├── Footer.jsx
 │   ├── HeadDefault.jsx
+│   ├── Loader.jsx
 │   ├── Nav.jsx
 │   ├── NavLeft.jsx
 │   ├── container
@@ -158,7 +159,7 @@ Why I use autoprefixer and cssnano?
 │   └── statusTypes.js
 └── yarn.lock
 
-29 directories, 107 files
+29 directories, 108 files
 ```
 
 ### Add next.config.js in your project root and add NextJS withSass config

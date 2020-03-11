@@ -153,3 +153,62 @@
       }    
     }
 }
+
+.profile_card {
+  // max-width: 350px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .075);
+  margin: 30px auto 5px auto;
+  // height: 100%;
+  transition: .5s ease;
+  img {
+    max-width: 100%;
+    transition: .5s ease;
+  }
+  &_body {
+    padding: 10px 20px;
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        font-weight: bold;
+        span {
+          display: block;
+          padding: 5px;
+          font-weight: 300;
+          font-size: 0.8rem;
+          color: $secondary;
+        }
+      }
+      img {
+        max-width: 50px;
+        border-radius: 100%;
+      }
+    }
+    .profile_interactions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        i {
+          width: 20px;
+          padding: 5px;
+          margin-right: .15rem;
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+  &:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    img {
+      @extend %ilist-c;
+    }
+  }
+}

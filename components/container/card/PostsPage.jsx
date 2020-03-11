@@ -59,7 +59,7 @@ const PostsPage = memo(props => {
             })}
           </div>
         </Container>
-        <h3>Posts</h3>
+        <h3>Profile</h3>
         <Row>
           {CARDS.posts.map((post, key) => {
             return (
@@ -97,6 +97,40 @@ const PostsPage = memo(props => {
                     <Button color="success">{menu.category}</Button>
                   </CardBody>
                 </Card>
+              </Col>
+            );
+          })}
+        </Row>
+        <h3>Profile</h3>
+        <Row>
+          {CARDS.posts.map((profile, m) => {
+            return (
+              <Col xs="12" md="12" lg="4" key={m}>
+                <div className="profile_card">
+                  <img src={profile.image} alt={profile.title} />
+                  <div className="profile_card_body">
+                    <div>
+                      <p>
+                        @{profile.postBy}
+                        <br />
+                        <span>{profile.publishedAt}</span>
+                      </p>
+                      <img src={profile.image} alt={`@${profile.postBy}`} />
+                    </div>
+                    <p>{profile.title}</p>
+                    <div className="profile_interactions">
+                      <p>
+                        <i className="fab fa-facebook"></i> {profile.views}
+                      </p>
+                      <p>
+                        <i className="fab fa-twitter"></i> {profile.views}
+                      </p>
+                      <p>
+                        <i className="fab fa-linkedin"></i> {profile.views}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </Col>
             );
           })}
