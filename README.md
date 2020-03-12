@@ -176,11 +176,14 @@ module.exports = {
   plugins: [
     // PostCSS Config
     require("cssnano")({
-      cascade: false,
-      minified: true,
-      discardComments: {
-        removeAll: true
-      }
+      preset: [
+        "default",
+        {
+          discardComments: {
+            removeAll: true
+          }
+        }
+      ]
     }),
     require("autoprefixer")({
       flexbox: "no-2009",
