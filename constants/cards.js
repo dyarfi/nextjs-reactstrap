@@ -132,6 +132,7 @@ const CARDS = {
       title: "Margarine Eggs",
       description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
       price: "4.5",
+      label: "Nice Deal",
       tag: "warning"
     },
     {
@@ -140,6 +141,7 @@ const CARDS = {
       title: "Steaks Eggs",
       description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
       price: "8.8",
+      label: "Popular",
       tag: "warning"
     },
     {
@@ -148,7 +150,8 @@ const CARDS = {
       title: "Steaks Fillet Eggs",
       description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
       price: "9.3",
-      tag: ""
+      label: "Nice Deal",
+      tag: "success"
     },
     {
       category: "steaks",
@@ -156,6 +159,7 @@ const CARDS = {
       title: "Fillet Egg Bread",
       description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
       price: "5.2",
+      label: "Nice Deal",
       tag: "danger"
     },
     {
@@ -165,7 +169,7 @@ const CARDS = {
       description:
         "Breast of chicken sautéed with lemon, white wine, capers and artichoke hearts.",
       price: "22.23",
-      tag: "",
+      tag: "info",
       label: "Hot Plate"
     },
     {

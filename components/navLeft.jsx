@@ -25,19 +25,19 @@ function NavLeft(props) {
       <div className="wrapper-list-group">
         <ListGroup flush className="list-group-nav-left">
           <ListGroupItem tag="a" href="/dashboard/dashboard">
-            Dashboard
-          </ListGroupItem>
-          <ListGroupItem tag="a" href="/form/buttons">
-            Buttons
-          </ListGroupItem>
-          <ListGroupItem tag="a" href="/table/tables">
-            Tables
+            <i className="fas fa-chart-pie"></i> Dashboard
           </ListGroupItem>
           <ListGroupItem tag="a" href="/card/posts">
-            Cards
+            <i className="fas fa-clone"></i> Cards
+          </ListGroupItem>
+          <ListGroupItem tag="a" href="/form/buttons">
+            <i className="fas fa-bullseye"></i> Buttons
+          </ListGroupItem>
+          <ListGroupItem tag="a" href="/table/tables">
+            <i className="fas fa-columns"></i> Tables
           </ListGroupItem>
           <ListGroupItem tag="a" href="/page/typography">
-            Typography
+            <i className="fas fa-list-ul"></i> Typography
           </ListGroupItem>
         </ListGroup>
       </div>

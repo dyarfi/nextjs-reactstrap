@@ -4,6 +4,7 @@ import {
   Row,
   Col,
   Button,
+  Badge,
   Card,
   CardBody,
   CardImg,
@@ -25,7 +26,13 @@ const PostsPage = memo(props => {
             {CARDS.posts.map((post, key) => {
               const oddEven = `boxed-bottom-${key % 2 == 1 ? "left" : "right"}`;
               return (
-                <Col key={key} className={oddEven} xs="12" md="12" lg="4">
+                <Col
+                  key={`b-${key}`}
+                  className={oddEven}
+                  xs="12"
+                  md="12"
+                  lg="4"
+                >
                   <div className="boxed-bottom-content">
                     <h4 className="font-weight-bolder headline text-muted">
                       {post.title}
@@ -87,14 +94,53 @@ const PostsPage = memo(props => {
         <h3>Menus</h3>
         <Row>
           {CARDS.menus.map((menu, key) => {
+            const disc = 2;
             return (
-              <Col md="6" lg="4" key={key}>
-                <Card>
+              <Col md="6" lg="4" key={`m-${key}`}>
+                <Card className="card-menu">
                   <CardImg top width="100%" src={menu.image} alt={menu.title} />
-                  <CardBody>
+                  <CardBody className="card-menu-body">
                     <CardTitle tag="h4">{menu.title}</CardTitle>
-                    <CardText>{menu.description}</CardText>
-                    <Button color="success">{menu.category}</Button>
+                    <CardText tag="div">
+                      <Row className="mb-2 font-weight-bold">
+                        <Col sm="6" tag="div" className="text-left">
+                          <span>${Math.floor(menu.price - (disc % 100))}</span>
+                          <span className="card-menu-price">${menu.price}</span>
+                          <span className="card-menu-disc">
+                            {disc * 10}% Off
+                          </span>
+                        </Col>
+                        <Col sm="6" className="text-right">
+                          <Badge color={menu.tag}>{menu.tag}</Badge>
+                        </Col>
+                      </Row>
+                      {menu.description}
+                    </CardText>
+                    <Row xs="12">
+                      <Col className="align-self-center text-left">
+                        <span className="font-weight-bold">@{menu.label}</span>
+                      </Col>
+                      <Col className="align-self-center text-right">
+                        <a
+                          href="#"
+                          className="btn btn-sm color-icons icon-rounded-circle p-1"
+                        >
+                          <i className="fab fa-facebook"></i>
+                        </a>
+                        <a
+                          href="#"
+                          className="btn btn-sm color-icons icon-rounded-circle p-1"
+                        >
+                          <i className="fab fa-twitter"></i>
+                        </a>
+                        <a
+                          href="#"
+                          className="btn btn-sm color-icons icon-rounded-circle p-1"
+                        >
+                          <i className="fab fa-linkedin"></i>
+                        </a>
+                      </Col>
+                    </Row>
                   </CardBody>
                 </Card>
               </Col>
@@ -105,10 +151,10 @@ const PostsPage = memo(props => {
         <Row>
           {CARDS.posts.map((profile, m) => {
             return (
-              <Col xs="12" md="12" lg="4" key={m}>
-                <div className="profile_card">
+              <Col xs="12" md="12" lg="4" key={`p-${m}`}>
+                <Card className="card-profile">
                   <img src={profile.image} alt={profile.title} />
-                  <div className="profile_card_body">
+                  <div className="card-profile-body">
                     <div>
                       <p>
                         @{profile.postBy}
@@ -118,7 +164,7 @@ const PostsPage = memo(props => {
                       <img src={profile.image} alt={`@${profile.postBy}`} />
                     </div>
                     <p>{profile.title}</p>
-                    <div className="profile_interactions">
+                    <div className="card-profile-interactions">
                       <p>
                         <i className="fab fa-facebook"></i> {profile.views}
                       </p>
@@ -130,7 +176,7 @@ const PostsPage = memo(props => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </Card>
               </Col>
             );
           })}

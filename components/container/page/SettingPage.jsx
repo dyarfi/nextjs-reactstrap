@@ -11,7 +11,15 @@ import {
   TabContent,
   TabPane
 } from "reactstrap";
-import { Button, Form, FormRow, FormGroup, Label, Input, FormText } from "reactstrap";
+import {
+  Button,
+  Form,
+  FormRow,
+  FormGroup,
+  Label,
+  Input,
+  FormText
+} from "reactstrap";
 
 const SettingPage = memo(props => {
   const { isOpen, toggle } = props;
@@ -79,7 +87,6 @@ const SettingPage = memo(props => {
                             id="visible_profile_yes"
                             className="form-check-input"
                             value="1"
-                            checked="checked"
                           />
                           <Label
                             className="form-check-label"
@@ -113,7 +120,6 @@ const SettingPage = memo(props => {
                             id="hideEmailYes"
                             className="form-check-input"
                             value="1"
-                            checked="checked"
                           />
                           <Label
                             className="form-check-label"
@@ -166,24 +172,23 @@ const SettingPage = memo(props => {
                         <span className="text-black">Disable Contact Form</span>
                         <FormGroup check>
                           <Label check for="disableFormYes">
-                          <Input
-                            type="radio"
-                            name="disableForm"
-                            id="disableFormYes"
-                            defaultValue="1"
-                          />                          
+                            <Input
+                              type="radio"
+                              name="disableForm"
+                              id="disableFormYes"
+                              defaultValue="1"
+                            />
                             Yes
                           </Label>
                         </FormGroup>
                         <FormGroup check>
                           <Label check for="disableFormNo">
-                          <Input
-                            type="radio"
-                            name="disableForm"
-                            id="disableFormNo"
-                            defaultValue="0"
-                            checked
-                          />                          
+                            <Input
+                              type="radio"
+                              name="disableForm"
+                              id="disableFormNo"
+                              defaultValue="0"
+                            />
                             No
                           </Label>
                         </FormGroup>
@@ -276,7 +281,6 @@ const SettingPage = memo(props => {
                             id="maintenanceModeNo"
                             className="form-check-input"
                             value="0"
-                            checked
                           />
                           <Label
                             className="form-check-label"
@@ -297,7 +301,6 @@ const SettingPage = memo(props => {
                             id="disableCommentYes"
                             className="form-check-input"
                             value="1"
-                            checked="checked"
                           />
                           <Label
                             className="form-check-label"
@@ -331,7 +334,6 @@ const SettingPage = memo(props => {
                             id="commentModerationOne"
                             className="form-check-input"
                             value="1"
-                            checked="checked"
                           />
                           <Label
                             className="form-check-label"
@@ -380,7 +382,6 @@ const SettingPage = memo(props => {
                             id="postFormatOne"
                             className="form-check-input"
                             value="1"
-                            checked="checked"
                           />
                           <Label
                             className="form-check-label"
@@ -541,7 +542,7 @@ const SettingPage = memo(props => {
                     name="name"
                     placeholder="Fullname"
                     className="form-control"
-                    value="John Doe"
+                    defaultValue="John Doe"
                   />
                   <Label for="username">Username</Label>
                   <Input
@@ -550,7 +551,7 @@ const SettingPage = memo(props => {
                     name="username"
                     placeholder="@username"
                     className="form-control"
-                    value="johndoe"
+                    defaultValue="johndoe"
                   />
                 </div>
                 <div className="col-sm-6">
@@ -561,7 +562,7 @@ const SettingPage = memo(props => {
                     name="email"
                     placeholder="email@email.com"
                     className="form-control"
-                    value="johndoe@gmail.com"
+                    defaultValue="johndoe@gmail.com"
                   />
                   <Label for="phone">Phone</Label>
                   <Input

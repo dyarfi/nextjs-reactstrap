@@ -8,14 +8,10 @@
 
 ### Add Bootstrap and Reactstrap to the project
 
-`$ yarn add redux react-redux next-redux-wrapper bootstrap reactstrap @zeit/next-sass node-sass autoprefixer cssnano @fortawesome/fontawesome-free imagehover.css`
+`$ yarn add redux react-redux next-redux-wrapper bootstrap reactstrap @zeit/next-sass node-sass cssnano @fortawesome/fontawesome-free imagehover.css`
 
 Add dev dependencies
 `$ yarn add --dev redux-devtools-extension prettier babel-eslint`
-
-Why I use autoprefixer and cssnano?
-
-> As default NextJS has a builtin CSS-in-JS, Styled JSX and CSS support with autoprefixer, since we are using node-sass with custom scss, we need to add some other tools for css autoprefixing and minified the css.
 
 ### Our project tree directory
 
@@ -221,13 +217,14 @@ module.exports = {
   "homepage": "https://github.com/dyarfi/nextjs-reactstrap",
   "version": "0.1.0",
   "private": false,
+  "license": "Unlicense",
   "author": {
     "name": "Defrian Yarfi",
-    "email": "your@email.com",
+    "email": "dyarfi20@gmail.com",
     "url": "https://dykraf.com/"
   },
   "contributors": [
-    "defrian <your@email.com> (https://dykraf.com/)"
+    "defrian <dyarfi20@gmail.com> (https://dykraf.com/)"
   ],
   "scripts": {
     "dev": "next dev -p 3001",
@@ -237,12 +234,9 @@ module.exports = {
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
     "@zeit/next-sass": "^1.0.1",
-    "autoprefixer": "^9.7.4",
     "bootstrap": "^4.4.1",
     "cssnano": "^4.1.10",
-    "imagehover.css": "^2.0.0",
     "next": "9.2.1",
-    "next-page-transitions": "^1.0.0-beta.2",
     "next-redux-wrapper": "^5.0.0",
     "node-sass": "^4.13.1",
     "react": "16.12.0",
@@ -308,8 +302,7 @@ Import bootstrap scss library `import 'node_modules/bootstrap/scss/bootstrap.scs
 'node_modules/@fortawesome/fontawesome-free/scss/brands', // Font Awesome 5 Brand
 'node_modules/@fortawesome/fontawesome-free/scss/regular', // Font Awesome 5 Regular
 'node_modules/@fortawesome/fontawesome-free/scss/solid', // Font Awesome 5 Solid
-'node_modules/@fortawesome/fontawesome-free/scss/fontawesome', // Font Awesome 5 Default
-'node_modules/imagehover.css/scss/imagehover' // Imagehover SCSS
+'node_modules/@fortawesome/fontawesome-free/scss/fontawesome' // Font Awesome 5 Default
 ;
 
 ```

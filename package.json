@@ -26,10 +26,8 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
     "@zeit/next-sass": "^1.0.1",
-    "autoprefixer": "^9.7.4",
     "bootstrap": "^4.4.1",
     "cssnano": "^4.1.10",
-    "imagehover.css": "^2.0.0",
     "next": "9.2.1",
     "next-redux-wrapper": "^5.0.0",
     "node-sass": "^4.13.1",

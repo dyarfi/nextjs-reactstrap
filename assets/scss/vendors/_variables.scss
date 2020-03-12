@@ -100,18 +100,3 @@ $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
-/*! ========== ImageHover ========== */
-// ImageHover Output
-$output-bourbon-deprecation-warnings: false !default;
-
-// ImageHover Settings
-$image-bg:             rgba(#919191,.75) !default;
-$figcaption-bg:        rgba(#666666,.75) !default;
-// $figcaption-padding:   28px 15px!default;
-// $text-color:           #ffffff !default;
-// /$border-color:         #ffffff !default;
-// $border-margin:        5px !default;
-// $border-width:         4px !default;
-$transition-duration:  0.35s !default;
-$shift-distance:       10px !default;
-

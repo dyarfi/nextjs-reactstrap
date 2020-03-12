@@ -15,7 +15,7 @@ const HomePage = memo(props => {
           <div className="lead my-5">
             <Row className="text-center mx-auto my-5">
               <Col className="my-3">
-                <i class="fab fa-bootstrap fa-8x text-primary"></i>
+                <i className="fab fa-bootstrap fa-8x text-primary"></i>
               </Col>
               <Col className="my-3">
                 <i className="fab fa-sass fa-8x text-danger"></i>
