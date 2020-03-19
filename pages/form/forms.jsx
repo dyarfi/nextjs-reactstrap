@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import MainLayout from "../../layout/MainLayout";
-import FormsContainer from "../../components/container/form/FormsContainer";
-import HeadHome from "../../components/HeadDefault";
+import MainLayout from '../../layout/MainLayout';
+import FormsContainer from '../../components/container/form/FormsContainer';
+import HeadDefault from '../../layout/head/HeadDefault';
 
 class Forms extends React.Component {
   constructor(props) {
@@ -13,16 +13,14 @@ class Forms extends React.Component {
   static async getInitialProps(props) {
     const { store, isServer, req, res } = props.ctx;
 
-    // console.log(storeLayout);
-    // return { storeLayout };
   }
 
   render() {
     const { dispatch, storeLayout } = this.props;
     return (
       <>
-        <HeadHome title="Forms" />
-        <MainLayout>
+        <HeadDefault title="Forms" />
+        <MainLayout activeLink="forms">
           <FormsContainer />
         </MainLayout>
       </>

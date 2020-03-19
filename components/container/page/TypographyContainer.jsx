@@ -1,14 +1,14 @@
 /** npm packages */
-import React from "react";
+import React from 'react';
 // import propTypes from 'prop-types';
 
 /** components */
-import TypographyPage from "./TypographyPage";
+import TypographyPage from './TypographyPage';
 
 function TypographyContainer({ dispatch, storeLayout }) {
   const props = {
     dispatch,
-    storeLayout
+    storeLayout,
   };
 
   return <TypographyPage {...props} />;

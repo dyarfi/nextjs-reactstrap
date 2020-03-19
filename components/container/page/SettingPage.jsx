@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo } from 'react';
 import {
   Col,
   Row,
@@ -9,8 +9,8 @@ import {
   NavItem,
   NavLink,
   TabContent,
-  TabPane
-} from "reactstrap";
+  TabPane,
+} from 'reactstrap';
 import {
   Button,
   Form,
@@ -18,8 +18,8 @@ import {
   FormGroup,
   Label,
   Input,
-  FormText
-} from "reactstrap";
+  FormText,
+} from 'reactstrap';
 
 const SettingPage = memo(props => {
   const { isOpen, toggle } = props;
@@ -30,9 +30,9 @@ const SettingPage = memo(props => {
       <Nav tabs>
         <NavItem>
           <NavLink
-            className={isOpen === "1" ? "active" : ""}
+            className={isOpen === '1' ? 'active' : ''}
             onClick={() => {
-              toggle("1");
+              toggle('1');
             }}
           >
             Profile
@@ -40,9 +40,9 @@ const SettingPage = memo(props => {
         </NavItem>
         <NavItem>
           <NavLink
-            className={isOpen === "2" ? "active" : ""}
+            className={isOpen === '2' ? 'active' : ''}
             onClick={() => {
-              toggle("2");
+              toggle('2');
             }}
           >
             Contact
@@ -50,9 +50,9 @@ const SettingPage = memo(props => {
         </NavItem>
         <NavItem>
           <NavLink
-            className={isOpen === "3" ? "active" : ""}
+            className={isOpen === '3' ? 'active' : ''}
             onClick={() => {
-              toggle("3");
+              toggle('3');
             }}
           >
             Post
@@ -60,9 +60,9 @@ const SettingPage = memo(props => {
         </NavItem>
         <NavItem>
           <NavLink
-            className={isOpen === "4" ? "active" : ""}
+            className={isOpen === '4' ? 'active' : ''}
             onClick={() => {
-              toggle("4");
+              toggle('4');
             }}
           >
             Widget

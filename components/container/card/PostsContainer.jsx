@@ -1,14 +1,14 @@
 /** npm packages */
-import React from "react";
+import React from 'react';
 // import propTypes from 'prop-types';
 
 /** components */
-import PostsPage from "./PostsPage";
+import PostsPage from './PostsPage';
 
 function PostsContainer({ dispatch, storeLayout }) {
   const props = {
     dispatch,
-    storeLayout
+    storeLayout,
   };
 
   return <PostsPage {...props} />;

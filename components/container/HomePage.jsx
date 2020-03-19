@@ -1,7 +1,7 @@
-import React, { memo } from "react";
-import Link from "next/link";
-import { Row, Container, Button, Col, CardDeck, Card } from "reactstrap";
-import Loader from "../Loader";
+import React, { memo } from 'react';
+import Link from 'next/link';
+import { Row, Container, Button, Col, CardDeck, Card } from 'reactstrap';
+import Loader from '../../layout/Loader';
 
 const HomePage = memo(props => {
   return (
@@ -42,7 +42,7 @@ const HomePage = memo(props => {
                 <Link href="/page/documentation">
                   <a href="/page/documentation" className="text-light">
                     <h3>
-                      Documentation{" "}
+                      Documentation{' '}
                       <i className="fas fa-chevron-right align-self-center"></i>
                     </h3>
                     <p>Learn more about Next.js in the documentation.</p>

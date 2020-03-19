@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Collapse,
   Navbar,
@@ -11,8 +11,8 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText
-} from "reactstrap";
+  NavbarText,
+} from 'reactstrap';
 
 function NavBar({
   /* state vars */
@@ -20,7 +20,7 @@ function NavBar({
   isToggled,
   /* toggles */
   toggle,
-  toggleLeft
+  toggleLeft,
 }) {
   return (
     <div>
@@ -36,7 +36,7 @@ function NavBar({
               <NavLink href="#" className="d-block" onClick={toggleLeft}>
                 <i
                   className={`fas fa-caret-square-${
-                    isToggled ? "left" : "right"
+                    isToggled ? 'left' : 'right'
                   }`}
                 ></i>
               </NavLink>
@@ -51,7 +51,7 @@ function NavBar({
               <DropdownMenu right>
                 <DropdownItem tag="div">
                   <NavLink href="/card/posts" className="text-primary">
-                    Posts
+                    Cards
                   </NavLink>
                 </DropdownItem>
                 <DropdownItem tag="div">

@@ -1,14 +1,14 @@
 /** npm packages */
-import React from "react";
+import React from 'react';
 // import propTypes from 'prop-types';
 
 /** components */
-import DocumentationPage from "./DocumentationPage";
+import DocumentationPage from './DocumentationPage';
 
 function DocumentationContainer({ dispatch, storeLayout }) {
   const props = {
     dispatch,
-    storeLayout
+    storeLayout,
   };
 
   return <DocumentationPage {...props} />;

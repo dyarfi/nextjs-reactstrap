@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import MainLayout from "../../layout/MainLayout";
-import PostsContainer from "../../components/container/card/PostsContainer";
-import HeadDefault from "../../components/HeadDefault";
+import MainLayout from '../../layout/MainLayout';
+import PostsContainer from '../../components/container/card/PostsContainer';
+import HeadDefault from '../../layout/head/HeadDefault';
 
 class Posts extends React.Component {
   constructor(props) {
@@ -12,9 +12,6 @@ class Posts extends React.Component {
 
   static async getInitialProps(props) {
     const { store, isServer, req, res } = props.ctx;
-
-    // console.log(storeLayout);
-    // return { storeLayout };
   }
 
   render() {
@@ -22,7 +19,11 @@ class Posts extends React.Component {
     return (
       <>
         <HeadDefault title="Posts" />
-        <MainLayout dispatch={dispatch} storeLayout={storeLayout}>
+        <MainLayout
+          dispatch={dispatch}
+          storeLayout={storeLayout}
+          activeLink="cards"
+        >
           <PostsContainer dispatch={dispatch} storeLayout={storeLayout} />
         </MainLayout>
       </>

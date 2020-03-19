@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import MainLayout from "../../layout/MainLayout";
-import ProfileContainer from "../../components/container/page/ProfileContainer";
-import HeadHome from "../../components/HeadDefault";
+import MainLayout from '../../layout/MainLayout';
+import ProfileContainer from '../../components/container/page/ProfileContainer';
+import HeadDefault from '../../layout/head/HeadDefault';
 
 class Profile extends React.Component {
   constructor(props) {
@@ -18,7 +18,7 @@ class Profile extends React.Component {
     const { dispatch, storeLayout } = this.props;
     return (
       <>
-        <HeadHome title="Profile" />
+        <HeadDefault title="Profile" />
         <MainLayout>
           <ProfileContainer />
         </MainLayout>

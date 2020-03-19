@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import MainLayout from "../../layout/MainLayout";
-import TableContainer from "../../components/container/table/TableContainer";
-import HeadHome from "../../components/HeadDefault";
+import MainLayout from '../../layout/MainLayout';
+import TableContainer from '../../components/container/table/TableContainer';
+import HeadDefault from '../../layout/head/HeadDefault';
 
 class Tables extends React.Component {
   constructor(props) {
@@ -13,16 +13,18 @@ class Tables extends React.Component {
   static async getInitialProps(props) {
     const { store, isServer, req, res } = props.ctx;
 
-    // console.log(storeLayout);
-    // return { storeLayout };
   }
 
   render() {
     const { dispatch, storeLayout } = this.props;
     return (
       <>
-        <HeadHome title="Tables" />
-        <MainLayout dispatch={dispatch} storeLayout={storeLayout}>
+        <HeadDefault title="Tables" />
+        <MainLayout
+          dispatch={dispatch}
+          storeLayout={storeLayout}
+          activeLink="tables"
+        >
           <TableContainer dispatch={dispatch} storeLayout={storeLayout} />
         </MainLayout>
       </>

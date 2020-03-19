@@ -1,21 +1,21 @@
-import React, { useState, useEffect, memo } from "react";
-import { connect } from "react-redux";
-import { Container, Row, Col } from "reactstrap";
+import React, { useState, useEffect, memo } from 'react';
+import { connect } from 'react-redux';
+import { Container, Row, Col } from 'reactstrap';
 
 /* Actions */
-import ACTION_TYPES from "../store/actionTypes";
+import ACTION_TYPES from '../store/actionTypes';
 
 /* Components */
-import NavLeft from "../components/NavLeft";
-import NavBar from "../components/navbar/NavBar";
-import Footer from "../components/Footer";
+import NavLeft from './nav/NavLeft';
+import NavBar from './nav/NavBar';
+import Footer from './foot/Footer';
 
 function MainLayout(mainProps) {
-  const { children, dispatch, storeLayout } = mainProps;
+  const { children, dispatch, storeLayout, activeLink } = mainProps;
 
   /* layout vars */
-  const wideNav = { width: "240px" };
-  const wideContent = { marginLeft: "240px" };
+  const wideNav = { width: '240px' };
+  const wideContent = { marginLeft: '240px' };
 
   const [isOpen, setIsOpen] = useState(false);
   const [isToggled, setIsToggled] = useState(false);
@@ -34,7 +34,7 @@ function MainLayout(mainProps) {
     }
     dispatch({
       type: ACTION_TYPES.LAYOUT.TOGGLE,
-      toggle: isToggled
+      toggle: isToggled,
     });
   };
 
@@ -44,7 +44,8 @@ function MainLayout(mainProps) {
     isToggled,
     /* toggles */
     toggle,
-    toggleLeft
+    toggleLeft,
+    activeLink,
   };
 
   return (
@@ -53,7 +54,7 @@ function MainLayout(mainProps) {
       <Container fluid className="wrapper">
         <Row>
           <Col className="wrapper-left" style={isWideNav}>
-            <NavLeft />
+            <NavLeft activeLink={activeLink} />
           </Col>
           <Col className="wrapper-content" style={isWideContent}>
             {children}

@@ -1,5 +1,5 @@
-import React, { memo } from "react";
-import { Col, Row, Table } from "reactstrap";
+import React, { memo } from 'react';
+import { Col, Row, Table } from 'reactstrap';
 
 const TablePage = memo(props => {
   const { dispatch, storeLayout } = props;

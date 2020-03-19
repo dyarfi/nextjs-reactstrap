@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import MainLayout from "../../layout/MainLayout";
-import CarouselsContainer from "../../components/container/carousel/CarouselsContainer";
-import HeadDefault from "../../components/HeadDefault";
+import MainLayout from '../../layout/MainLayout';
+import CarouselsContainer from '../../components/container/carousel/CarouselsContainer';
+import HeadDefault from '../../layout/head/HeadDefault';
 
 class Carousels extends React.Component {
   constructor(props) {
@@ -13,8 +13,6 @@ class Carousels extends React.Component {
   static async getInitialProps(props) {
     const { store, isServer, req, res } = props.ctx;
 
-    // console.log(storeLayout);
-    // return { storeLayout };
   }
 
   render() {
@@ -23,7 +21,7 @@ class Carousels extends React.Component {
     return (
       <>
         <HeadDefault title="Carousels" />
-        <MainLayout>
+        <MainLayout activeLink="carousels">
           <CarouselsContainer />
         </MainLayout>
       </>

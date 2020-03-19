@@ -1,12 +1,12 @@
 /** npm packages */
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 // import propTypes from 'prop-types';
 
 /** components */
-import LoginPage from "./LoginPage";
+import LoginPage from './LoginPage';
 
 function LoginContainer({ dispatch, storeLayout }) {
-  const [isOpen, setIsOpen] = useState("1");
+  const [isOpen, setIsOpen] = useState('1');
   const toggle = e => setIsOpen(e);
 
   const props = {
@@ -14,7 +14,7 @@ function LoginContainer({ dispatch, storeLayout }) {
     storeLayout,
     /* states */
     isOpen,
-    toggle
+    toggle,
   };
 
   return <LoginPage {...props} />;

@@ -1,10 +1,9 @@
 /* eslint-disable no-unused-vars */
 /** npm packages */
-import React, { Component } from "react";
-import propTypes from "prop-types";
-// import Head from "next/document";
-import Head from "next/head";
-import { THEME } from "../constants/vars";
+import React, { Component } from 'react';
+import propTypes from 'prop-types';
+import Head from 'next/head';
+import { THEME } from '../../constants/vars';
 
 function HeadDefault({
   title,
@@ -14,7 +13,7 @@ function HeadDefault({
   ogDescription,
   ogImageUrl,
   ogImageAlt,
-  ogUrl
+  ogUrl,
 }) {
   return (
     <Head>

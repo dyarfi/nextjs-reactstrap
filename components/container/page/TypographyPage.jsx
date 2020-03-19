@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo } from 'react';
 import {
   Container,
   Row,
@@ -10,8 +10,8 @@ import {
   FormGroup,
   Label,
   Input,
-  Button
-} from "reactstrap";
+  Button,
+} from 'reactstrap';
 
 const TypographyPage = memo(props => {
   return (
@@ -79,27 +79,27 @@ const TypographyPage = memo(props => {
               <p className="my-4">
                 <span className="text-muted mr-2">Hidden Icons</span>
                 <Button className="btn btn-danger btn-sm btn-square btn-hidden">
-                  <i className="fas fa-eye"></i>{" "}
+                  <i className="fas fa-eye"></i>{' '}
                   <span className="links">Read More</span>
                 </Button>
                 <Button className="btn btn-danger btn-sm btn-square btn-hidden">
-                  <i className="fas fa-trash"></i>{" "}
+                  <i className="fas fa-trash"></i>{' '}
                   <span className="links">Delete</span>
                 </Button>
                 <Button className="btn btn-danger btn-sm btn-square btn-hidden">
-                  <i className="fas fa-chevron-left"></i>{" "}
+                  <i className="fas fa-chevron-left"></i>{' '}
                   <span className="links">Submit</span>
                 </Button>
                 <Button className="btn btn-danger btn-sm btn-square btn-hidden">
-                  <i className="fab fa-facebook"></i>{" "}
+                  <i className="fab fa-facebook"></i>{' '}
                   <span className="links">Post</span>
                 </Button>
                 <Button className="btn btn-danger btn-sm btn-square btn-hidden">
-                  <i className="fab fa-twitter"></i>{" "}
+                  <i className="fab fa-twitter"></i>{' '}
                   <span className="links">Twit</span>
                 </Button>
                 <Button className="btn btn-danger btn-sm btn-square btn-hidden">
-                  <i className="fab fa-github"></i>{" "}
+                  <i className="fab fa-github"></i>{' '}
                   <span className="links">Commit</span>
                 </Button>
               </p>

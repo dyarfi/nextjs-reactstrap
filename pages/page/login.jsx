@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import SingleLayout from "../../layout/SingleLayout";
-import LoginContainer from "../../components/container/page/LoginContainer";
-import HeadHome from "../../components/HeadDefault";
+import SingleLayout from '../../layout/SingleLayout';
+import LoginContainer from '../../components/container/page/LoginContainer';
+import HeadDefault from '../../layout/head/HeadDefault';
 
 class Profile extends React.Component {
   constructor(props) {
@@ -18,7 +18,7 @@ class Profile extends React.Component {
     const { dispatch, storeLayout } = this.props;
     return (
       <>
-        <HeadHome title="Profile" />
+        <HeadDefault title="Profile" />
         <SingleLayout>
           <LoginContainer />
         </SingleLayout>

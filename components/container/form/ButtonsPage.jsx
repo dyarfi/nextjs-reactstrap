@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo } from 'react';
 import {
   Badge,
   Button,
@@ -8,8 +8,8 @@ import {
   Dropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem
-} from "reactstrap";
+  DropdownItem,
+} from 'reactstrap';
 
 const ButtonsPage = memo(props => {
   const {
@@ -23,7 +23,7 @@ const ButtonsPage = memo(props => {
     setStateDropRight,
     stateDropRightAlign,
     setStateDropRightAlign,
-    toggle
+    toggle,
   } = props;
 
   return (
@@ -67,19 +67,19 @@ const ButtonsPage = memo(props => {
         <div>
           <Button outline color="primary">
             primary
-          </Button>{" "}
+          </Button>{' '}
           <Button outline color="secondary">
             secondary
-          </Button>{" "}
+          </Button>{' '}
           <Button outline color="success">
             success
-          </Button>{" "}
+          </Button>{' '}
           <Button outline color="info">
             info
-          </Button>{" "}
+          </Button>{' '}
           <Button outline color="warning">
             warning
-          </Button>{" "}
+          </Button>{' '}
           <Button outline color="danger">
             danger
           </Button>
@@ -87,19 +87,19 @@ const ButtonsPage = memo(props => {
         <div className="my-3">
           <Button outline color="primary" className="btn-ghost-light">
             rounded <Badge color="primary">2</Badge>
-          </Button>{" "}
+          </Button>{' '}
           <Button outline color="secondary" className="btn-ghost-light">
             secondary <Badge color="secondary">4</Badge>
-          </Button>{" "}
+          </Button>{' '}
           <Button outline color="success" className="btn-ghost-light">
             success
-          </Button>{" "}
+          </Button>{' '}
           <Button outline color="info" className="btn-ghost-light">
             info
-          </Button>{" "}
+          </Button>{' '}
           <Button outline color="warning" className="btn-ghost-light">
             warning
-          </Button>{" "}
+          </Button>{' '}
           <Button outline color="danger" className="btn-ghost-light">
             danger
           </Button>
@@ -108,45 +108,45 @@ const ButtonsPage = memo(props => {
         <div>
           <Button outline color="primary">
             <i className="fab fa-facebook"></i> primary
-          </Button>{" "}
+          </Button>{' '}
           <Button outline color="secondary">
             <i className="fab fa-github"></i> secondary
-          </Button>{" "}
+          </Button>{' '}
           <Button outline color="success">
             <i className="fab fa-twitter"></i> success
-          </Button>{" "}
+          </Button>{' '}
           <Button outline color="info">
             <i className="fab fa-linkedin"></i> info
-          </Button>{" "}
+          </Button>{' '}
           <Button outline color="warning">
             <i className="fab fa-yelp"></i> warning
-          </Button>{" "}
+          </Button>{' '}
           <Button outline color="danger">
             <i className="fab fa-yahoo"></i> danger
           </Button>
           <div className="my-2">
             <Button className="btn btn-danger btn-sm btn-square btn-hidden">
-              <i className="fas fa-eye"></i>{" "}
+              <i className="fas fa-eye"></i>{' '}
               <span className="links">Read More</span>
             </Button>
             <Button className="btn btn-danger btn-sm btn-square btn-hidden">
-              <i className="fas fa-trash"></i>{" "}
+              <i className="fas fa-trash"></i>{' '}
               <span className="links">Delete</span>
             </Button>
             <Button className="btn btn-danger btn-sm btn-square btn-hidden">
-              <i className="fas fa-chevron-left"></i>{" "}
+              <i className="fas fa-chevron-left"></i>{' '}
               <span className="links">Submit</span>
             </Button>
             <Button className="btn btn-danger btn-sm btn-square btn-hidden">
-              <i className="fab fa-facebook"></i>{" "}
+              <i className="fab fa-facebook"></i>{' '}
               <span className="links">Post</span>
             </Button>
             <Button className="btn btn-danger btn-sm btn-square btn-hidden">
-              <i className="fab fa-twitter"></i>{" "}
+              <i className="fab fa-twitter"></i>{' '}
               <span className="links">Twit</span>
             </Button>
             <Button className="btn btn-danger btn-sm btn-square btn-hidden">
-              <i className="fab fa-github"></i>{" "}
+              <i className="fab fa-github"></i>{' '}
               <span className="links">Commit</span>
             </Button>
           </div>

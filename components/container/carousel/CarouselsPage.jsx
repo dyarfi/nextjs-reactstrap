@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo } from 'react';
 import {
   Row,
   Col,
@@ -6,8 +6,8 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption
-} from "reactstrap";
+  CarouselCaption,
+} from 'reactstrap';
 
 const CarouselsPage = memo(props => {
   const {
@@ -17,7 +17,7 @@ const CarouselsPage = memo(props => {
     setAnimating,
     next,
     previous,
-    goToIndex
+    goToIndex,
   } = props;
 
   const slides = SLIDES.carousels.map(item => {

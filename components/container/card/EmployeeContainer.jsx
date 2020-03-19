@@ -1,21 +1,22 @@
 /** npm packages */
-import React from "react";
-// import propTypes from 'prop-types';
+import React from 'react';
+import propTypes from 'prop-types';
 
 /** components */
-import EmployeePage from "./EmployeePage";
+import EmployeePage from './EmployeePage';
 
-function EmployeeContainer({ dispatch, storeLayout }) {
+function EmployeeContainer({ dispatch, storeLayout, id }) {
   const props = {
     dispatch,
-    storeLayout
+    storeLayout,
+    id,
   };
 
   return <EmployeePage {...props} />;
 }
 
-// EmployeeContainer.propTypes = {
-//   isMobile: propTypes.bool.isRequired,
-// };
+EmployeeContainer.propTypes = {
+  id: propTypes.number,
+};
 
 export default EmployeeContainer;

@@ -1,12 +1,11 @@
-import React from "react";
-import Link from "next/link";
-// import { Navbar } from "reactstrap";
+import React from 'react';
+import Link from 'next/link';
 
-const links = [{ href: "/page/documentation", label: "Documentation" }].map(
+const links = [{ href: '/page/documentation', label: 'Documentation' }].map(
   link => ({
     ...link,
-    key: `Footer-link-${link.href}-${link.label}`
-  })
+    key: `Footer-link-${link.href}-${link.label}`,
+  }),
 );
 
 function Footer() {
@@ -19,7 +18,7 @@ function Footer() {
           </Link>
         </li>
         <li>
-          <small className="text-muted">Copyright 2020 | dykraf.com</small>
+          <small className="text-muted">Copyright 2020 | dyarfi.github.io</small>
         </li>
         {links.map(({ key, href, label }) => (
           <li key={key}>

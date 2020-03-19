@@ -1,12 +1,12 @@
 /** npm packages */
-import React, { useState } from "react";
+import React, { useState } from 'react';
 // import propTypes from 'prop-types';
 
 /** components */
-import CarouselsPage from "./CarouselsPage";
+import CarouselsPage from './CarouselsPage';
 
 /* slides */
-import { SLIDES } from "../../../constants/slides";
+import { SLIDES } from '../../../constants/slides';
 
 function CarouselsContainer({ dispatch, storeLayout }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -40,7 +40,7 @@ function CarouselsContainer({ dispatch, storeLayout }) {
     setAnimating,
     next,
     previous,
-    goToIndex
+    goToIndex,
   };
 
   return <CarouselsPage {...props} />;

@@ -178,13 +178,8 @@ footer[class=footer-main] {
 // 		border-left: .4em solid transparent;
 //     }
 // }
-.dropdown-menu:not([x-placement]) {
-    // visibility: hidden;
-	// opacity: 0;
-	// border-radius:.2rem;
-    // border: 0;  	
+.dropdown-menu:not([x-placement]) {     	
     &.show {
-        // border: 0;
         @extend %shadow-md;	
     }	   
 }
@@ -198,9 +193,19 @@ footer[class=footer-main] {
         background-color:transparent;
         border:0;
         text-decoration: none;
+        .dropdown-toggle {
+            text-decoration: none;
+        }
         i {
             margin-right: .25rem;
             color: $dark;
         }
-    }
+        &.active {
+            background-color:$primary !important;
+            color:$white !important;
+            i {
+                color:$white !important;
+            }
+        }
+    }    
 }

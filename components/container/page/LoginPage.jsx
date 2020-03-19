@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo } from 'react';
 import {
   Card,
   CardBody,
@@ -6,8 +6,8 @@ import {
   FormGroup,
   Label,
   Input,
-  Button
-} from "reactstrap";
+  Button,
+} from 'reactstrap';
 
 const LoginPage = memo(props => {
   const { isOpen, toggle } = props;

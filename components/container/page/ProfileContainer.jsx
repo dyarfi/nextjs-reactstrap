@@ -1,14 +1,14 @@
 /** npm packages */
-import React from "react";
+import React from 'react';
 // import propTypes from 'prop-types';
 
 /** components */
-import ProfilePage from "./ProfilePage";
+import ProfilePage from './ProfilePage';
 
 function ProfileContainer({ dispatch, storeLayout }) {
   const props = {
     dispatch,
-    storeLayout
+    storeLayout,
   };
 
   return <ProfilePage {...props} />;

@@ -8,15 +8,16 @@
 
 ### Add Bootstrap and Reactstrap to the project
 
-`$ yarn add redux react-redux next-redux-wrapper bootstrap reactstrap @zeit/next-sass node-sass cssnano @fortawesome/fontawesome-free imagehover.css`
+`$ yarn add redux react-redux next-redux-wrapper prop-types bootstrap reactstrap @zeit/next-sass node-sass cssnano @fortawesome/fontawesome-free`
 
 Add dev dependencies
-`$ yarn add --dev redux-devtools-extension prettier babel-eslint`
+`$ yarn add --dev redux-devtools-extension prettier`
+
+> Adding chrome redux dev tool for debugging and pretier for code formatting
 
 ### Our project tree directory
 
 ```
-.
 ├── README.md
 ├── assets
 │   └── scss
@@ -36,54 +37,60 @@ Add dev dependencies
 │           ├── _variables.scss
 │           └── vendor.scss
 ├── components
-│   ├── Footer.jsx
-│   ├── HeadDefault.jsx
-│   ├── Loader.jsx
-│   ├── Nav.jsx
-│   ├── NavLeft.jsx
-│   ├── container
-│   │   ├── HomeContainer.jsx
-│   │   ├── HomePage.jsx
-│   │   ├── card
-│   │   │   ├── EmployeeContainer.jsx
-│   │   │   ├── EmployeePage.jsx
-│   │   │   ├── PostsContainer.jsx
-│   │   │   └── PostsPage.jsx
-│   │   ├── carousel
-│   │   │   ├── CarouselsContainer.jsx
-│   │   │   └── CarouselsPage.jsx
-│   │   ├── dashboard
-│   │   │   ├── DashboardContainer.jsx
-│   │   │   └── DashboardPage.jsx
-│   │   ├── form
-│   │   │   ├── ButtonsContainer.jsx
-│   │   │   ├── ButtonsPage.jsx
-│   │   │   ├── FormsContainer.jsx
-│   │   │   └── FormsPage.jsx
-│   │   ├── page
-│   │   │   ├── DocumentationContainer.jsx
-│   │   │   ├── DocumentationPage.jsx
-│   │   │   ├── LoginContainer.jsx
-│   │   │   ├── LoginPage.jsx
-│   │   │   ├── ProfileContainer.jsx
-│   │   │   ├── ProfilePage.jsx
-│   │   │   ├── SettingContainer.jsx
-│   │   │   ├── SettingPage.jsx
-│   │   │   ├── TypographyContainer.jsx
-│   │   │   └── TypographyPage.jsx
-│   │   └── table
-│   │       ├── TableContainer.jsx
-│   │       └── TablePage.jsx
-│   └── navbar
-│       └── NavBar.jsx
+│   ├── card
+│   │   ├── EmployeeCard.jsx
+│   │   ├── MenuCard.jsx
+│   │   ├── PostCard.jsx
+│   │   ├── ProfileCard.jsx
+│   │   └── index.js
+│   └── container
+│       ├── HomeContainer.jsx
+│       ├── HomePage.jsx
+│       ├── card
+│       │   ├── EmployeeContainer.jsx
+│       │   ├── EmployeePage.jsx
+│       │   ├── PostsContainer.jsx
+│       │   └── PostsPage.jsx
+│       ├── carousel
+│       │   ├── CarouselsContainer.jsx
+│       │   └── CarouselsPage.jsx
+│       ├── dashboard
+│       │   ├── DashboardContainer.jsx
+│       │   └── DashboardPage.jsx
+│       ├── form
+│       │   ├── ButtonsContainer.jsx
+│       │   ├── ButtonsPage.jsx
+│       │   ├── FormsContainer.jsx
+│       │   └── FormsPage.jsx
+│       ├── page
+│       │   ├── DocumentationContainer.jsx
+│       │   ├── DocumentationPage.jsx
+│       │   ├── LoginContainer.jsx
+│       │   ├── LoginPage.jsx
+│       │   ├── ProfileContainer.jsx
+│       │   ├── ProfilePage.jsx
+│       │   ├── SettingContainer.jsx
+│       │   ├── SettingPage.jsx
+│       │   ├── TypographyContainer.jsx
+│       │   └── TypographyPage.jsx
+│       └── table
+│           ├── TableContainer.jsx
+│           └── TablePage.jsx
 ├── constants
 │   ├── cards.js
 │   ├── slides.js
 │   └── vars.js
 ├── layout
 │   ├── ErrorLayout.jsx
+│   ├── Footer.jsx
+│   ├── Loader.jsx
 │   ├── MainLayout.jsx
-│   └── SingleLayout.jsx
+│   ├── SingleLayout.jsx
+│   ├── head
+│   │   └── HeadDefault.jsx
+│   └── nav
+│       ├── NavBar.jsx
+│       └── NavLeft.jsx
 ├── next.config.js
 ├── package.json
 ├── pages
@@ -155,7 +162,7 @@ Add dev dependencies
 │   └── statusTypes.js
 └── yarn.lock
 
-29 directories, 108 files
+31 directories, 112 files
 ```
 
 ### Add next.config.js in your project root and add NextJS withSass config
@@ -242,6 +249,7 @@ module.exports = {
     "next": "9.2.1",
     "next-redux-wrapper": "^5.0.0",
     "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-redux": "^7.2.0",

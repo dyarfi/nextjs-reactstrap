@@ -1,20 +1,20 @@
-import React from "react";
-import Link from "next/link";
-import { Row, Col } from "reactstrap";
+import React from 'react';
+import Link from 'next/link';
+import { Row, Col } from 'reactstrap';
 
-import ErrorLayout from "../layout/ErrorLayout";
-import HeadHome from "../components/HeadDefault";
+import ErrorLayout from '../layout/ErrorLayout';
+import HeadDefault from '../layout/head/HeadDefault';
 function Error({ statusCode }) {
   return (
     <>
-      <HeadHome title={`Page not Found - ${statusCode}`} />
+      <HeadDefault title={`Page not Found - ${statusCode}`} />
       <ErrorLayout>
         <Row>
           <Col>
             <h2 className="text-warning">
               {statusCode
                 ? `An error ${statusCode} occurred on server`
-                : "An error occurred on client"}
+                : 'An error occurred on client'}
             </h2>
             <span className="small clearfix d-block text-center my-2">
               <Link href="/">

@@ -100,3 +100,10 @@ $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
+$component-active-color: $white !default;
+$component-active-bg: $brand-color !default;
+
+// $list-group-hover-bg:               $gray-100 !default;
+// $list-group-active-color:           $component-active-color !default;
+// $list-group-active-bg:              $component-active-bg !default;
+// $list-group-active-border-color:    $list-group-active-bg !default;

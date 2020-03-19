@@ -1,14 +1,14 @@
 /** npm packages */
-import React from "react";
+import React from 'react';
 // import propTypes from 'prop-types';
 
 /** components */
-import TablePage from "./TablePage";
+import TablePage from './TablePage';
 
 function TableContainer({ dispatch, storeLayout }) {
   const props = {
     dispatch,
-    storeLayout
+    storeLayout,
   };
 
   return <TablePage {...props} />;

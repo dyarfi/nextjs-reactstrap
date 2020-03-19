@@ -1,6 +1,6 @@
-import React, { memo, useState } from "react";
+import React, { memo, useState } from 'react';
 
-import Link from "next/link";
+import Link from 'next/link';
 import {
   Row,
   Col,
@@ -9,8 +9,8 @@ import {
   Label,
   Button,
   Input,
-  FormText
-} from "reactstrap";
+  FormText,
+} from 'reactstrap';
 
 const FormsPage = memo(props => {
   return (
@@ -153,7 +153,7 @@ const FormsPage = memo(props => {
             </FormGroup>
             <FormGroup check className="mb-3">
               <Label check>
-                <Input type="checkbox" name="terms" /> Agree{" "}
+                <Input type="checkbox" name="terms" /> Agree{' '}
                 <Link href="/terms">
                   <a>terms </a>
                 </Link>

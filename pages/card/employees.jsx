@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import MainLayout from "../../layout/MainLayout";
-import EmployeeContainer from "../../components/container/card/EmployeeContainer";
-import HeadDefault from "../../components/HeadDefault";
+import MainLayout from '../../layout/MainLayout';
+import EmployeeContainer from '../../components/container/card/EmployeeContainer';
+import HeadDefault from '../../layout/head/HeadDefault';
 class Employees extends React.Component {
   constructor(props) {
     super(props);
@@ -10,19 +10,23 @@ class Employees extends React.Component {
   }
 
   static async getInitialProps(props) {
-    const { store, isServer, req, res } = props.ctx;
+    const { store, isServer, req, res, query } = props.ctx;
+    const { id } = query;
 
-    // console.log(storeLayout);
-    // return { storeLayout };
+    return { id };
   }
 
   render() {
-    const { dispatch, storeLayout } = this.props;
+    const { dispatch, storeLayout, id } = this.props;
     return (
       <>
         <HeadDefault title="Employees" />
-        <MainLayout dispatch={dispatch} storeLayout={storeLayout}>
-          <EmployeeContainer dispatch={dispatch} storeLayout={storeLayout} />
+        <MainLayout activeLink="employees" dispatch={dispatch} storeLayout={storeLayout}>
+          <EmployeeContainer
+            dispatch={dispatch}
+            storeLayout={storeLayout}
+            id={id}
+          />
         </MainLayout>
       </>
     );

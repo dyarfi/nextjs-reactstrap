@@ -1,9 +1,9 @@
 /** npm packages */
-import React, { useState } from "react";
+import React, { useState } from 'react';
 // import propTypes from 'prop-types';
 
 /** components */
-import ButtonsPage from "./ButtonsPage";
+import ButtonsPage from './ButtonsPage';
 
 function ButtonsContainer({ dispatch, storeLayout }) {
   const [stateDropUp, setStateDropUp] = useState(false);
@@ -26,7 +26,7 @@ function ButtonsContainer({ dispatch, storeLayout }) {
     setStateDropRight,
     stateDropRightAlign,
     setStateDropRightAlign,
-    toggle
+    toggle,
   };
 
   return <ButtonsPage {...props} />;

@@ -1,8 +1,7 @@
-import React from "react";
+import React from 'react';
 
 function Loader(props) {
   return (
-    // <!-- Preloader -->
     <div id="preloader">
       <div class="bouncing-loader">
         <div></div>
