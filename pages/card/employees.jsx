@@ -20,8 +20,15 @@ class Employees extends React.Component {
     const { dispatch, storeLayout, id } = this.props;
     return (
       <>
-        <HeadDefault title="Employees" />
-        <MainLayout activeLink="employees" dispatch={dispatch} storeLayout={storeLayout}>
+        <HeadDefault
+          title="Employees | Next.JS with Reactstrap (React dashboard web application)"
+          description="NextJS with Reactstrap components with SCSS library, a NextJS dashboard template."
+        />
+        <MainLayout
+          activeLink="employees"
+          dispatch={dispatch}
+          storeLayout={storeLayout}
+        >
           <EmployeeContainer
             dispatch={dispatch}
             storeLayout={storeLayout}

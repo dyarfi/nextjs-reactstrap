@@ -12,14 +12,16 @@ class Buttons extends React.Component {
 
   static async getInitialProps(props) {
     const { store, isServer, req, res } = props.ctx;
-
   }
 
   render() {
     const { dispatch, storeLayout } = this.props;
     return (
       <>
-        <HeadDefault title="Buttons" />
+        <HeadDefault
+          title="Buttons | Next.JS with Reactstrap (React dashboard web application)"
+          description="NextJS with Reactstrap components with SCSS library, a NextJS dashboard template."
+        />
         <MainLayout
           dispatch={dispatch}
           storeLayout={storeLayout}

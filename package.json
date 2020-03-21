@@ -12,11 +12,11 @@
   "license": "Unlicense",
   "author": {
     "name": "Defrian Yarfi",
-    "email": "dyarfi20@gmail.com",
-    "url": "https://dykraf.com/"
+    "email": "defrian.yarfi@gmail.com",
+    "url": "https://dyarfi.github.io/"
   },
   "contributors": [
-    "defrian <dyarfi20@gmail.com> (https://dykraf.com/)"
+    "defrian <dyarfi20@gmail.com> (https://dyarfi.github.io/)"
   ],
   "scripts": {
     "dev": "next dev -p 3001",

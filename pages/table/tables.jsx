@@ -12,14 +12,16 @@ class Tables extends React.Component {
 
   static async getInitialProps(props) {
     const { store, isServer, req, res } = props.ctx;
-
   }
 
   render() {
     const { dispatch, storeLayout } = this.props;
     return (
       <>
-        <HeadDefault title="Tables" />
+        <HeadDefault
+          title="Tables | Next.JS with Reactstrap (React dashboard web application)"
+          description="NextJS with Reactstrap components with SCSS library, a NextJS dashboard template."
+        />
         <MainLayout
           dispatch={dispatch}
           storeLayout={storeLayout}

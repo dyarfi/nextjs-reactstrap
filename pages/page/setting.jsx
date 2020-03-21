@@ -12,15 +12,17 @@ class Setting extends React.Component {
 
   static async getInitialProps(props) {
     const { store, isServer, req, res } = props.ctx;
-
   }
 
   render() {
     const { dispatch, storeLayout } = this.props;
     return (
       <>
-        <HeadDefault title="Setting" />
-        <MainLayout>
+        <HeadDefault
+          title="Setting | Next.JS with Reactstrap (React dashboard web application)"
+          description="NextJS with Reactstrap components with SCSS library, a NextJS dashboard template."
+        />
+        <MainLayout activeLink="page.setting">
           <SettingContainer />
         </MainLayout>
       </>

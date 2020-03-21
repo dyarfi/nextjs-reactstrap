@@ -698,6 +698,14 @@
 .icon-size-lg {
     font-size:$h1-font-size;
 }
+a.card-text.color-icons {
+	outline: none;
+	box-shadow: none;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 auto 1rem auto;
+	color: $text-muted;
+}
 .color-icons {
 	background-color: transparent;
 }

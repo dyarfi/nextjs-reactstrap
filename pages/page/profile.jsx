@@ -18,8 +18,11 @@ class Profile extends React.Component {
     const { dispatch, storeLayout } = this.props;
     return (
       <>
-        <HeadDefault title="Profile" />
-        <MainLayout>
+        <HeadDefault
+          title="Profile | Next.JS with Reactstrap (React dashboard web application)"
+          description="NextJS with Reactstrap components with SCSS library, a NextJS dashboard template."
+        />
+        <MainLayout activeLink="page.profile">
           <ProfileContainer />
         </MainLayout>
       </>

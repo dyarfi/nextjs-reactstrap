@@ -12,7 +12,6 @@ class Carousels extends React.Component {
 
   static async getInitialProps(props) {
     const { store, isServer, req, res } = props.ctx;
-
   }
 
   render() {
@@ -20,7 +19,10 @@ class Carousels extends React.Component {
 
     return (
       <>
-        <HeadDefault title="Carousels" />
+        <HeadDefault
+          title="Carousels | Next.JS with Reactstrap (React dashboard web application)"
+          description="NextJS with Reactstrap components with SCSS library, a NextJS dashboard template."
+        />
         <MainLayout activeLink="carousels">
           <CarouselsContainer />
         </MainLayout>

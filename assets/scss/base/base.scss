@@ -8,8 +8,9 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 600;
 }
 // Set default link focus outline
-.btn:focus, a:focus, button:focus {
+.btn:focus, .btn:active a:focus, button:focus {
     box-shadow: none !important;
+    outline: none !important;
 }
 .logo {
     width:78px;
@@ -193,19 +194,32 @@ footer[class=footer-main] {
         background-color:transparent;
         border:0;
         text-decoration: none;
+        transition: transform .25s ease;
+        transform: translateX(0);
         .dropdown-toggle {
             text-decoration: none;
         }
         i {
             margin-right: .25rem;
             color: $dark;
-        }
+        }        
         &.active {
             background-color:$primary !important;
             color:$white !important;
+            font-weight: $font-weight-bold;
             i {
                 color:$white !important;
             }
         }
+        [toggler] {
+            ul li.active .nav-link {
+                background-color:$primary !important;
+                color:$white !important;
+                font-weight: $font-weight-bold;
+            }
+        }
+        // &:hover {
+        //     transform: translateX(4px);
+        // }
     }    
 }

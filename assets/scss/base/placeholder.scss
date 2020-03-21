@@ -1,8 +1,10 @@
 /* --- Box Shadow --- */
 // -- Placeholder -- box shadow default
-%box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+%box-shadow { 
+	box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); 
+}
 %box-shadow-hover { 
-	box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+	@extend %box-shadow;
 	transition: box-shadow .5s ease;
 	&:hover {
 		box-shadow: .15rem .25rem .75rem rgba(0, 0, 0, .10); 

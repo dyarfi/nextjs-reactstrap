@@ -12,14 +12,16 @@ class Documentation extends React.Component {
 
   static async getInitialProps(props) {
     const { store, isServer, req, res } = props.ctx;
-
   }
 
   render() {
     const { dispatch, storeLayout } = this.props;
     return (
       <>
-        <HeadDefault title="Documentation" />
+        <HeadDefault
+          title="Documentation | Next.JS with Reactstrap (React dashboard web application)"
+          description="NextJS with Reactstrap components with SCSS library, a NextJS dashboard template."
+        />
         <MainLayout>
           <DocumentationContainer />
         </MainLayout>

@@ -18,7 +18,10 @@ class Posts extends React.Component {
     const { dispatch, storeLayout } = this.props;
     return (
       <>
-        <HeadDefault title="Posts" />
+        <HeadDefault
+          title="Posts | Next.JS with Reactstrap (React dashboard web application)"
+          description="NextJS with Reactstrap components with SCSS library, a NextJS dashboard template."
+        />
         <MainLayout
           dispatch={dispatch}
           storeLayout={storeLayout}

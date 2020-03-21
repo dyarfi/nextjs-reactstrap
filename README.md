@@ -18,6 +18,7 @@ Add dev dependencies
 ### Our project tree directory
 
 ```
+.
 ├── README.md
 ├── assets
 │   └── scss
@@ -39,6 +40,7 @@ Add dev dependencies
 ├── components
 │   ├── card
 │   │   ├── EmployeeCard.jsx
+│   │   ├── EmployeeVCard.jsx
 │   │   ├── MenuCard.jsx
 │   │   ├── PostCard.jsx
 │   │   ├── ProfileCard.jsx
@@ -78,14 +80,16 @@ Add dev dependencies
 │           └── TablePage.jsx
 ├── constants
 │   ├── cards.js
+│   ├── menus.js
 │   ├── slides.js
 │   └── vars.js
 ├── layout
 │   ├── ErrorLayout.jsx
-│   ├── Footer.jsx
 │   ├── Loader.jsx
 │   ├── MainLayout.jsx
 │   ├── SingleLayout.jsx
+│   ├── foot
+│   │   └── Footer.jsx
 │   ├── head
 │   │   └── HeadDefault.jsx
 │   └── nav
@@ -162,7 +166,7 @@ Add dev dependencies
 │   └── statusTypes.js
 └── yarn.lock
 
-31 directories, 112 files
+32 directories, 114 files
 ```
 
 ### Add next.config.js in your project root and add NextJS withSass config
@@ -217,57 +221,56 @@ module.exports = {
 
 ```
 {
-  "name": "nextjs-reactstrap",
-  "description": "NextJS with Reactstrap Dashboard",
-  "keywords": [
-    "NextJS",
-    "ReactJS",
-    "Reactstrap"
-  ],
-  "homepage": "https://github.com/dyarfi/nextjs-reactstrap",
-  "version": "0.1.0",
-  "private": false,
-  "license": "Unlicense",
-  "author": {
-    "name": "Defrian Yarfi",
-    "email": "dyarfi20@gmail.com",
-    "url": "https://dykraf.com/"
-  },
-  "contributors": [
-    "defrian <dyarfi20@gmail.com> (https://dykraf.com/)"
-  ],
-  "scripts": {
-    "dev": "next dev -p 3001",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.12.1",
-    "@zeit/next-sass": "^1.0.1",
-    "bootstrap": "^4.4.1",
-    "cssnano": "^4.1.10",
-    "next": "9.2.1",
-    "next-redux-wrapper": "^5.0.0",
-    "node-sass": "^4.13.1",
-    "prop-types": "^15.7.2",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "react-redux": "^7.2.0",
-    "reactstrap": "^8.4.1",
-    "redux": "^4.0.5"
-  },
-  "browserslist": [
-    ">0.3%",
-    "not ie 11",
-    "not dead",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "prettier": "^1.19.1",
-    "redux-devtools-extension": "^2.13.8"
+    "name": "nextjs-reactstrap",
+    "description": "NextJS with Reactstrap Dashboard",
+    "keywords": [
+      "NextJS",
+      "ReactJS",
+      "Reactstrap"
+    ],
+    "homepage": "https://github.com/dyarfi/nextjs-reactstrap",
+    "version": "0.1.0",
+    "private": false,
+    "license": "Unlicense",
+    "author": {
+      "name": "Defrian Yarfi",
+      "email": "defrian.yarfi@gmail.com",
+      "url": "https://dyarfi.github.io/"
+    },
+    "contributors": [
+      "defrian <dyarfi20@gmail.com> (https://dyarfi.github.io/)"
+    ],
+    "scripts": {
+      "dev": "next dev -p 3001",
+      "build": "next build",
+      "start": "next start"
+    },
+    "dependencies": {
+      "@fortawesome/fontawesome-free": "^5.12.1",
+      "@zeit/next-sass": "^1.0.1",
+      "bootstrap": "^4.4.1",
+      "cssnano": "^4.1.10",
+      "next": "9.2.1",
+      "next-redux-wrapper": "^5.0.0",
+      "node-sass": "^4.13.1",
+      "prop-types": "^15.7.2",
+      "react": "16.12.0",
+      "react-dom": "16.12.0",
+      "react-redux": "^7.2.0",
+      "reactstrap": "^8.4.1",
+      "redux": "^4.0.5"
+    },
+    "browserslist": [
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all"
+    ],
+    "devDependencies": {
+      "prettier": "^1.19.1",
+      "redux-devtools-extension": "^2.13.8"
+    }
   }
-}
 ```
 
 ### Start project development

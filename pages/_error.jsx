@@ -7,7 +7,10 @@ import HeadDefault from '../layout/head/HeadDefault';
 function Error({ statusCode }) {
   return (
     <>
-      <HeadDefault title={`Page not Found - ${statusCode}`} />
+      <HeadDefault
+        title={`Page not Found - ${statusCode} | Next.JS with Reactstrap (React dashboard web application)`}
+        description="NextJS with Reactstrap components with SCSS library, a NextJS dashboard template."
+      />
       <ErrorLayout>
         <Row>
           <Col>
