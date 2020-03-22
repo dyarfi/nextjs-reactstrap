@@ -6,6 +6,8 @@ import {
   CardDeck,
   Card,
   CardBody,
+  CardText,
+  Media,
   Form,
   FormGroup,
   Label,
@@ -268,6 +270,167 @@ const TypographyPage = memo(props => {
                 Submit <span className="badge badge-danger badge-pill">14</span>
               </Button>
             </div>
+          </Col>
+
+          <Col>
+            <Row>
+              <Media className="col-6 mt-4 pl-0">
+                <Media left href="#" className="col-4">
+                  <Media
+                    className="img-thumbnail img-fluid"
+                    src="/images/profile6.jpg"
+                    alt="Avatar"
+                  />
+                </Media>
+                <Media body className="col-8 pl-0">
+                  <Media heading tag="h5">
+                    Micah Immanuel
+                  </Media>
+                  <CardText>
+                    Hi, I already sent you the design to your email. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Maiores
+                    reiciendis libero in!
+                    <div className="mt-2">
+                      <a
+                        href="#"
+                        className="btn btn-sm btn-info rounded-circle mr-1"
+                      >
+                        <i className="fab fa-linkedin"></i>
+                      </a>
+                      <a
+                        href="#"
+                        className="btn btn-sm btn-dark rounded-circle mr-1"
+                      >
+                        <i className="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="#"
+                        className="btn btn-sm btn-primary rounded-circle mr-1"
+                      >
+                        <i className="fab fa-facebook"></i>
+                      </a>
+                    </div>
+                  </CardText>
+                </Media>
+              </Media>
+              <Media className="col-6 mt-4 pl-0">
+                <Media left href="#" className="col-4">
+                  <Media
+                    className="img-thumbnail img-fluid"
+                    src="/images/profile6.jpg"
+                    alt="Avatar"
+                  />
+                </Media>
+                <Media body className="col-8 pl-0">
+                  <Media heading tag="h5">
+                    Micah Immanuel
+                  </Media>
+                  <CardText>
+                    Hi, I already sent you the design to your email. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Maiores
+                    reiciendis libero in!
+                    <div className="mt-2">
+                      <a
+                        href="#"
+                        className="btn btn-sm btn-info rounded-circle mr-1"
+                      >
+                        <i className="fab fa-linkedin"></i>
+                      </a>
+                      <a
+                        href="#"
+                        className="btn btn-sm btn-dark rounded-circle mr-1"
+                      >
+                        <i className="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="#"
+                        className="btn btn-sm btn-primary rounded-circle mr-1"
+                      >
+                        <i className="fab fa-facebook"></i>
+                      </a>
+                    </div>
+                  </CardText>
+                </Media>
+              </Media>
+              <Media className="col-6 mt-4 pl-0">
+                <Media left href="#" className="col-4">
+                  <Media
+                    className="img-thumbnail img-fluid"
+                    src="/images/profile6.jpg"
+                    alt="Avatar"
+                  />
+                </Media>
+                <Media body className="col-8 pl-0">
+                  <Media heading tag="h5">
+                    Micah Immanuel
+                  </Media>
+                  <CardText>
+                    Hi, I already sent you the design to your email. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Maiores
+                    reiciendis libero in!
+                    <div className="mt-2">
+                      <a
+                        href="#"
+                        className="btn btn-sm btn-info rounded-circle mr-1"
+                      >
+                        <i className="fab fa-linkedin"></i>
+                      </a>
+                      <a
+                        href="#"
+                        className="btn btn-sm btn-dark rounded-circle mr-1"
+                      >
+                        <i className="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="#"
+                        className="btn btn-sm btn-primary rounded-circle mr-1"
+                      >
+                        <i className="fab fa-facebook"></i>
+                      </a>
+                    </div>
+                  </CardText>
+                </Media>
+              </Media>
+              <Media className="col-6 mt-4 pl-0">
+                <Media left href="#" className="col-4">
+                  <Media
+                    className="img-thumbnail img-fluid"
+                    src="/images/profile6.jpg"
+                    alt="Avatar"
+                  />
+                </Media>
+                <Media body className="col-8 pl-0">
+                  <Media heading tag="h5">
+                    Micah Immanuel
+                  </Media>
+                  <CardText>
+                    Hi, I already sent you the design to your email. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Maiores
+                    reiciendis libero in!
+                    <div className="mt-2">
+                      <a
+                        href="#"
+                        className="btn btn-sm btn-info rounded-circle mr-1"
+                      >
+                        <i className="fab fa-linkedin"></i>
+                      </a>
+                      <a
+                        href="#"
+                        className="btn btn-sm btn-dark rounded-circle mr-1"
+                      >
+                        <i className="fab fa-github"></i>
+                      </a>
+                      <a
+                        href="#"
+                        className="btn btn-sm btn-primary rounded-circle mr-1"
+                      >
+                        <i className="fab fa-facebook"></i>
+                      </a>
+                    </div>
+                  </CardText>
+                </Media>
+              </Media>
+            </Row>
           </Col>
         </Row>
       </Container>

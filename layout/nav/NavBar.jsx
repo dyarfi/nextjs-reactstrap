@@ -24,7 +24,7 @@ function NavBar({
 }) {
   return (
     <div>
-      <Navbar color="dark" dark expand="sm" fixed="top" className="py-0">
+      <Navbar color="dark" dark expand="sm" fixed="top">
         <NavbarBrand href="/">
           <img src="/logo.svg" alt="Logo" className="logo" />
           NextJS BS 4
@@ -33,7 +33,11 @@ function NavBar({
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="#" className="d-block" onClick={toggleLeft}>
+              <NavLink
+                href="#"
+                className="d-none d-sm-block"
+                onClick={toggleLeft}
+              >
                 <i
                   className={`fas fa-caret-square-${
                     isToggled ? 'left' : 'right'

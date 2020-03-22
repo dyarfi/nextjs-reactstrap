@@ -1,6 +1,9 @@
 // Imports SCSS theme
-@import "vendors/vendor";
+// Vendors variables override and path
 @import "themes/theme";
+@import "vendors/variables";
+@import "base/path";
+@import "vendors/vendor";
 @import "components/component";
 @import "base/placeholder";
 @import "base/utility";

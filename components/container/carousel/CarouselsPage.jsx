@@ -2,6 +2,7 @@ import React, { memo } from 'react';
 import {
   Row,
   Col,
+  Container,
   Carousel,
   CarouselItem,
   CarouselControl,
@@ -39,26 +40,33 @@ const CarouselsPage = memo(props => {
   return (
     <>
       <h1>Carousel</h1>
-      <Row lg="12">
-        <Carousel activeIndex={activeIndex} next={next} previous={previous}>
-          <CarouselIndicators
-            items={SLIDES.carousels}
+      <Col lg="6">
+        <Row>
+          <Carousel
             activeIndex={activeIndex}
-            onClickHandler={goToIndex}
-          />
-          {slides}
-          <CarouselControl
-            direction="prev"
-            directionText="Previous"
-            onClickHandler={previous}
-          />
-          <CarouselControl
-            direction="next"
-            directionText="Next"
-            onClickHandler={next}
-          />
-        </Carousel>
-      </Row>
+            next={next}
+            previous={previous}
+            id="key1"
+          >
+            <CarouselIndicators
+              items={SLIDES.carousels}
+              activeIndex={activeIndex}
+              onClickHandler={goToIndex}
+            />
+            {slides}
+            <CarouselControl
+              direction="prev"
+              directionText="Previous"
+              onClickHandler={previous}
+            />
+            <CarouselControl
+              direction="next"
+              directionText="Next"
+              onClickHandler={next}
+            />
+          </Carousel>
+        </Row>
+      </Col>
     </>
   );
 });

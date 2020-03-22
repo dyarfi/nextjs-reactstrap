@@ -1,6 +1,11 @@
 import React, { memo } from 'react';
 import { CARDS } from '../../../constants/cards';
-import { PostCard, ProfileCard, MenuCard } from '../../../components/card';
+import {
+  PostCard,
+  ProfileCard,
+  MenuCard,
+  MenuCardDiscount,
+} from '../../../components/card';
 
 const PostsPage = memo(props => {
   return (
@@ -12,7 +17,9 @@ const PostsPage = memo(props => {
         <h3>Profile</h3>
         <ProfileCard items={CARDS.posts} />
         <h3>Menus</h3>
-        <MenuCard items={CARDS.posts} />
+        <MenuCard items={CARDS.menus} />
+        <h3>Menu Discount</h3>
+        <MenuCardDiscount items={CARDS.menus} />
       </div>
     </>
   );

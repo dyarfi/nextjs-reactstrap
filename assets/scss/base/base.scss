@@ -21,11 +21,11 @@ h1,h2,h3,h4,h5,h6 {
         background-color:$light;
         height:100%;
         overflow-y:auto;
-        // width: calc(100% - 240px);
-        // @include media-breakpoint-down(xs) {            
-            width:240px;
-            position:fixed;
-        // }
+        position:fixed;
+        width:240px;
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
     }
     &-content {
         height:100%;
@@ -34,9 +34,10 @@ h1,h2,h3,h4,h5,h6 {
         animation:scaleUpCenter .15s linear both;
         padding-top:.75rem;
         padding-bottom:.75rem;
-        // @include media-breakpoint-down(xs) {
-            margin-left:240px;
-        // }
+        margin-left:240px;
+        @include media-breakpoint-down(sm) {
+            margin-left:0px !important;
+        }
     }
     &-list {
         &-group {
@@ -130,7 +131,8 @@ footer[class=footer-main] {
             // top:50%;
             // bottom:50%;
             height:1px;
-            background-color:$text-muted;
+            border-bottom: 1px dashed lighten($text-muted, 30);
+            // background-color:lighten($text-muted, 30);
             width:auto;
             margin: 0 auto 0 0;
             display:flex;
@@ -139,6 +141,11 @@ footer[class=footer-main] {
     }
 }
 // Bootstrap overide / extend
+/* --- Navbar --- */
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 /* --- Width --- */
 .w-10 {
     width: 10%;
@@ -179,7 +186,7 @@ footer[class=footer-main] {
 // 		border-left: .4em solid transparent;
 //     }
 // }
-.dropdown-menu:not([x-placement]) {     	
+.dropdown-menu:not([x-placement]) {
     &.show {
         @extend %shadow-md;	
     }	   

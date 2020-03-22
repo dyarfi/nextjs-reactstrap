@@ -83,7 +83,13 @@
   &-menu {
     overflow: hidden;
     border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, .1);
+    .card-title {
+      transition: .5s ease !important;
+      opacity: 0;
+      transform: translateY(-100px);
+      @extend %box-shadow;
+    }
     &-price, &-disc {
       margin-left: .35rem;
       transition: .5s ease;
@@ -114,6 +120,10 @@
       }      
     } 
     &:hover {
+      .card-title {
+        opacity: 1;
+        transform: translateY(0px);
+      }
       .card-menu-price, .card-menu-disc {
         transform: scale(1) translate(-100px) !important;
         opacity: 1;

@@ -83,7 +83,10 @@ const CARDS = {
         'Fried eggplant, mixed greens, fresh mozzarella, thinly sliced cherry pepper, tomato',
       price: '12.2',
       label: 'Hot Plate',
-      tag: 'default',
+      tag: 'success',
+      publishedAt: 'Wed, 12-02-2019',
+      postBy: 'Chief Kitchen',
+      views: '98',
     },
     {
       id: 2,
@@ -95,6 +98,9 @@ const CARDS = {
       price: '10',
       label: 'Popular',
       tag: 'warning',
+      publishedAt: 'Wed, 12-02-2019',
+      postBy: 'Chief Kitchen',
+      views: '98',
     },
     {
       id: 3,
@@ -105,7 +111,10 @@ const CARDS = {
         'Grilled chicken, grilled zucchini, fresh mozzarella, roasted pepper, roasted red onion.',
       price: '7.5',
       label: 'Hot Plate',
-      tag: 'default',
+      tag: 'success',
+      publishedAt: 'Wed, 12-02-2019',
+      postBy: 'Chief Kitchen',
+      views: '98',
     },
     {
       id: 4,
@@ -116,6 +125,9 @@ const CARDS = {
       price: '22.2',
       label: 'Popular',
       tag: 'danger',
+      publishedAt: 'Wed, 12-02-2019',
+      postBy: 'Chief Kitchen',
+      views: '98',
     },
     {
       id: 5,
@@ -127,6 +139,9 @@ const CARDS = {
       price: '15',
       label: 'Hot Plate',
       tag: 'warning',
+      publishedAt: 'Wed, 12-02-2019',
+      postBy: 'Chief Kitchen',
+      views: '98',
     },
     {
       id: 6,
@@ -137,6 +152,9 @@ const CARDS = {
       price: '7.7',
       label: 'Hot Plate',
       tag: 'warning',
+      publishedAt: 'Wed, 12-02-2019',
+      postBy: 'Chief Kitchen',
+      views: '98',
     },
     {
       id: 7,
@@ -147,6 +165,9 @@ const CARDS = {
       price: '4.5',
       label: 'Nice Deal',
       tag: 'warning',
+      publishedAt: 'Wed, 12-02-2019',
+      postBy: 'Chief Kitchen',
+      views: '98',
     },
     {
       id: 8,
@@ -157,6 +178,9 @@ const CARDS = {
       price: '8.8',
       label: 'Popular',
       tag: 'warning',
+      publishedAt: 'Wed, 12-02-2019',
+      postBy: 'Chief Kitchen',
+      views: '98',
     },
     {
       id: 9,
@@ -167,6 +191,9 @@ const CARDS = {
       price: '9.3',
       label: 'Nice Deal',
       tag: 'success',
+      publishedAt: 'Wed, 12-02-2019',
+      postBy: 'Chief Kitchen',
+      views: '98',
     },
     {
       id: 10,
@@ -177,6 +204,9 @@ const CARDS = {
       price: '5.2',
       label: 'Nice Deal',
       tag: 'danger',
+      publishedAt: 'Wed, 12-02-2019',
+      postBy: 'Chief Kitchen',
+      views: '98',
     },
     {
       id: 11,
@@ -188,6 +218,9 @@ const CARDS = {
       price: '22.23',
       tag: 'info',
       label: 'Hot Plate',
+      publishedAt: 'Wed, 12-02-2019',
+      postBy: 'Chief Kitchen',
+      views: '98',
     },
     {
       id: 12,
@@ -198,6 +231,9 @@ const CARDS = {
       price: '11.5',
       tag: 'warning',
       label: 'Popular',
+      publishedAt: 'Wed, 12-02-2019',
+      postBy: 'Chief Kitchen',
+      views: '98',
     },
   ],
   employees: [

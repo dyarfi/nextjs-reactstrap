@@ -67,14 +67,14 @@ const SUBMENUS = [
         icon: '',
       },
       {
-        name: 'carousels',
+        name: 'setting',
         as: 'a',
         href: '/page/setting',
         label: 'Settings',
         icon: '',
       },
       {
-        name: 'carousels',
+        name: 'login',
         as: 'a',
         href: '/page/login',
         label: 'Login',
@@ -104,14 +104,14 @@ const SUBMENUS = [
         icon: '',
       },
       {
-        name: 'carousels',
+        name: 'setting',
         as: 'a',
         href: '/page/setting',
         label: 'Settings',
         icon: '',
       },
       {
-        name: 'carousels',
+        name: 'login',
         as: 'a',
         href: '/page/login',
         label: 'Login',

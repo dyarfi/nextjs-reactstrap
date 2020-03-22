@@ -10,34 +10,40 @@ class MenuCard extends React.Component {
   }
   render() {
     const { items } = this.props;
-    console.log(items);
-
     return (
       <Row>
-        {items.map((profile, m) => {
+        {items.map((menu, m) => {
           return (
             <Col xs="12" md="12" lg="4" key={`p-${m}`}>
               <Card className="card-profile">
-                <img src={profile.image} alt={profile.title} />
+                <NextLink
+                  as={`/card/posts?id=${menu.id}`}
+                  href={{
+                    pathname: `/card/posts`,
+                    query: { id: menu.id },
+                  }}
+                >
+                  <img src={menu.image} alt={menu.title} />
+                </NextLink>
                 <div className="card-profile-body">
                   <div>
                     <p>
-                      @{profile.postBy}
+                      @{menu.postBy}
                       <br />
-                      <span>{profile.publishedAt}</span>
+                      <span>{menu.publishedAt}</span>
                     </p>
-                    <img src={profile.image} alt={`@${profile.postBy}`} />
+                    <img src={menu.image} alt={`@${menu.postBy}`} />
                   </div>
-                  <p>{profile.title}</p>
+                  <p>{menu.title}</p>
                   <div className="card-profile-interactions">
                     <p>
-                      <i className="fab fa-facebook"></i> {profile.views}
+                      <i className="fab fa-facebook"></i> {menu.views}
                     </p>
                     <p>
-                      <i className="fab fa-twitter"></i> {profile.views}
+                      <i className="fab fa-twitter"></i> {menu.views}
                     </p>
                     <p>
-                      <i className="fab fa-linkedin"></i> {profile.views}
+                      <i className="fab fa-linkedin"></i> {menu.views}
                     </p>
                   </div>
                 </div>
