@@ -28,7 +28,7 @@
     "@zeit/next-sass": "^1.0.1",
     "bootstrap": "^4.4.1",
     "cssnano": "^4.1.10",
-    "next": "9.2.1",
+    "next": "9.3.2",
     "next-redux-wrapper": "^5.0.0",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
